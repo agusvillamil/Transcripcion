@@ -4,20 +4,21 @@ Escucha el audio del sistema (la llamada), transcribe cada frase con Whisper
 y la traduce con un modelo local de Ollama. Ejecutar: python3 app.py
 """
 import html
+import math
 import re
 import sys
 import threading
 from datetime import datetime
-from pathlib import Path
 
 from PySide6.QtCore import QObject, Qt, QTimer, Signal
 from PySide6.QtGui import QGuiApplication, QKeySequence, QShortcut
 from PySide6.QtWidgets import (
-	QApplication, QButtonGroup, QComboBox, QFileDialog, QFrame, QHBoxLayout, QLabel,
+	QApplication, QButtonGroup, QComboBox, QFrame, QHBoxLayout, QLabel,
 	QMainWindow, QProgressBar, QPushButton, QScrollArea, QVBoxLayout, QWidget,
 )
 
 import config
+import limpieza
 from asr import ServidorWhisper
 from captura import CapturaAudio, listar_fuentes, monitor_predeterminado
 from segmentador import Segmentador
@@ -47,6 +48,7 @@ QPushButton#iniciar {{ background: {C['es']}; color: {C['fondo']}; font-weight: 
 QPushButton#iniciar[activo="true"] {{ background: {C['error']}; color: white; }}
 QPushButton#iniciar:disabled {{ background: {C['borde']}; color: {C['tenue']}; }}
 QPushButton#mini {{ padding: 3px 9px; font-size: 12px; color: {C['tenue']}; }}
+QPushButton#mini:checked {{ background: {C['tarjeta']}; color: {C['numero']}; border-color: {C['numero']}; }}
 QScrollArea {{ border: none; background: {C['fondo']}; }}
 QScrollBar:vertical {{ background: {C['fondo']}; width: 10px; }}
 QScrollBar::handle:vertical {{ background: {C['borde']}; border-radius: 5px; min-height: 30px; }}
@@ -97,9 +99,13 @@ class Tarjeta(QFrame):
 		self.escala = escala
 		self.lineas: dict[int, list[str]] = {}  # id de línea -> [original, traducción]
 		self.traduciendo: set[int] = set()
+		self.inicio = self.fin = datetime.now()  # para la duración de la llamada al guardar
+		self._px = 0.0  # tamaño de letra ya aplicado: setStyleSheet es caro, solo se llama si cambia
+		# Pintar con cada token redibuja la tarjeta y reacomoda todo el feed ~30 veces por segundo.
+		self._pintar_luego = QTimer(self, interval=config.UI_REFRESCO_MS, singleShot=True, timeout=self._render)
 
 		self.badge = QLabel()
-		self.hora = QLabel(datetime.now().strftime("%H:%M:%S"))
+		self.hora = QLabel(self.inicio.strftime("%H:%M:%S"))
 		self.hora.setObjectName("tenue")
 		self.tiempos = QLabel()
 		self.tiempos.setObjectName("tenue")
@@ -111,12 +117,18 @@ class Tarjeta(QFrame):
 		boton_copiar.setObjectName("mini")
 		boton_copiar.setCursor(Qt.PointingHandCursor)
 		boton_copiar.clicked.connect(self._copiar)
+		# Marca el turno para estudiarlo después: al guardar lleva #repasar en la nota.
+		self.boton_repasar = QPushButton("☆ Repasar", checkable=True)
+		self.boton_repasar.setObjectName("mini")
+		self.boton_repasar.setCursor(Qt.PointingHandCursor)
+		self.boton_repasar.toggled.connect(lambda m: self.boton_repasar.setText("★ Repasar" if m else "☆ Repasar"))
 
 		cabecera = QHBoxLayout()
 		cabecera.addWidget(self.badge)
 		cabecera.addWidget(self.hora)
 		cabecera.addWidget(self.tiempos)
 		cabecera.addStretch()
+		cabecera.addWidget(self.boton_repasar)
 		cabecera.addWidget(self.boton_idioma)
 		cabecera.addWidget(boton_copiar)
 
@@ -152,6 +164,7 @@ class Tarjeta(QFrame):
 
 	def poner_linea(self, linea_id: int, original: str, traduccion: str, traduciendo: bool) -> None:
 		self.lineas[linea_id] = [original, traduccion]
+		self.fin = datetime.now()
 		if traduciendo:
 			self.traduciendo.add(linea_id)
 		else:
@@ -161,7 +174,10 @@ class Tarjeta(QFrame):
 	def agregar_token(self, linea_id: int, token: str) -> None:
 		if linea_id in self.lineas:
 			self.lineas[linea_id][1] += token
-			self._render()
+			if not config.UI_REFRESCO_MS:
+				self._render()
+			elif not self._pintar_luego.isActive():
+				self._pintar_luego.start()  # junta los tokens que lleguen en ese lapso
 
 	def aplicar_escala(self, escala: float) -> None:
 		self.escala = escala
@@ -175,10 +191,13 @@ class Tarjeta(QFrame):
 		)
 
 	def _render(self) -> None:
+		self._pintar_luego.stop()
 		original, traduccion = self.texto_plano()
 		px = FUENTE_BASE_PX * self.escala
-		self.original.setStyleSheet(f"color: {C['tenue']}; font-size: {px:.0f}px;")
-		self.traduccion.setStyleSheet(f"color: {C['texto']}; font-size: {px * 1.4:.0f}px; font-weight: 600;")
+		if px != self._px:
+			self._px = px
+			self.original.setStyleSheet(f"color: {C['tenue']}; font-size: {px:.0f}px;")
+			self.traduccion.setStyleSheet(f"color: {C['texto']}; font-size: {px * 1.4:.0f}px; font-weight: 600;")
 		self.original.setText(resaltar(original))
 		cursor = f' <span style="color:{C[self.origen]}">▍</span>' if self.traduciendo else ""
 		self.traduccion.setText(resaltar(traduccion) + cursor)
@@ -208,6 +227,7 @@ class Ventana(QMainWindow):
 		self.escala = 1.0
 		self.filtro = "todo"
 		self.tarjetas: dict[int, Tarjeta] = {}
+		self._descartada = 0  # tarjetas hasta esta se limpiaron: sus eventos tardíos se ignoran
 		self.captura: CapturaAudio | None = None
 		self.segmentador: Segmentador | None = None
 		self.asr = ServidorWhisper()
@@ -218,7 +238,7 @@ class Ventana(QMainWindow):
 
 		self.puente = Puente()
 		self.puente.linea_nueva.connect(self._linea_nueva)
-		self.puente.token.connect(lambda linea, t: self._tarjeta(linea).agregar_token(linea.id, t))
+		self.puente.token.connect(self._token)
 		self.puente.linea_traducida.connect(self._linea_traducida)
 		self.puente.linea_actualizada.connect(self._linea_actualizada)
 		self.puente.estado.connect(self._estado)
@@ -253,6 +273,8 @@ class Ventana(QMainWindow):
 
 		self.vumetro_timer = QTimer(self, interval=60, timeout=self._actualizar_vumetro)
 		self.vumetro_timer.start()
+		# Reintenta guardar mientras queden frases en proceso (un solo timer: pulsar varias veces no duplica).
+		self.guardar_timer = QTimer(self, interval=300, singleShot=True, timeout=self._guardar)
 		threading.Thread(target=self._preparar_servicios, daemon=True).start()
 
 	# --- construcción ---
@@ -273,7 +295,7 @@ class Ventana(QMainWindow):
 		self.vumetro.setFixedSize(90, 8)
 		capa.addWidget(self.vumetro)
 		self.indicador_voz = QLabel("")
-		self.indicador_voz.setObjectName("tenue")
+		self.indicador_voz.setStyleSheet(f"color: {C['error']}; font-size: 12px;")
 		self.indicador_voz.setFixedWidth(52)
 		capa.addWidget(self.indicador_voz)
 
@@ -482,11 +504,12 @@ class Ventana(QMainWindow):
 		db = self.segmentador.nivel_db
 		self.vumetro.setValue(int(max(0, min(100, (db + 60) * 100 / 60))))
 		self.indicador_voz.setText("● voz" if self.segmentador.en_voz else "")
-		self.indicador_voz.setStyleSheet(f"color: {C['error']}; font-size: 12px;")
 
 	# --- eventos de la sesión ---
 
-	def _tarjeta(self, linea: Linea) -> Tarjeta:
+	def _tarjeta(self, linea: Linea) -> Tarjeta | None:
+		if linea.tarjeta <= self._descartada:
+			return None  # llegó después de Limpiar: recrearla dejaría una tarjeta fantasma
 		if linea.tarjeta not in self.tarjetas:
 			self.vacio.hide()
 			tarjeta = Tarjeta(linea.tarjeta, linea.origen, self.escala)
@@ -494,18 +517,28 @@ class Ventana(QMainWindow):
 			tarjeta.setVisible(self.filtro in ("todo", linea.origen))
 			self.capa_feed.insertWidget(self.capa_feed.count() - 1, tarjeta)
 			self.tarjetas[linea.tarjeta] = tarjeta
+			vieja = self.tarjetas.get(linea.tarjeta - config.AUDIO_TARJETAS) if config.AUDIO_TARJETAS else None
+			if vieja:
+				vieja.boton_idioma.hide()  # la sesión ya soltó su audio: no se puede re-transcribir
 		return self.tarjetas[linea.tarjeta]
 
 	def _linea_nueva(self, linea: Linea) -> None:
-		self._tarjeta(linea).poner_linea(linea.id, linea.original, "", traduciendo=True)
+		if tarjeta := self._tarjeta(linea):
+			tarjeta.poner_linea(linea.id, linea.original, "", traduciendo=True)
+
+	def _token(self, linea: Linea, token: str) -> None:
+		if tarjeta := self._tarjeta(linea):
+			tarjeta.agregar_token(linea.id, token)
 
 	def _linea_traducida(self, linea: Linea) -> None:
-		tarjeta = self._tarjeta(linea)
+		if not (tarjeta := self._tarjeta(linea)):
+			return
 		tarjeta.poner_linea(linea.id, linea.original, linea.traduccion, traduciendo=False)
 		tarjeta.tiempos.setText(f"· Whisper {linea.t_asr:.1f}s · traducción {linea.t_traduccion:.1f}s")
 
 	def _linea_actualizada(self, linea: Linea) -> None:
-		tarjeta = self._tarjeta(linea)
+		if not (tarjeta := self._tarjeta(linea)):
+			return
 		tarjeta.set_origen(linea.origen)
 		tarjeta.setVisible(self.filtro in ("todo", linea.origen))
 		tarjeta.poner_linea(linea.id, linea.original, "", traduciendo=True)
@@ -535,22 +568,61 @@ class Ventana(QMainWindow):
 		for t in self.tarjetas.values():
 			t.deleteLater()
 		self.tarjetas.clear()
-		self.sesion.limpiar()
+		self._descartada = self.sesion.limpiar()
 		self.vacio.show()
 
 	def _guardar(self) -> None:
+		"""Guarda la llamada como nota en la bóveda de Obsidian y limpia la consola."""
 		if not self.tarjetas:
 			return
-		sugerido = Path.home() / f"interpretacion-{datetime.now():%Y%m%d-%H%M}.md"
-		ruta, _ = QFileDialog.getSaveFileName(self, "Guardar sesión", str(sugerido), "Markdown (*.md)")
-		if not ruta:
+		if self.sesion.pendientes():
+			# Guardar a mitad de una traducción dejaría la frase cortada en la nota
+			# y, tras limpiar, sus tokens crearían una tarjeta fantasma.
+			self._estado("Esperando que termine la traducción para guardar…")
+			self.guardar_timer.start()
 			return
-		lineas = [f"# Sesión de interpretación {datetime.now():%d/%m/%Y %H:%M}", ""]
-		for t in self.tarjetas.values():
+		ahora = datetime.now()
+		tarjetas = list(self.tarjetas.values())
+		inicio = min(t.inicio for t in tarjetas)
+		fin = max(t.fin for t in tarjetas)
+		lineas = [
+			"---",
+			f"fecha: {inicio:%Y-%m-%d}",
+			f'inicio: "{inicio:%H:%M}"',
+			f'fin: "{fin:%H:%M}"',
+			f"duracion_min: {max(1, math.ceil((fin - inicio).total_seconds() / 60))}",
+			f"turnos: {len(tarjetas)}",
+			f"repasar: {sum(t.boton_repasar.isChecked() for t in tarjetas)}",
+			"tags: [interpretacion]",
+			"---",
+			f"# Llamada {ahora:%d-%m-%Y - %H:%M}",
+			"",
+		]
+		for t in tarjetas:
 			original, traduccion = t.texto_plano()
+			if t.boton_repasar.isChecked():
+				traduccion += f"\n{config.ETIQUETA_REPASAR}"  # `python repaso.py` junta estos turnos
 			lineas += [f"### {t.hora.text()} · {DIRECCION[t.origen]}", f"> {original}", "", traduccion, ""]
-		Path(ruta).write_text("\n".join(lineas), encoding="utf-8")
-		self._estado(f"Sesión guardada en {ruta}")
+		nota = "\n".join(lineas)
+		try:
+			nota = limpieza.limpiar(nota)  # pliega los "Thank you." sueltos; no borra nada
+		except ValueError:
+			pass  # ante la duda se guarda tal cual: `python limpieza.py` la puede limpiar después
+		# Obsidian no admite ":" en nombres de archivo: la hora va como HH.MM.
+		nombre = f"{ahora:%d-%m-%Y - %H.%M}"
+		try:
+			config.SESIONES_DIR.mkdir(exist_ok=True)
+			ruta = config.SESIONES_DIR / f"{nombre}.md"
+			n = 2
+			while ruta.exists():  # dos llamadas guardadas en el mismo minuto
+				ruta = config.SESIONES_DIR / f"{nombre} ({n}).md"
+				n += 1
+			ruta.write_text(nota, encoding="utf-8")
+		except OSError as e:
+			self._error(f"No se pudo guardar la sesión (la consola no se limpió): {e}")
+			return
+		self._limpiar()
+		self._estado(f"Guardada en Obsidian: {config.SESIONES_DIR.name}/{ruta.name} · consola limpia.")
 
 	def closeEvent(self, evento) -> None:
 		if self.captura:

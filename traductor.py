@@ -13,22 +13,25 @@ import config
 
 _NOMBRES = {"en": "English", "es": "Spanish"}
 
-_SISTEMA = """You are a professional medical interpreter translating a live conversation between a healthcare provider and a patient. Translate the user's message from {origen} to {destino}.
+# Igual para ambas direcciones (la dirección va en _PEDIDO): así Ollama reutiliza el
+# prompt ya procesado de la frase anterior y las reglas no suman latencia. Las de "usted"
+# y cortesía se ajustaron contra bench/reporte_colecistectomia.md: con qwen3:8b, cambiar
+# la redacción de los ejemplos vuelve a aparecer el tuteo.
+_SISTEMA = """You are a professional medical interpreter on a live phone call between a healthcare provider and a patient, English ⇄ Spanish. Each message says which direction to translate.
 Rules:
+- You only translate; you never answer. A greeting, a "thank you" or a question is translated, not replied to.
 - Translate faithfully and completely: do not add, omit, summarize or explain anything.
 - Keep the speaker's first-person voice, tone and register.
 - Keep numbers, doses, units, dates, times and drug names exactly as said.
-- Use correct medical terminology in {destino}. The text comes from speech recognition: if a medical term is misspelled, translate the intended term.
+- Use correct medical terminology. The text comes from speech recognition: if a medical term is misspelled, translate the intended term.
 - The message may be very short (a greeting, "yes", "no"): translate just that, never continue or complete it.
-- {estilo}
-- Output only the {destino} translation, with no quotes, notes or labels."""
+- Courtesy formulas get their usual equivalent, not a literal one: "You're welcome" = "De nada", "Thank you so much" = "Muchas gracias".
+- Into Spanish: neutral Latin American Spanish. Address the listener as ONE person with formal "usted" in every verb, pronoun and command: "usted está", "con usted", "le", "su", "Come see me" = "Venga a verme" (not "Ven"), "Let them know" = "Hágales saber" (not "Háganles"). Never use "tú", "te", "contigo", "vos" or "ustedes".
+- In Spanish, "you" is always "usted": "con usted" (never "contigo"), "usted está" (never "estás"), "que usted hable" (never "que hables"), "¿Tiene…?" (never "¿Tienes…?").
+- Into English: natural, plain American English.
+- Output only the translation, with no quotes, notes or labels."""
 
 _PEDIDO = "Translate this {origen} text into {destino}:\n\n{texto}"
-
-_ESTILO = {
-	"es": "Use neutral Latin American Spanish. Always use formal 'usted' forms (le, su, usted), never 'tú' or 'vos'.",
-	"en": "Use natural, plain American English.",
-}
 
 # Formato recomendado por Google para TranslateGemma.
 _TRANSLATEGEMMA = (
@@ -136,7 +139,7 @@ class Traductor:
 		o, d = _NOMBRES[origen], _NOMBRES[destino]
 		if self.modelo.startswith("translategemma"):
 			return [{"role": "user", "content": _TRANSLATEGEMMA.format(origen=o, destino=d, o=origen, d=destino, texto=texto)}]
-		sistema = _SISTEMA.format(origen=o, destino=d, estilo=_ESTILO[destino])
+		sistema = _SISTEMA
 		if contexto:
 			sistema += "\n\nPrevious lines of the conversation, for context only (do not translate them):\n"
 			sistema += "\n".join(f"- {linea}" for linea in contexto)

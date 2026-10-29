@@ -15,9 +15,11 @@ from typing import Callable
 
 import numpy as np
 
+import config
 from asr import ServidorWhisper, es_ambiguo
+from frases import traduccion_fija
 from segmentador import Fragmento
-from traductor import Traductor
+from traductor import Traduccion, Traductor
 
 CONTEXTO_LINEAS = 4
 
@@ -30,7 +32,7 @@ class Linea:
 	original: str
 	inicio: float
 	fin: float
-	audio: np.ndarray = field(repr=False)
+	audio: np.ndarray | None = field(repr=False)  # None cuando la tarjeta ya es vieja (config.AUDIO_TARJETAS)
 	traduccion: str = ""
 	t_asr: float = 0.0
 	t_primer_token: float = 0.0
@@ -64,6 +66,7 @@ class Sesion:
 		self._candado = threading.Lock()
 		self._gpu = threading.Lock()
 		self._tarjeta = 0
+		self._descartada = 0  # tarjetas hasta esta se limpiaron: no se traducen
 		self._ultimo_turno: int | None = None
 		self._activa = True
 		self._hilos = [
@@ -92,10 +95,13 @@ class Sesion:
 		self._cola_asr.put(None)
 		self._cola_trad.put(None)
 
-	def limpiar(self) -> None:
+	def limpiar(self) -> int:
+		"""Olvida lo transcripto. Devuelve la última tarjeta descartada."""
 		with self._candado:
 			self.lineas.clear()
 			self._ultimo_turno = None
+			self._descartada = self._tarjeta
+			return self._tarjeta
 
 	# --- hilos ---
 
@@ -155,12 +161,18 @@ class Sesion:
 				t_fin_habla=t_fin_habla,
 			)
 			self.lineas.append(linea)
+			if config.AUDIO_TARJETAS:
+				# El audio solo sirve para «⇄» y son ~4 MB por minuto de voz: se suelta el de las tarjetas viejas.
+				for vieja in self.lineas:
+					if vieja.tarjeta > self._tarjeta - config.AUDIO_TARJETAS:
+						break
+					vieja.audio = None
 		self.cb.linea_nueva(linea)
 		self._cola_trad.put(linea)
 
 	def _forzar(self, tarjeta: int, idioma: str) -> None:
 		with self._candado:
-			lineas = [l for l in self.lineas if l.tarjeta == tarjeta]
+			lineas = [l for l in self.lineas if l.tarjeta == tarjeta and l.audio is not None]
 		for linea in lineas:
 			self.cb.estado("Re-transcribiendo…")
 			with self._gpu:
@@ -170,14 +182,20 @@ class Sesion:
 			self._cola_trad.put(linea)
 
 	def _traducir(self, linea: Linea) -> None:
-		self.cb.estado("Traduciendo…")
 		with self._candado:
+			if linea.tarjeta <= self._descartada:
+				return  # se limpió la consola mientras esperaba en la cola
 			previas = [l for l in self.lineas if l.id < linea.id][-CONTEXTO_LINEAS:]
-		contexto = [f"({l.origen.upper()}) {l.original}" for l in previas]
-		with self._gpu:
-			tr = self.traductor.traducir(
-				linea.original, linea.origen, linea.destino, contexto, al_token=lambda t: self.cb.token(linea, t)
-			)
+		fija = traduccion_fija(linea.original, linea.origen)
+		if fija is not None:
+			tr = Traduccion(fija, 0.0, 0.0)  # fórmula de cortesía: al instante, sin esperar la GPU
+		else:
+			self.cb.estado("Traduciendo…")
+			contexto = [f"({l.origen.upper()}) {l.original}" for l in previas]
+			with self._gpu:
+				tr = self.traductor.traducir(
+					linea.original, linea.origen, linea.destino, contexto, al_token=lambda t: self.cb.token(linea, t)
+				)
 		linea.traduccion = tr.texto
 		linea.t_primer_token = tr.primer_token
 		linea.t_traduccion = tr.total

@@ -10,7 +10,7 @@ WHISPER_MODELOS_DIR = WHISPER_DIR / "models"
 WHISPER_MODELO = "ggml-large-v3-turbo-q5_0.bin"
 WHISPER_HOST = "127.0.0.1"
 WHISPER_PUERTO = 8178
-WHISPER_HILOS = 4
+WHISPER_HILOS = 4  # con 2 da el mismo texto, tiempo y CPU (medido): el trabajo lo hace la GPU
 WHISPER_AUDIO_CTX = 768  # 15 s de contexto: ~2x más rápido que 30 s en la RX 570
 
 # --- Ollama (backend Vulkan) ---
@@ -31,3 +31,15 @@ VAD_MARGEN_DB = 10.0         # dB sobre el piso de ruido para considerar voz
 VAD_UMBRAL_MIN_DB = -55.0    # nunca se considera voz por debajo de esto
 
 IDIOMAS = {"en": "English", "es": "Español"}
+
+# --- Consumo de la app (para no competir con el navegador durante la llamada) ---
+# No tocan los modelos ni el texto que producen. Cada uno se desactiva con 0.
+UI_REFRESCO_MS = 100  # la traducción en curso se pinta cada 100 ms; 0 = con cada token, como antes
+AUDIO_TARJETAS = 10   # tarjetas recientes que conservan su audio para «⇄»; 0 = todas, como antes
+
+# --- Registro de llamadas: "Guardar sesión" escribe aquí (bóveda de Obsidian) ---
+SESIONES_DIR = Path.home() / "Documentos/Obsidian Vault/Llamadas"
+
+# --- Repaso: turnos marcados con «☆ Repasar» y la nota que arma `python repaso.py` ---
+ETIQUETA_REPASAR = "#repasar"  # queda debajo de la traducción del turno marcado
+REPASO_NOTA = SESIONES_DIR.parent / "Repaso.md"  # fuera de Llamadas/: no es una llamada
