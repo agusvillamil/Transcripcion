@@ -1,0 +1,17 @@
+{
+  "fuentes": ["Casos sintéticos de contraste; no representan pacientes reales."],
+  "lineas": [
+    {"grupo":"contraste","sin_contexto":true,"origen":"en","texto":"You can return to work on light duty, but do not lift more than 10 pounds.","criterio":"Restricciones laborales, negación y 10 libras; usted."},
+    {"grupo":"contraste","sin_contexto":true,"origen":"en","texto":"Your copay is 25 dollars. You do not need prior authorization for this visit.","criterio":"Copago de 25 dólares; no requiere autorización previa."},
+    {"grupo":"contraste","sin_contexto":true,"origen":"en","texto":"Take your blood thinner every evening. Do not stop it without calling us.","criterio":"Anticoagulante o equivalente claro; cada noche; no suspender sin llamar."},
+    {"grupo":"contraste","sin_contexto":true,"origen":"en","texto":"Use the sling for your arm and the walker when you get out of bed.","criterio":"Cabestrillo para brazo, andador al levantarse de la cama; usted."},
+    {"grupo":"contraste","sin_contexto":true,"origen":"en","texto":"I have heartburn after meals, but no chest pain or shortness of breath.","criterio":"Primera persona; acidez después de comer; niega dolor de pecho y disnea."},
+    {"grupo":"contraste","sin_contexto":true,"origen":"en","texto":"The rash is from shingles. It is not an allergy to your medication.","criterio":"Herpes zóster/culebrilla, erupción; no alergia al medicamento."},
+    {"grupo":"contraste","sin_contexto":true,"origen":"en","texto":"The benefits of surgery outweigh the risks in your case.","criterio":"Beneficios clínicos, no prestaciones del seguro; superan riesgos."},
+    {"grupo":"contraste","sin_contexto":true,"origen":"en","texto":"Please tell us if you see discharge from your eye.","criterio":"Secreción ocular; no alta hospitalaria ni ultrasonido por us."},
+    {"grupo":"contraste","sin_contexto":true,"origen":"es","texto":"Me dieron un andador y un cabestrillo, pero todavía no puedo volver al trabajo.","criterio":"Walker y sling; primera persona; todavía no puede volver."},
+    {"grupo":"contraste","sin_contexto":true,"origen":"es","texto":"No tengo dolor de pecho. La acidez empezó después de tomar el medicamento.","criterio":"Niega dolor de pecho; heartburn tras medicamento; sin causalidad añadida."},
+    {"grupo":"contraste","sin_contexto":true,"origen":"es","texto":"¿Debo venir en ayunas para la cita de seguimiento?", "criterio":"Pregunta sobre fasting y follow-up appointment; no responderla."},
+    {"grupo":"contraste","sin_contexto":true,"origen":"en","texto":"Take 5 mg at 8 AM, not 10 mg. If you feel dizzy, call us.","criterio":"5 mg, 8 AM, no 10 mg; llamar si mareo; no ultrasonido por us."}
+  ]
+}

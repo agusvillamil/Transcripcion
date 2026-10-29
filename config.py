@@ -18,6 +18,12 @@ OLLAMA_URL = "http://127.0.0.1:11434"
 OLLAMA_MODELO = "qwen3:8b"  # el más fiel en el benchmark médico; ver README
 OLLAMA_CONTEXTO = 2048
 
+# --- Glosario opcional (solo lectura; también se activa desde la interfaz) ---
+GLOSARIO_ACTIVO = False
+GLOSARIO_RUTA = Path.home() / "Proyectos/Paso a paso/datos.json"
+GLOSARIO_MAX_ENTRADAS = 3
+GLOSARIO_MAX_TOKENS = 150  # estimación conservadora, incluyendo la instrucción
+
 # --- Segmentación por voz (VAD por energía) ---
 VAD_FRAME_MS = 30
 VAD_PRE_ROLL_MS = 300        # audio previo al inicio de voz que se conserva

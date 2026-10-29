@@ -21,6 +21,7 @@ import config
 import limpieza
 from asr import ServidorWhisper
 from captura import CapturaAudio, listar_fuentes, monitor_predeterminado
+from glosario import Glosario
 from segmentador import Segmentador
 from sesion import Callbacks, Linea, Sesion
 from traductor import Traductor
@@ -339,6 +340,12 @@ class Ventana(QMainWindow):
 			grupo.addButton(b)
 			capa.addWidget(b)
 		capa.addStretch()
+		self.boton_glosario = QPushButton("Glosario: desactivado", checkable=True)
+		self.boton_glosario.setToolTip("Usar términos de Paso a Paso. Se actualiza al iniciar; cambiar solo entre llamadas.")
+		self.boton_glosario.toggled.connect(self._cambiar_glosario)
+		capa.addWidget(self.boton_glosario)
+		if config.GLOSARIO_ACTIVO:
+			self.boton_glosario.setChecked(True)
 		for texto, accion in (("A−", lambda: self._zoom(-0.1)), ("A+", lambda: self._zoom(0.1)),
 							  ("Guardar sesión", self._guardar), ("Limpiar", self._limpiar)):
 			b = QPushButton(texto)
@@ -464,6 +471,24 @@ class Ventana(QMainWindow):
 
 	# --- captura ---
 
+	def _cambiar_glosario(self, activo: bool) -> None:
+		if self._escuchando() or self.sesion.pendientes():
+			self.boton_glosario.blockSignals(True)
+			self.boton_glosario.setChecked(self.traductor.glosario is not None)
+			self.boton_glosario.blockSignals(False)
+			return
+		g = Glosario.cargar(config.GLOSARIO_RUTA) if activo else None
+		self.traductor.glosario = g if g and g.indice else None
+		self.boton_glosario.blockSignals(True)
+		self.boton_glosario.setChecked(self.traductor.glosario is not None)
+		self.boton_glosario.blockSignals(False)
+		self.boton_glosario.setText(f"Glosario: {g.cantidad} términos" if self.traductor.glosario else "Glosario: desactivado")
+		self.boton_glosario.setToolTip(
+			(g.error or "El archivo no contiene términos utilizables. Se mantiene la traducción habitual.")
+			if activo and not self.traductor.glosario else
+			"Términos de Paso a Paso; se recargan al iniciar. Cambiar solo entre llamadas."
+		)
+
 	def _escuchando(self) -> bool:
 		return self.captura is not None and self.captura.activa()
 
@@ -475,6 +500,8 @@ class Ventana(QMainWindow):
 			self.captura = None
 			self._estado("Detenido.")
 		elif self.listo:
+			if self.boton_glosario.isChecked() and not self.sesion.pendientes():
+				self._cambiar_glosario(True)
 			fuente = self.combo_fuente.currentData()
 			self.segmentador = Segmentador()
 			self.captura = CapturaAudio(fuente, self._al_bloque)
@@ -497,6 +524,7 @@ class Ventana(QMainWindow):
 		self.combo_whisper.setEnabled(not activo)  # reiniciar Whisper cortaría la transcripción
 
 	def _actualizar_vumetro(self) -> None:
+		self.boton_glosario.setEnabled(self.listo and not self._escuchando() and not self.sesion.pendientes())
 		if not self._escuchando():
 			self.vumetro.setValue(0)
 			self.indicador_voz.setText("")

@@ -1,0 +1,91 @@
+{
+  "modelo": "qwen3:8b",
+  "metodo": "/tokenize del runner local; referencia sin plantilla de chat",
+  "casos": [
+    {
+      "indice": 5,
+      "tokens_referencia": 40,
+      "estimados": 84
+    },
+    {
+      "indice": 25,
+      "tokens_referencia": 44,
+      "estimados": 93
+    },
+    {
+      "indice": 42,
+      "tokens_referencia": 53,
+      "estimados": 114
+    },
+    {
+      "indice": 43,
+      "tokens_referencia": 41,
+      "estimados": 92
+    },
+    {
+      "indice": 58,
+      "tokens_referencia": 39,
+      "estimados": 88
+    },
+    {
+      "indice": 70,
+      "tokens_referencia": 53,
+      "estimados": 111
+    },
+    {
+      "indice": 72,
+      "tokens_referencia": 39,
+      "estimados": 86
+    },
+    {
+      "indice": 75,
+      "tokens_referencia": 81,
+      "estimados": 147
+    },
+    {
+      "indice": 79,
+      "tokens_referencia": 39,
+      "estimados": 88
+    },
+    {
+      "indice": 82,
+      "tokens_referencia": 38,
+      "estimados": 86
+    },
+    {
+      "indice": 86,
+      "tokens_referencia": 72,
+      "estimados": 150
+    },
+    {
+      "indice": 90,
+      "tokens_referencia": 44,
+      "estimados": 99
+    },
+    {
+      "indice": 91,
+      "tokens_referencia": 37,
+      "estimados": 92
+    },
+    {
+      "indice": 92,
+      "tokens_referencia": 53,
+      "estimados": 111
+    },
+    {
+      "indice": 94,
+      "tokens_referencia": 62,
+      "estimados": 127
+    },
+    {
+      "indice": 99,
+      "tokens_referencia": 38,
+      "estimados": 84
+    },
+    {
+      "indice": 100,
+      "tokens_referencia": 39,
+      "estimados": 92
+    }
+  ]
+}

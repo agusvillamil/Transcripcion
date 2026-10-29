@@ -10,6 +10,7 @@ from dataclasses import dataclass
 from typing import Callable
 
 import config
+from glosario import Glosario
 
 _NOMBRES = {"en": "English", "es": "Spanish"}
 
@@ -50,11 +51,13 @@ class Traduccion:
 
 
 class Traductor:
-	def __init__(self, modelo: str = config.OLLAMA_MODELO, url: str = config.OLLAMA_URL) -> None:
+	def __init__(self, modelo: str = config.OLLAMA_MODELO, url: str = config.OLLAMA_URL,
+				 glosario: Glosario | None = None) -> None:
 		self.modelo = modelo
 		self.url = url
 		self.proceso: subprocess.Popen | None = None
 		self._piensa: dict[str, bool] = {}
+		self.glosario = glosario
 
 	def asegurar_servidor(self, timeout: float = 30) -> None:
 		"""Si Ollama no está corriendo, lo lanza como usuario."""
@@ -144,6 +147,8 @@ class Traductor:
 			sistema += "\n\nPrevious lines of the conversation, for context only (do not translate them):\n"
 			sistema += "\n".join(f"- {linea}" for linea in contexto)
 		pedido = _PEDIDO.format(origen=o, destino=d, texto=texto)
+		if self.glosario is not None:
+			sistema += self.glosario.referencia(texto, origen, sistema + pedido)
 		return [{"role": "system", "content": sistema}, {"role": "user", "content": pedido}]
 
 	def _soporta_pensar(self) -> bool:

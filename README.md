@@ -51,6 +51,7 @@ python3 app.py
 | `asr.py` | Whisper (`whisper-server`) + detección de idioma por frase |
 | `traductor.py` | Traducción con Ollama (prompt de intérprete médico) |
 | `frases.py` | Traducciones fijas de fórmulas de cortesía (editable) |
+| `glosario.py` | Selección local y acotada de términos de Paso a Paso |
 | `sesion.py` | Orquesta transcripción → traducción; turna la GPU entre ambos |
 | `repaso.py` | Arma `Repaso.md` con horas, turnos marcados y términos frecuentes |
 | `config.py` | Modelos, umbrales y parámetros |
@@ -102,9 +103,63 @@ estos ajustes: las 73 transcripciones y las 73 traducciones salen idénticas. No
   (73 líneas y 1307 palabras las dos veces). Causa sin identificar; la traducción tardó lo mismo (2.3 s).
 - Mientras procesa una frase la GPU está al ~100 % y `llama-server` ocupa ~0.8 núcleos. VRAM máxima: 6.1 de 8 GB.
 
-## Actualizaciones futuras
+## Glosario de Paso a Paso (opcional)
 
-- **Glosario personal en Obsidian.** Una nota de la bóveda (ej. `Glosario.md`) con pares de términos
-  (`light duty = trabajo liviano`, `follow-up = cita de control`) que se le pasen al LLM en cada traducción,
-  para que la terminología sea siempre la misma. Pasar solo los términos que aparecen en la frase, y ponerlos
-  después de las reglas fijas del prompt, para no hacer más lenta la traducción.
+El botón **Glosario: desactivado**, junto a los filtros, permite activarlo antes de
+iniciar una llamada. Por defecto está apagado: se conserva el pedido original a
+la IA. Al activarlo muestra la cantidad de entradas cargadas. Solo se puede cambiar
+con la captura detenida y sin frases pendientes. El archivo se recarga al iniciar
+la siguiente captura, cuando no quedan tareas pendientes.
+
+Lee `~/Proyectos/Paso a paso/datos.json` (`datos.glosario`) en modo solo lectura.
+No hace falta abrir Paso a Paso. La ruta se cambia en `GLOSARIO_RUTA` de `config.py`.
+Si el archivo falta, está roto o no tiene entradas utilizables, el botón vuelve a
+desactivado; al pasar el puntero se ve el motivo. No se usa una copia anterior
+silenciosamente. La captura sigue funcionando con el comportamiento habitual.
+
+- Busca palabras completas y variantes separadas por ` / ` en el idioma de origen,
+  dando prioridad a expresiones largas. No hace coincidencias aproximadas ni inventa
+  sinónimos; conserva tildes y exige mayúsculas para siglas cortas como `US`.
+- El perfil conservador solo envía expresiones de dos o más palabras y siglas
+  exactas de 2–4 caracteres. Omite palabras aisladas, aunque aparezcan en el archivo:
+  la prueba inicial mostró que `bottom` y `hold` podían imponer un sentido incorrecto.
+  Esta precaución reduce cobertura también para palabras médicas válidas. El número
+  del botón indica entradas cargadas, no entradas que se enviarán en una frase.
+- Omite alias con traducciones conflictivas. No elimina calificadores como
+  `(from hospital)`, para no convertir una secreción en un alta hospitalaria.
+- Agrega hasta tres entradas, solo si caben en un presupuesto de 150 tokens
+  **estimados** incluyendo la instrucción. Se estima un token por cada dos bytes
+  UTF-8: es un margen amplio para este texto EN/ES, no un tokenizador exacto.
+- Reserva margen para la respuesta y la plantilla de chat; si el contexto ya es
+  largo, omite referencias. Nunca recorta reglas, texto original ni conversación
+  para hacer lugar. Tampoco envía `nota`, fechas, IDs ni datos de estudio.
+- No modifica Whisper, los modelos, las fórmulas fijas ni las reglas actuales.
+  Sin coincidencias, el prompt sigue siendo exactamente el original.
+
+Cambiar el prompt puede cambiar otras palabras de la traducción. La evaluación
+encontró mejoras puntuales, pero **no una mejora general demostrada**; por eso
+se recomienda mantenerlo apagado para llamadas habituales. Ver el
+[informe A/B](bench/reporte_glosario.md), con resultados y limitaciones.
+Las pruebas de calidad de esta incorporación usan `qwen3:8b`.
+
+### Verificación y comparación
+
+```bash
+python -B -m unittest discover -s tests -v
+OLLAMA_HOST=127.0.0.1:11439 OLLAMA_VULKAN=1 ollama serve
+# En otra terminal, con la app de llamadas detenida:
+python -B bench/comparar_glosario.py --corpus bench/corpus_glosario.json --salida /tmp/comparacion-glosario.json
+```
+
+La prueba compara las mismas transcripciones y cuatro líneas previas. Calienta el
+mismo prefijo antes de cada variante, alterna el orden A/B y mide desde antes de
+enviar la petición hasta el primer token y hasta completar la traducción. Omite
+inferencias duplicadas cuando los pedidos son idénticos o aplica una fórmula fija.
+El resultado se guarda después de cada caso y el mismo comando puede reanudarlo,
+si no cambiaron el corpus, el código, el modelo seleccionado o el archivo fuente.
+`--repeticiones 2` permite repetir cada comparación. No descarga ni cambia modelos.
+
+El corpus contiene 55 frases del benchmark anterior, 35 fragmentos transcritos del
+video de práctica de insuficiencia mitral y 12 casos sintéticos de contraste.
+Los resultados de calidad se revisan por fidelidad, no por igualdad literal con
+el glosario. Los errores de ASR se evalúan por separado.

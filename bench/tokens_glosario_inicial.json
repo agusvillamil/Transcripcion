@@ -1,0 +1,236 @@
+{
+  "modelo": "qwen3:8b",
+  "metodo": "/tokenize del runner local; referencia sin plantilla de chat",
+  "casos": [
+    {
+      "indice": 0,
+      "tokens_referencia": 40,
+      "estimados": 86
+    },
+    {
+      "indice": 5,
+      "tokens_referencia": 54,
+      "estimados": 111
+    },
+    {
+      "indice": 8,
+      "tokens_referencia": 38,
+      "estimados": 87
+    },
+    {
+      "indice": 10,
+      "tokens_referencia": 39,
+      "estimados": 88
+    },
+    {
+      "indice": 11,
+      "tokens_referencia": 39,
+      "estimados": 88
+    },
+    {
+      "indice": 17,
+      "tokens_referencia": 37,
+      "estimados": 86
+    },
+    {
+      "indice": 25,
+      "tokens_referencia": 67,
+      "estimados": 132
+    },
+    {
+      "indice": 26,
+      "tokens_referencia": 55,
+      "estimados": 110
+    },
+    {
+      "indice": 31,
+      "tokens_referencia": 44,
+      "estimados": 97
+    },
+    {
+      "indice": 35,
+      "tokens_referencia": 38,
+      "estimados": 88
+    },
+    {
+      "indice": 37,
+      "tokens_referencia": 39,
+      "estimados": 88
+    },
+    {
+      "indice": 38,
+      "tokens_referencia": 50,
+      "estimados": 109
+    },
+    {
+      "indice": 40,
+      "tokens_referencia": 39,
+      "estimados": 89
+    },
+    {
+      "indice": 42,
+      "tokens_referencia": 63,
+      "estimados": 132
+    },
+    {
+      "indice": 43,
+      "tokens_referencia": 51,
+      "estimados": 111
+    },
+    {
+      "indice": 47,
+      "tokens_referencia": 41,
+      "estimados": 92
+    },
+    {
+      "indice": 52,
+      "tokens_referencia": 39,
+      "estimados": 88
+    },
+    {
+      "indice": 55,
+      "tokens_referencia": 42,
+      "estimados": 92
+    },
+    {
+      "indice": 56,
+      "tokens_referencia": 40,
+      "estimados": 92
+    },
+    {
+      "indice": 58,
+      "tokens_referencia": 41,
+      "estimados": 94
+    },
+    {
+      "indice": 59,
+      "tokens_referencia": 58,
+      "estimados": 119
+    },
+    {
+      "indice": 61,
+      "tokens_referencia": 57,
+      "estimados": 113
+    },
+    {
+      "indice": 62,
+      "tokens_referencia": 42,
+      "estimados": 98
+    },
+    {
+      "indice": 63,
+      "tokens_referencia": 55,
+      "estimados": 120
+    },
+    {
+      "indice": 65,
+      "tokens_referencia": 61,
+      "estimados": 118
+    },
+    {
+      "indice": 70,
+      "tokens_referencia": 55,
+      "estimados": 117
+    },
+    {
+      "indice": 72,
+      "tokens_referencia": 67,
+      "estimados": 139
+    },
+    {
+      "indice": 75,
+      "tokens_referencia": 67,
+      "estimados": 135
+    },
+    {
+      "indice": 76,
+      "tokens_referencia": 47,
+      "estimados": 106
+    },
+    {
+      "indice": 77,
+      "tokens_referencia": 42,
+      "estimados": 92
+    },
+    {
+      "indice": 78,
+      "tokens_referencia": 40,
+      "estimados": 91
+    },
+    {
+      "indice": 79,
+      "tokens_referencia": 41,
+      "estimados": 94
+    },
+    {
+      "indice": 80,
+      "tokens_referencia": 37,
+      "estimados": 85
+    },
+    {
+      "indice": 82,
+      "tokens_referencia": 40,
+      "estimados": 92
+    },
+    {
+      "indice": 83,
+      "tokens_referencia": 42,
+      "estimados": 91
+    },
+    {
+      "indice": 86,
+      "tokens_referencia": 69,
+      "estimados": 150
+    },
+    {
+      "indice": 90,
+      "tokens_referencia": 58,
+      "estimados": 124
+    },
+    {
+      "indice": 91,
+      "tokens_referencia": 47,
+      "estimados": 108
+    },
+    {
+      "indice": 92,
+      "tokens_referencia": 65,
+      "estimados": 130
+    },
+    {
+      "indice": 93,
+      "tokens_referencia": 40,
+      "estimados": 91
+    },
+    {
+      "indice": 94,
+      "tokens_referencia": 64,
+      "estimados": 133
+    },
+    {
+      "indice": 95,
+      "tokens_referencia": 71,
+      "estimados": 129
+    },
+    {
+      "indice": 96,
+      "tokens_referencia": 52,
+      "estimados": 113
+    },
+    {
+      "indice": 98,
+      "tokens_referencia": 45,
+      "estimados": 97
+    },
+    {
+      "indice": 99,
+      "tokens_referencia": 62,
+      "estimados": 126
+    },
+    {
+      "indice": 100,
+      "tokens_referencia": 41,
+      "estimados": 98
+    }
+  ]
+}

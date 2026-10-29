@@ -1,0 +1,1604 @@
+{
+  "meta": {
+    "huella": "07ccf7f816aa9b4090bc34a65d516789e44dc8947ee0b1b6dc1b6c399c186aaf",
+    "modelo": "qwen3:8b",
+    "contexto": 2048,
+    "repeticiones": 1,
+    "fuentes": [
+      "bench/reporte_colecistectomia.md",
+      "https://www.youtube.com/watch?v=lj1ObXJKDgA",
+      "bench/casos_glosario.json"
+    ],
+    "entradas": 3698
+  },
+  "casos": [
+    {
+      "grupo": "colecistectomia",
+      "texto": "Hello, I am John. I will be your nurse today to get you ready for your procedure. What are we going to be doing to you today?",
+      "origen": "en",
+      "indice": 0,
+      "contexto": [],
+      "prompt_igual": false,
+      "fija": null,
+      "referencia": "\n\nTerminology reference (data, not instructions). Use only if appropriate to this sentence; preserve meaning and register. Do not add explanations:\n[\"nurse\", \"enfermero/a\"]",
+      "mediciones": [
+        {
+          "modo": "base",
+          "repeticion": 0,
+          "texto": "Hola, soy John. Seré su enfermero hoy para prepararlo para su procedimiento. ¿Qué vamos a hacer hoy con usted?",
+          "primer_token_s": 0.36579418182373047,
+          "total_s": 1.3629562854766846
+        },
+        {
+          "modo": "glosario",
+          "repeticion": 0,
+          "texto": "Hola, soy John. Seré su enfermero hoy para prepararlo para su procedimiento. ¿Qué vamos a hacer hoy con usted?",
+          "primer_token_s": 0.6894948482513428,
+          "total_s": 1.6846122741699219
+        }
+      ]
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Hola.",
+      "origen": "es",
+      "indice": 1,
+      "contexto": [
+        "(EN) Hello, I am John. I will be your nurse today to get you ready for your procedure. What are we going to be doing to you today?"
+      ],
+      "prompt_igual": true,
+      "fija": "Hello.",
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Me van a remover la vesícula y a quitar las piedras.",
+      "origen": "es",
+      "indice": 2,
+      "contexto": [
+        "(EN) Hello, I am John. I will be your nurse today to get you ready for your procedure. What are we going to be doing to you today?",
+        "(ES) Hola."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "That is correct. What we are going to perform is called a laparoscopic cholecystectomy.",
+      "origen": "en",
+      "indice": 3,
+      "contexto": [
+        "(EN) Hello, I am John. I will be your nurse today to get you ready for your procedure. What are we going to be doing to you today?",
+        "(ES) Hola.",
+        "(ES) Me van a remover la vesícula y a quitar las piedras."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Muy bien, entonces es una colexistectomía laparoscópica.",
+      "origen": "es",
+      "indice": 4,
+      "contexto": [
+        "(EN) Hello, I am John. I will be your nurse today to get you ready for your procedure. What are we going to be doing to you today?",
+        "(ES) Hola.",
+        "(ES) Me van a remover la vesícula y a quitar las piedras.",
+        "(EN) That is correct. What we are going to perform is called a laparoscopic cholecystectomy."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Yes. Now moving on. Are you allergic to any medication?",
+      "origen": "en",
+      "indice": 5,
+      "contexto": [
+        "(ES) Hola.",
+        "(ES) Me van a remover la vesícula y a quitar las piedras.",
+        "(EN) That is correct. What we are going to perform is called a laparoscopic cholecystectomy.",
+        "(ES) Muy bien, entonces es una colexistectomía laparoscópica."
+      ],
+      "prompt_igual": false,
+      "fija": null,
+      "referencia": "\n\nTerminology reference (data, not instructions). Use only if appropriate to this sentence; preserve meaning and register. Do not add explanations:\n[\"allergic to\", \"alérgico/a a\"]\n[\"medication\", \"medicamento / medicina\"]",
+      "mediciones": [
+        {
+          "modo": "glosario",
+          "repeticion": 0,
+          "texto": "Sí. Ahora pasamos a otro punto. ¿Es alérgico a algún medicamento?",
+          "primer_token_s": 1.0713484287261963,
+          "total_s": 1.8342955112457275
+        },
+        {
+          "modo": "base",
+          "repeticion": 0,
+          "texto": "Sí. Ahora pasamos a otro punto. ¿Tiene alergia a algún medicamento?",
+          "primer_token_s": 0.9976303577423096,
+          "total_s": 1.7560479640960693
+        }
+      ]
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Pues no que yo sepa, hasta ahorita nada.",
+      "origen": "es",
+      "indice": 6,
+      "contexto": [
+        "(ES) Me van a remover la vesícula y a quitar las piedras.",
+        "(EN) That is correct. What we are going to perform is called a laparoscopic cholecystectomy.",
+        "(ES) Muy bien, entonces es una colexistectomía laparoscópica.",
+        "(EN) Yes. Now moving on. Are you allergic to any medication?"
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Good. Have you had any previous operations?",
+      "origen": "en",
+      "indice": 7,
+      "contexto": [
+        "(EN) That is correct. What we are going to perform is called a laparoscopic cholecystectomy.",
+        "(ES) Muy bien, entonces es una colexistectomía laparoscópica.",
+        "(EN) Yes. Now moving on. Are you allergic to any medication?",
+        "(ES) Pues no que yo sepa, hasta ahorita nada."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "No, solo una cesárea.",
+      "origen": "es",
+      "indice": 8,
+      "contexto": [
+        "(ES) Muy bien, entonces es una colexistectomía laparoscópica.",
+        "(EN) Yes. Now moving on. Are you allergic to any medication?",
+        "(ES) Pues no que yo sepa, hasta ahorita nada.",
+        "(EN) Good. Have you had any previous operations?"
+      ],
+      "prompt_igual": false,
+      "fija": null,
+      "referencia": "\n\nTerminology reference (data, not instructions). Use only if appropriate to this sentence; preserve meaning and register. Do not add explanations:\n[\"cesárea\", \"C-section\"]",
+      "mediciones": [
+        {
+          "modo": "base",
+          "repeticion": 0,
+          "texto": "No, just a cesarean section.",
+          "primer_token_s": 0.7331297397613525,
+          "total_s": 1.0555167198181152
+        },
+        {
+          "modo": "glosario",
+          "repeticion": 0,
+          "texto": "No, just a C-section.",
+          "primer_token_s": 1.03902006149292,
+          "total_s": 1.2805747985839844
+        }
+      ]
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Did you have any adverse reactions to Buenesthesia?",
+      "origen": "en",
+      "indice": 9,
+      "contexto": [
+        "(EN) Yes. Now moving on. Are you allergic to any medication?",
+        "(ES) Pues no que yo sepa, hasta ahorita nada.",
+        "(EN) Good. Have you had any previous operations?",
+        "(ES) No, solo una cesárea."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Pues no, pero no me durmieron, solo me pusieron la raquia. Nunca me han dormido con anestesia.",
+      "origen": "es",
+      "indice": 10,
+      "contexto": [
+        "(ES) Pues no que yo sepa, hasta ahorita nada.",
+        "(EN) Good. Have you had any previous operations?",
+        "(ES) No, solo una cesárea.",
+        "(EN) Did you have any adverse reactions to Buenesthesia?"
+      ],
+      "prompt_igual": false,
+      "fija": null,
+      "referencia": "\n\nTerminology reference (data, not instructions). Use only if appropriate to this sentence; preserve meaning and register. Do not add explanations:\n[\"anestesia\", \"anesthesia\"]",
+      "mediciones": [
+        {
+          "modo": "base",
+          "repeticion": 0,
+          "texto": "Well, no, but they didn't put me to sleep, they just gave me spinal anesthesia. They've never put me to sleep with anesthesia.",
+          "primer_token_s": 0.9970157146453857,
+          "total_s": 2.032097101211548
+        },
+        {
+          "modo": "glosario",
+          "repeticion": 0,
+          "texto": "Well, no, but they didn't put me to sleep, they just gave me a spinal. They've never put me to sleep with anesthesia.",
+          "primer_token_s": 1.0511069297790527,
+          "total_s": 2.086726665496826
+        }
+      ]
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Okay, well this time we are going to give you general anesthesia, which will put you completely asleep.",
+      "origen": "en",
+      "indice": 11,
+      "contexto": [
+        "(EN) Good. Have you had any previous operations?",
+        "(ES) No, solo una cesárea.",
+        "(EN) Did you have any adverse reactions to Buenesthesia?",
+        "(ES) Pues no, pero no me durmieron, solo me pusieron la raquia. Nunca me han dormido con anestesia."
+      ],
+      "prompt_igual": false,
+      "fija": null,
+      "referencia": "\n\nTerminology reference (data, not instructions). Use only if appropriate to this sentence; preserve meaning and register. Do not add explanations:\n[\"anesthesia\", \"anestesia\"]",
+      "mediciones": [
+        {
+          "modo": "glosario",
+          "repeticion": 0,
+          "texto": "Okay, bien, esta vez vamos a darle anestesia general, la cual lo pondrá completamente dormido.",
+          "primer_token_s": 1.0631515979766846,
+          "total_s": 1.9389855861663818
+        },
+        {
+          "modo": "base",
+          "repeticion": 0,
+          "texto": "Okay, bien, esta vez vamos a darle anestesia general, la cual lo pondrá completamente dormido.",
+          "primer_token_s": 1.0056867599487305,
+          "total_s": 1.8677804470062256
+        }
+      ]
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Ok, sí, está bien. Ya me habían explicado eso.",
+      "origen": "es",
+      "indice": 12,
+      "contexto": [
+        "(ES) No, solo una cesárea.",
+        "(EN) Did you have any adverse reactions to Buenesthesia?",
+        "(ES) Pues no, pero no me durmieron, solo me pusieron la raquia. Nunca me han dormido con anestesia.",
+        "(EN) Okay, well this time we are going to give you general anesthesia, which will put you completely asleep."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "That's fine ma'am. We still have to go over all of this because we need you to sign consent forms before the procedure.",
+      "origen": "en",
+      "indice": 13,
+      "contexto": [
+        "(EN) Did you have any adverse reactions to Buenesthesia?",
+        "(ES) Pues no, pero no me durmieron, solo me pusieron la raquia. Nunca me han dormido con anestesia.",
+        "(EN) Okay, well this time we are going to give you general anesthesia, which will put you completely asleep.",
+        "(ES) Ok, sí, está bien. Ya me habían explicado eso."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Entendido.",
+      "origen": "es",
+      "indice": 14,
+      "contexto": [
+        "(ES) Pues no, pero no me durmieron, solo me pusieron la raquia. Nunca me han dormido con anestesia.",
+        "(EN) Okay, well this time we are going to give you general anesthesia, which will put you completely asleep.",
+        "(ES) Ok, sí, está bien. Ya me habían explicado eso.",
+        "(EN) That's fine ma'am. We still have to go over all of this because we need you to sign consent forms before the procedure."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "When was the last time you had anything to eat or drink?",
+      "origen": "en",
+      "indice": 15,
+      "contexto": [
+        "(EN) Okay, well this time we are going to give you general anesthesia, which will put you completely asleep.",
+        "(ES) Ok, sí, está bien. Ya me habían explicado eso.",
+        "(EN) That's fine ma'am. We still have to go over all of this because we need you to sign consent forms before the procedure.",
+        "(ES) Entendido."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Pues me dijeron que no comiera ni bebiera nada después de la medianoche ayer. Desde las 9 p.m. ya no he comido nada.",
+      "origen": "es",
+      "indice": 16,
+      "contexto": [
+        "(ES) Ok, sí, está bien. Ya me habían explicado eso.",
+        "(EN) That's fine ma'am. We still have to go over all of this because we need you to sign consent forms before the procedure.",
+        "(ES) Entendido.",
+        "(EN) When was the last time you had anything to eat or drink?"
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Excellent. Do you have diabetes or any other medical conditions?",
+      "origen": "en",
+      "indice": 17,
+      "contexto": [
+        "(EN) That's fine ma'am. We still have to go over all of this because we need you to sign consent forms before the procedure.",
+        "(ES) Entendido.",
+        "(EN) When was the last time you had anything to eat or drink?",
+        "(ES) Pues me dijeron que no comiera ni bebiera nada después de la medianoche ayer. Desde las 9 p.m. ya no he comido nada."
+      ],
+      "prompt_igual": false,
+      "fija": null,
+      "referencia": "\n\nTerminology reference (data, not instructions). Use only if appropriate to this sentence; preserve meaning and register. Do not add explanations:\n[\"diabetes\", \"diabetes\"]",
+      "mediciones": [
+        {
+          "modo": "glosario",
+          "repeticion": 0,
+          "texto": "Excelente. ¿Tiene diabetes o alguna otra condición médica?",
+          "primer_token_s": 1.0964016914367676,
+          "total_s": 1.5826325416564941
+        },
+        {
+          "modo": "base",
+          "repeticion": 0,
+          "texto": "Excelente. ¿Tiene diabetes o alguna otra condición médica?",
+          "primer_token_s": 1.0280756950378418,
+          "total_s": 1.519577980041504
+        }
+      ]
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "No.",
+      "origen": "es",
+      "indice": 18,
+      "contexto": [
+        "(ES) Entendido.",
+        "(EN) When was the last time you had anything to eat or drink?",
+        "(ES) Pues me dijeron que no comiera ni bebiera nada después de la medianoche ayer. Desde las 9 p.m. ya no he comido nada.",
+        "(EN) Excellent. Do you have diabetes or any other medical conditions?"
+      ],
+      "prompt_igual": true,
+      "fija": "No.",
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Are you taking any medications?",
+      "origen": "en",
+      "indice": 19,
+      "contexto": [
+        "(EN) When was the last time you had anything to eat or drink?",
+        "(ES) Pues me dijeron que no comiera ni bebiera nada después de la medianoche ayer. Desde las 9 p.m. ya no he comido nada.",
+        "(EN) Excellent. Do you have diabetes or any other medical conditions?",
+        "(ES) No."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "No.",
+      "origen": "es",
+      "indice": 20,
+      "contexto": [
+        "(ES) Pues me dijeron que no comiera ni bebiera nada después de la medianoche ayer. Desde las 9 p.m. ya no he comido nada.",
+        "(EN) Excellent. Do you have diabetes or any other medical conditions?",
+        "(ES) No.",
+        "(EN) Are you taking any medications?"
+      ],
+      "prompt_igual": true,
+      "fija": "No.",
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Do you feel ill or coming down with any flu-like symptoms or sickness?",
+      "origen": "en",
+      "indice": 21,
+      "contexto": [
+        "(EN) Excellent. Do you have diabetes or any other medical conditions?",
+        "(ES) No.",
+        "(EN) Are you taking any medications?",
+        "(ES) No."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "No.",
+      "origen": "es",
+      "indice": 22,
+      "contexto": [
+        "(ES) No.",
+        "(EN) Are you taking any medications?",
+        "(ES) No.",
+        "(EN) Do you feel ill or coming down with any flu-like symptoms or sickness?"
+      ],
+      "prompt_igual": true,
+      "fija": "No.",
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Do you have any loose, chipped or missing teeth?",
+      "origen": "en",
+      "indice": 23,
+      "contexto": [
+        "(EN) Are you taking any medications?",
+        "(ES) No.",
+        "(EN) Do you feel ill or coming down with any flu-like symptoms or sickness?",
+        "(ES) No."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "No, aún no.",
+      "origen": "es",
+      "indice": 24,
+      "contexto": [
+        "(ES) No.",
+        "(EN) Do you feel ill or coming down with any flu-like symptoms or sickness?",
+        "(ES) No.",
+        "(EN) Do you have any loose, chipped or missing teeth?"
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "So the procedure will go like this. We're going to give you medicine to calm you down through an IV. Then when you are calm, we will administer general anesthesia. This will put you completely asleep.",
+      "origen": "en",
+      "indice": 25,
+      "contexto": [
+        "(EN) Do you feel ill or coming down with any flu-like symptoms or sickness?",
+        "(ES) No.",
+        "(EN) Do you have any loose, chipped or missing teeth?",
+        "(ES) No, aún no."
+      ],
+      "prompt_igual": false,
+      "fija": null,
+      "referencia": "\n\nTerminology reference (data, not instructions). Use only if appropriate to this sentence; preserve meaning and register. Do not add explanations:\n[\"medicine\", \"medicamento / medicina\"]\n[\"IV\", \"vía intravenosa / por vía intravenosa\"]\n[\"anesthesia\", \"anestesia\"]",
+      "mediciones": [
+        {
+          "modo": "glosario",
+          "repeticion": 0,
+          "texto": "Así será el procedimiento. Le daremos medicamento para que se tranquilice por vía intravenosa. Luego, cuando esté tranquilo, le administraremos anestesia general. Esto lo pondrá completamente dormido.",
+          "primer_token_s": 1.3717994689941406,
+          "total_s": 3.1024210453033447
+        },
+        {
+          "modo": "base",
+          "repeticion": 0,
+          "texto": "Así será el procedimiento. Le daremos medicamentos para que se tranquilice a través de una vía intravenosa. Luego, cuando esté tranquilo, le administraremos anestesia general. Esto lo dejará completamente dormido.",
+          "primer_token_s": 1.0136003494262695,
+          "total_s": 2.8395965099334717
+        }
+      ]
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "We will then proceed to put a tube in your mouth to help you breathe. The surgeon will make a small incision through which he will put a small tube with a camera and light on the end.",
+      "origen": "en",
+      "indice": 26,
+      "contexto": [
+        "(ES) No.",
+        "(EN) Do you have any loose, chipped or missing teeth?",
+        "(ES) No, aún no.",
+        "(EN) So the procedure will go like this. We're going to give you medicine to calm you down through an IV. Then when you are calm, we will administer general anesthesia. This will put you completely asleep."
+      ],
+      "prompt_igual": false,
+      "fija": null,
+      "referencia": "\n\nTerminology reference (data, not instructions). Use only if appropriate to this sentence; preserve meaning and register. Do not add explanations:\n[\"surgeon\", \"cirujano/a\"]\n[\"incision\", \"incisión / corte quirúrgico\"]",
+      "mediciones": [
+        {
+          "modo": "base",
+          "repeticion": 0,
+          "texto": "Entonces procederemos a colocar un tubo en su boca para ayudarlo a respirar. El cirujano hará una pequeña incisión a través de la cual colocará un pequeño tubo con una cámara y luz en el extremo.",
+          "primer_token_s": 1.0408833026885986,
+          "total_s": 2.8427436351776123
+        },
+        {
+          "modo": "glosario",
+          "repeticion": 0,
+          "texto": "Entonces procederemos a colocarle un tubo en la boca para ayudarle a respirar. El cirujano hará una pequeña incisión mediante la cual colocará un pequeño tubo con una cámara y luz en el extremo.",
+          "primer_token_s": 1.386648178100586,
+          "total_s": 3.2016422748565674
+        }
+      ]
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "He will then start the procedure.",
+      "origen": "en",
+      "indice": 27,
+      "contexto": [
+        "(EN) Do you have any loose, chipped or missing teeth?",
+        "(ES) No, aún no.",
+        "(EN) So the procedure will go like this. We're going to give you medicine to calm you down through an IV. Then when you are calm, we will administer general anesthesia. This will put you completely asleep.",
+        "(EN) We will then proceed to put a tube in your mouth to help you breathe. The surgeon will make a small incision through which he will put a small tube with a camera and light on the end."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "After the procedure we will remove the tube before you wake up and then we will take you to recovery.",
+      "origen": "en",
+      "indice": 28,
+      "contexto": [
+        "(ES) No, aún no.",
+        "(EN) So the procedure will go like this. We're going to give you medicine to calm you down through an IV. Then when you are calm, we will administer general anesthesia. This will put you completely asleep.",
+        "(EN) We will then proceed to put a tube in your mouth to help you breathe. The surgeon will make a small incision through which he will put a small tube with a camera and light on the end.",
+        "(EN) He will then start the procedure."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Muy bien.",
+      "origen": "es",
+      "indice": 29,
+      "contexto": [
+        "(EN) So the procedure will go like this. We're going to give you medicine to calm you down through an IV. Then when you are calm, we will administer general anesthesia. This will put you completely asleep.",
+        "(EN) We will then proceed to put a tube in your mouth to help you breathe. The surgeon will make a small incision through which he will put a small tube with a camera and light on the end.",
+        "(EN) He will then start the procedure.",
+        "(EN) After the procedure we will remove the tube before you wake up and then we will take you to recovery."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "This first consent form states that you are understanding the procedure and complications and give us permission to perform this.",
+      "origen": "en",
+      "indice": 30,
+      "contexto": [
+        "(EN) We will then proceed to put a tube in your mouth to help you breathe. The surgeon will make a small incision through which he will put a small tube with a camera and light on the end.",
+        "(EN) He will then start the procedure.",
+        "(EN) After the procedure we will remove the tube before you wake up and then we will take you to recovery.",
+        "(ES) Muy bien."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Any complications being that we might have to make a larger incision than expected.",
+      "origen": "en",
+      "indice": 31,
+      "contexto": [
+        "(EN) He will then start the procedure.",
+        "(EN) After the procedure we will remove the tube before you wake up and then we will take you to recovery.",
+        "(ES) Muy bien.",
+        "(EN) This first consent form states that you are understanding the procedure and complications and give us permission to perform this."
+      ],
+      "prompt_igual": false,
+      "fija": null,
+      "referencia": "\n\nTerminology reference (data, not instructions). Use only if appropriate to this sentence; preserve meaning and register. Do not add explanations:\n[\"incision\", \"incisión / corte quirúrgico\"]",
+      "mediciones": [
+        {
+          "modo": "glosario",
+          "repeticion": 0,
+          "texto": "Cualquier complicación consiste en que podríamos tener que hacer una incisión más grande de lo esperado.",
+          "primer_token_s": 1.0708739757537842,
+          "total_s": 1.9396615028381348
+        },
+        {
+          "modo": "base",
+          "repeticion": 0,
+          "texto": "Cualquier complicación consiste en que podríamos tener que hacer una incisión más grande de lo esperado.",
+          "primer_token_s": 0.7471647262573242,
+          "total_s": 1.6163289546966553
+        }
+      ]
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Ok, listo.",
+      "origen": "es",
+      "indice": 32,
+      "contexto": [
+        "(EN) After the procedure we will remove the tube before you wake up and then we will take you to recovery.",
+        "(ES) Muy bien.",
+        "(EN) This first consent form states that you are understanding the procedure and complications and give us permission to perform this.",
+        "(EN) Any complications being that we might have to make a larger incision than expected."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "This next one says that you understand all risks involved with this procedure.",
+      "origen": "en",
+      "indice": 33,
+      "contexto": [
+        "(ES) Muy bien.",
+        "(EN) This first consent form states that you are understanding the procedure and complications and give us permission to perform this.",
+        "(EN) Any complications being that we might have to make a larger incision than expected.",
+        "(ES) Ok, listo."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "This like any other procedure has the risk to injure any of the other organs nearby.",
+      "origen": "en",
+      "indice": 34,
+      "contexto": [
+        "(EN) This first consent form states that you are understanding the procedure and complications and give us permission to perform this.",
+        "(EN) Any complications being that we might have to make a larger incision than expected.",
+        "(ES) Ok, listo.",
+        "(EN) This next one says that you understand all risks involved with this procedure."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "There is also a risk for infection and hemorrhage.",
+      "origen": "en",
+      "indice": 35,
+      "contexto": [
+        "(EN) Any complications being that we might have to make a larger incision than expected.",
+        "(ES) Ok, listo.",
+        "(EN) This next one says that you understand all risks involved with this procedure.",
+        "(EN) This like any other procedure has the risk to injure any of the other organs nearby."
+      ],
+      "prompt_igual": false,
+      "fija": null,
+      "referencia": "\n\nTerminology reference (data, not instructions). Use only if appropriate to this sentence; preserve meaning and register. Do not add explanations:\n[\"infection\", \"infección\"]",
+      "mediciones": [
+        {
+          "modo": "glosario",
+          "repeticion": 0,
+          "texto": "También hay un riesgo de infección y hemorragia.",
+          "primer_token_s": 1.0531761646270752,
+          "total_s": 1.6420941352844238
+        },
+        {
+          "modo": "base",
+          "repeticion": 0,
+          "texto": "También existe el riesgo de infección y hemorragia.",
+          "primer_token_s": 0.744356632232666,
+          "total_s": 1.347344160079956
+        }
+      ]
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Also, there is a risk of chipping, loosening, or knocking out teeth with a tooth to help you breathe, but this rarely happens.",
+      "origen": "en",
+      "indice": 36,
+      "contexto": [
+        "(ES) Ok, listo.",
+        "(EN) This next one says that you understand all risks involved with this procedure.",
+        "(EN) This like any other procedure has the risk to injure any of the other organs nearby.",
+        "(EN) There is also a risk for infection and hemorrhage."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "There is also risk with the anesthesia which will include awareness during the procedure, coma or in the worst case scenario, death.",
+      "origen": "en",
+      "indice": 37,
+      "contexto": [
+        "(EN) This next one says that you understand all risks involved with this procedure.",
+        "(EN) This like any other procedure has the risk to injure any of the other organs nearby.",
+        "(EN) There is also a risk for infection and hemorrhage.",
+        "(EN) Also, there is a risk of chipping, loosening, or knocking out teeth with a tooth to help you breathe, but this rarely happens."
+      ],
+      "prompt_igual": false,
+      "fija": null,
+      "referencia": "\n\nTerminology reference (data, not instructions). Use only if appropriate to this sentence; preserve meaning and register. Do not add explanations:\n[\"anesthesia\", \"anestesia\"]",
+      "mediciones": [
+        {
+          "modo": "glosario",
+          "repeticion": 0,
+          "texto": "También hay riesgo con la anestesia, que incluirá la conciencia durante el procedimiento, coma o, en el peor de los casos, la muerte.",
+          "primer_token_s": 1.3656275272369385,
+          "total_s": 2.797910690307617
+        },
+        {
+          "modo": "base",
+          "repeticion": 0,
+          "texto": "También hay riesgo con la anestesia, la cual incluirá la conciencia durante el procedimiento, coma o, en el peor de los casos, la muerte.",
+          "primer_token_s": 1.0514130592346191,
+          "total_s": 2.516815662384033
+        }
+      ]
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "This very rarely occurs. The anesthesiologist will speak to you in detail about the risk and benefits of anesthesia after I am done with you.",
+      "origen": "en",
+      "indice": 38,
+      "contexto": [
+        "(EN) This like any other procedure has the risk to injure any of the other organs nearby.",
+        "(EN) There is also a risk for infection and hemorrhage.",
+        "(EN) Also, there is a risk of chipping, loosening, or knocking out teeth with a tooth to help you breathe, but this rarely happens.",
+        "(EN) There is also risk with the anesthesia which will include awareness during the procedure, coma or in the worst case scenario, death."
+      ],
+      "prompt_igual": false,
+      "fija": null,
+      "referencia": "\n\nTerminology reference (data, not instructions). Use only if appropriate to this sentence; preserve meaning and register. Do not add explanations:\n[\"benefits\", \"beneficios / prestaciones\"]\n[\"anesthesia\", \"anestesia\"]",
+      "mediciones": [
+        {
+          "modo": "base",
+          "repeticion": 0,
+          "texto": "Esto ocurre muy raramente. El anestesiólogo le hablará en detalle sobre los riesgos y beneficios de la anestesia después de que termine con usted.",
+          "primer_token_s": 1.0665810108184814,
+          "total_s": 2.4502665996551514
+        },
+        {
+          "modo": "glosario",
+          "repeticion": 0,
+          "texto": "Esto ocurre muy raramente. El anestesiólogo le hablará en detalle sobre los riesgos y beneficios de la anestesia después de que termine con usted.",
+          "primer_token_s": 1.406907320022583,
+          "total_s": 2.7925596237182617
+        }
+      ]
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Todo eso se escucha muy feo.",
+      "origen": "es",
+      "indice": 39,
+      "contexto": [
+        "(EN) There is also a risk for infection and hemorrhage.",
+        "(EN) Also, there is a risk of chipping, loosening, or knocking out teeth with a tooth to help you breathe, but this rarely happens.",
+        "(EN) There is also risk with the anesthesia which will include awareness during the procedure, coma or in the worst case scenario, death.",
+        "(EN) This very rarely occurs. The anesthesiologist will speak to you in detail about the risk and benefits of anesthesia after I am done with you."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "This is just a risk that might happen. It does not mean that it will. I am required to discuss all of this with you. Let's hold up on signing this form until after you speak to the anesthesiologist, okay? Okay.",
+      "origen": "en",
+      "indice": 40,
+      "contexto": [
+        "(EN) Also, there is a risk of chipping, loosening, or knocking out teeth with a tooth to help you breathe, but this rarely happens.",
+        "(EN) There is also risk with the anesthesia which will include awareness during the procedure, coma or in the worst case scenario, death.",
+        "(EN) This very rarely occurs. The anesthesiologist will speak to you in detail about the risk and benefits of anesthesia after I am done with you.",
+        "(ES) Todo eso se escucha muy feo."
+      ],
+      "prompt_igual": false,
+      "fija": null,
+      "referencia": "\n\nTerminology reference (data, not instructions). Use only if appropriate to this sentence; preserve meaning and register. Do not add explanations:\n[\"Hold\", \"Retener/retención\"]",
+      "mediciones": [
+        {
+          "modo": "base",
+          "repeticion": 0,
+          "texto": "Esto es solo un riesgo que podría ocurrir. No significa que ocurrirá. Estoy obligado a discutir todo esto con usted. Vamos a posponer la firma de este formulario hasta después de que hable con el anestesiólogo, ¿de acuerdo? ¿De acuerdo?",
+          "primer_token_s": 1.3784165382385254,
+          "total_s": 3.623141050338745
+        },
+        {
+          "modo": "glosario",
+          "repeticion": 0,
+          "texto": "Esto es solo un riesgo que podría ocurrir. No significa que ocurrirá. Estoy obligado a discutir todo esto con usted. Vamos a retener el acto de firmar este formulario hasta después de que hable con el anestesiólogo, ¿de acuerdo? ¿De acuerdo?",
+          "primer_token_s": 1.4307231903076172,
+          "total_s": 3.759272575378418
+        }
+      ]
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Muy bien. Entonces, ¿qué sigue?",
+      "origen": "es",
+      "indice": 41,
+      "contexto": [
+        "(EN) There is also risk with the anesthesia which will include awareness during the procedure, coma or in the worst case scenario, death.",
+        "(EN) This very rarely occurs. The anesthesiologist will speak to you in detail about the risk and benefits of anesthesia after I am done with you.",
+        "(ES) Todo eso se escucha muy feo.",
+        "(EN) This is just a risk that might happen. It does not mean that it will. I am required to discuss all of this with you. Let's hold up on signing this form until after you speak to the anesthesiologist, okay? Okay."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Next one states that if the doctor finds the need to administer a blood transfusion or blood products, we have your permission to do so.",
+      "origen": "en",
+      "indice": 42,
+      "contexto": [
+        "(EN) This very rarely occurs. The anesthesiologist will speak to you in detail about the risk and benefits of anesthesia after I am done with you.",
+        "(ES) Todo eso se escucha muy feo.",
+        "(EN) This is just a risk that might happen. It does not mean that it will. I am required to discuss all of this with you. Let's hold up on signing this form until after you speak to the anesthesiologist, okay? Okay.",
+        "(ES) Muy bien. Entonces, ¿qué sigue?"
+      ],
+      "prompt_igual": false,
+      "fija": null,
+      "referencia": "\n\nTerminology reference (data, not instructions). Use only if appropriate to this sentence; preserve meaning and register. Do not add explanations:\n[\"blood transfusion\", \"transfusión de sangre\"]\n[\"Blood products\", \"Productos sanguíneos\"]\n[\"doctor\", \"médico/a\"]",
+      "mediciones": [
+        {
+          "modo": "base",
+          "repeticion": 0,
+          "texto": "El siguiente indica que si el médico determina la necesidad de administrar una transfusión de sangre o productos sanguíneos, tenemos su permiso para hacerlo.",
+          "primer_token_s": 1.1057095527648926,
+          "total_s": 2.468681573867798
+        },
+        {
+          "modo": "glosario",
+          "repeticion": 0,
+          "texto": "El siguiente indica que si el médico/a determina la necesidad de administrar una transfusión de sangre o productos sanguíneos, tenemos su permiso para hacerlo.",
+          "primer_token_s": 1.449279546737671,
+          "total_s": 2.8159542083740234
+        }
+      ]
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Ya me estoy preocupando, ¿entonces me van a hacer una transfusión de sangre? A mí me dijeron que era una operación fácil y con pocas complicaciones.",
+      "origen": "es",
+      "indice": 43,
+      "contexto": [
+        "(ES) Todo eso se escucha muy feo.",
+        "(EN) This is just a risk that might happen. It does not mean that it will. I am required to discuss all of this with you. Let's hold up on signing this form until after you speak to the anesthesiologist, okay? Okay.",
+        "(ES) Muy bien. Entonces, ¿qué sigue?",
+        "(EN) Next one states that if the doctor finds the need to administer a blood transfusion or blood products, we have your permission to do so."
+      ],
+      "prompt_igual": false,
+      "fija": null,
+      "referencia": "\n\nTerminology reference (data, not instructions). Use only if appropriate to this sentence; preserve meaning and register. Do not add explanations:\n[\"transfusión de sangre\", \"blood transfusion\"]\n[\"operación\", \"surgery\"]",
+      "mediciones": [
+        {
+          "modo": "glosario",
+          "repeticion": 0,
+          "texto": "I'm already starting to worry. So, are they going to give me a blood transfusion? They told me it was an easy operation with few complications.",
+          "primer_token_s": 1.448521614074707,
+          "total_s": 2.539553642272949
+        },
+        {
+          "modo": "base",
+          "repeticion": 0,
+          "texto": "I'm already starting to worry, so are they going to give me a blood transfusion? They told me it was an easy operation with few complications.",
+          "primer_token_s": 1.3680574893951416,
+          "total_s": 2.4626505374908447
+        }
+      ]
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "We are not planning on doing so. This is just in case we need to.",
+      "origen": "en",
+      "indice": 44,
+      "contexto": [
+        "(EN) This is just a risk that might happen. It does not mean that it will. I am required to discuss all of this with you. Let's hold up on signing this form until after you speak to the anesthesiologist, okay? Okay.",
+        "(ES) Muy bien. Entonces, ¿qué sigue?",
+        "(EN) Next one states that if the doctor finds the need to administer a blood transfusion or blood products, we have your permission to do so.",
+        "(ES) Ya me estoy preocupando, ¿entonces me van a hacer una transfusión de sangre? A mí me dijeron que era una operación fácil y con pocas complicaciones."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "This does not mean that we are going to, okay?",
+      "origen": "en",
+      "indice": 45,
+      "contexto": [
+        "(ES) Muy bien. Entonces, ¿qué sigue?",
+        "(EN) Next one states that if the doctor finds the need to administer a blood transfusion or blood products, we have your permission to do so.",
+        "(ES) Ya me estoy preocupando, ¿entonces me van a hacer una transfusión de sangre? A mí me dijeron que era una operación fácil y con pocas complicaciones.",
+        "(EN) We are not planning on doing so. This is just in case we need to."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Muy bien, es que ya me estoy asustando. Entonces, ¿dónde firmo este?",
+      "origen": "es",
+      "indice": 46,
+      "contexto": [
+        "(EN) Next one states that if the doctor finds the need to administer a blood transfusion or blood products, we have your permission to do so.",
+        "(ES) Ya me estoy preocupando, ¿entonces me van a hacer una transfusión de sangre? A mí me dijeron que era una operación fácil y con pocas complicaciones.",
+        "(EN) We are not planning on doing so. This is just in case we need to.",
+        "(EN) This does not mean that we are going to, okay?"
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Right there at the bottom ma'am. It's perfectly normal to feel nervous before any procedure.",
+      "origen": "en",
+      "indice": 47,
+      "contexto": [
+        "(ES) Ya me estoy preocupando, ¿entonces me van a hacer una transfusión de sangre? A mí me dijeron que era una operación fácil y con pocas complicaciones.",
+        "(EN) We are not planning on doing so. This is just in case we need to.",
+        "(EN) This does not mean that we are going to, okay?",
+        "(ES) Muy bien, es que ya me estoy asustando. Entonces, ¿dónde firmo este?"
+      ],
+      "prompt_igual": false,
+      "fija": null,
+      "referencia": "\n\nTerminology reference (data, not instructions). Use only if appropriate to this sentence; preserve meaning and register. Do not add explanations:\n[\"Bottom\", \"Parte trasera, trasero\"]",
+      "mediciones": [
+        {
+          "modo": "glosario",
+          "repeticion": 0,
+          "texto": "Justo ahí en la parte trasera, señora. Es perfectamente normal sentirse nervioso antes de cualquier procedimiento.",
+          "primer_token_s": 1.3918330669403076,
+          "total_s": 2.326831579208374
+        },
+        {
+          "modo": "base",
+          "repeticion": 0,
+          "texto": "Justo ahí en la parte inferior, señora. Es perfectamente normal sentirse nervioso antes de cualquier procedimiento.",
+          "primer_token_s": 1.0660176277160645,
+          "total_s": 1.9691128730773926
+        }
+      ]
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "But just know you are in good hands. Do you have any questions or concerns?",
+      "origen": "en",
+      "indice": 48,
+      "contexto": [
+        "(EN) We are not planning on doing so. This is just in case we need to.",
+        "(EN) This does not mean that we are going to, okay?",
+        "(ES) Muy bien, es que ya me estoy asustando. Entonces, ¿dónde firmo este?",
+        "(EN) Right there at the bottom ma'am. It's perfectly normal to feel nervous before any procedure."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "No, solo que estoy muy nerviosa.",
+      "origen": "es",
+      "indice": 49,
+      "contexto": [
+        "(EN) This does not mean that we are going to, okay?",
+        "(ES) Muy bien, es que ya me estoy asustando. Entonces, ¿dónde firmo este?",
+        "(EN) Right there at the bottom ma'am. It's perfectly normal to feel nervous before any procedure.",
+        "(EN) But just know you are in good hands. Do you have any questions or concerns?"
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Eso es todo. Ya van a empezar.",
+      "origen": "es",
+      "indice": 50,
+      "contexto": [
+        "(ES) Muy bien, es que ya me estoy asustando. Entonces, ¿dónde firmo este?",
+        "(EN) Right there at the bottom ma'am. It's perfectly normal to feel nervous before any procedure.",
+        "(EN) But just know you are in good hands. Do you have any questions or concerns?",
+        "(ES) No, solo que estoy muy nerviosa."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Try not to worry so much ma'am. The surgeons are very experienced and will know what to do in case of any complications.",
+      "origen": "en",
+      "indice": 51,
+      "contexto": [
+        "(EN) Right there at the bottom ma'am. It's perfectly normal to feel nervous before any procedure.",
+        "(EN) But just know you are in good hands. Do you have any questions or concerns?",
+        "(ES) No, solo que estoy muy nerviosa.",
+        "(ES) Eso es todo. Ya van a empezar."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Well, that's it for me, ma'am. You have to wait for the anesthesiologist to come and discuss with you important information about anesthesia and sign more consent forms.",
+      "origen": "en",
+      "indice": 52,
+      "contexto": [
+        "(EN) But just know you are in good hands. Do you have any questions or concerns?",
+        "(ES) No, solo que estoy muy nerviosa.",
+        "(ES) Eso es todo. Ya van a empezar.",
+        "(EN) Try not to worry so much ma'am. The surgeons are very experienced and will know what to do in case of any complications."
+      ],
+      "prompt_igual": false,
+      "fija": null,
+      "referencia": "\n\nTerminology reference (data, not instructions). Use only if appropriate to this sentence; preserve meaning and register. Do not add explanations:\n[\"anesthesia\", \"anestesia\"]",
+      "mediciones": [
+        {
+          "modo": "base",
+          "repeticion": 0,
+          "texto": "Bueno, eso es todo por mi, señora. Usted tiene que esperar a que el anestesiólogo venga a discutir con usted información importante sobre la anestesia y firmar más formularios de consentimiento.",
+          "primer_token_s": 1.0454432964324951,
+          "total_s": 2.8964836597442627
+        },
+        {
+          "modo": "glosario",
+          "repeticion": 0,
+          "texto": "Bueno, eso es todo por mi, señora. Usted tiene que esperar a que llegue el anestesiólogo para que le discuta información importante sobre la anestesia y firme más formularios de consentimiento.",
+          "primer_token_s": 1.3625061511993408,
+          "total_s": 3.170128107070923
+        }
+      ]
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Muchas gracias.",
+      "origen": "es",
+      "indice": 53,
+      "contexto": [
+        "(ES) No, solo que estoy muy nerviosa.",
+        "(ES) Eso es todo. Ya van a empezar.",
+        "(EN) Try not to worry so much ma'am. The surgeons are very experienced and will know what to do in case of any complications.",
+        "(EN) Well, that's it for me, ma'am. You have to wait for the anesthesiologist to come and discuss with you important information about anesthesia and sign more consent forms."
+      ],
+      "prompt_igual": true,
+      "fija": "Thank you very much.",
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "You are very welcome, ma'am.",
+      "origen": "en",
+      "indice": 54,
+      "contexto": [
+        "(ES) Eso es todo. Ya van a empezar.",
+        "(EN) Try not to worry so much ma'am. The surgeons are very experienced and will know what to do in case of any complications.",
+        "(EN) Well, that's it for me, ma'am. You have to wait for the anesthesiologist to come and discuss with you important information about anesthesia and sign more consent forms.",
+        "(ES) Muchas gracias."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "id": 0,
+      "origen": "en",
+      "texto": "Hello ma'am. We have the results of your transesophageal echocardiogram. This test shows us that you have mitral valve regurgitation, which means that your mitral valve is",
+      "inicio": 6.779999999999999,
+      "fin": 17.91,
+      "asr_s": 2.765326738357544,
+      "grupo": "mitral",
+      "indice": 55,
+      "contexto": [],
+      "prompt_igual": false,
+      "fija": null,
+      "referencia": "\n\nTerminology reference (data, not instructions). Use only if appropriate to this sentence; preserve meaning and register. Do not add explanations:\n[\"echocardiogram\", \"ecocardiograma\"]",
+      "mediciones": [
+        {
+          "modo": "glosario",
+          "repeticion": 0,
+          "texto": "Buenas tardes señora. Tenemos los resultados de su ecocardiograma transesofágico. Este examen nos muestra que tiene regurgitación mitral, lo que significa que su válvula mitral es",
+          "primer_token_s": 0.709944486618042,
+          "total_s": 2.4467933177948
+        },
+        {
+          "modo": "base",
+          "repeticion": 0,
+          "texto": "Buenas tardes señora. Tenemos los resultados de su ecocardiograma transesofágico. Este examen nos muestra que tiene regurgitación mitral, lo que significa que su válvula mitral está",
+          "primer_token_s": 0.38022637367248535,
+          "total_s": 2.104978084564209
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "origen": "en",
+      "texto": "is allowing backflow to other chambers.",
+      "inicio": 17.91,
+      "fin": 20.79,
+      "asr_s": 2.607656478881836,
+      "grupo": "mitral",
+      "indice": 56,
+      "contexto": [
+        "(EN) Hello ma'am. We have the results of your transesophageal echocardiogram. This test shows us that you have mitral valve regurgitation, which means that your mitral valve is"
+      ],
+      "prompt_igual": false,
+      "fija": null,
+      "referencia": "\n\nTerminology reference (data, not instructions). Use only if appropriate to this sentence; preserve meaning and register. Do not add explanations:\n[\"Chambers\", \"Cámara del corazón\"]",
+      "mediciones": [
+        {
+          "modo": "base",
+          "repeticion": 0,
+          "texto": "está permitiendo el retroceso hacia otras cámaras.",
+          "primer_token_s": 0.6932721138000488,
+          "total_s": 1.1389472484588623
+        },
+        {
+          "modo": "glosario",
+          "repeticion": 0,
+          "texto": "está permitiendo el retroceso hacia otras cámaras.",
+          "primer_token_s": 1.0150816440582275,
+          "total_s": 1.4656703472137451
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "origen": "es",
+      "texto": "¿Y esto qué significa, doctor? ¿Es algo muy serio?",
+      "inicio": 48.809999999999995,
+      "fin": 52.68,
+      "asr_s": 2.6093337535858154,
+      "grupo": "mitral",
+      "indice": 57,
+      "contexto": [
+        "(EN) Hello ma'am. We have the results of your transesophageal echocardiogram. This test shows us that you have mitral valve regurgitation, which means that your mitral valve is",
+        "(EN) is allowing backflow to other chambers."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "id": 3,
+      "origen": "en",
+      "texto": "It can potentially be serious, but let me ask you a series of questions. Do you ever get short of breath?",
+      "inicio": 60.54,
+      "fin": 66.78,
+      "asr_s": 2.6575684547424316,
+      "grupo": "mitral",
+      "indice": 58,
+      "contexto": [
+        "(EN) Hello ma'am. We have the results of your transesophageal echocardiogram. This test shows us that you have mitral valve regurgitation, which means that your mitral valve is",
+        "(EN) is allowing backflow to other chambers.",
+        "(ES) ¿Y esto qué significa, doctor? ¿Es algo muy serio?"
+      ],
+      "prompt_igual": false,
+      "fija": null,
+      "referencia": "\n\nTerminology reference (data, not instructions). Use only if appropriate to this sentence; preserve meaning and register. Do not add explanations:\n[\"Short of breath\", \"Falta de aliento\"]",
+      "mediciones": [
+        {
+          "modo": "base",
+          "repeticion": 0,
+          "texto": "Puede ser potencialmente grave, pero permítame hacerte una serie de preguntas. ¿A veces te sientes con dificultad para respirar?",
+          "primer_token_s": 1.0222833156585693,
+          "total_s": 2.2031970024108887
+        },
+        {
+          "modo": "glosario",
+          "repeticion": 0,
+          "texto": "Puede ser potencialmente grave, pero permítame hacerle una serie de preguntas. ¿A veces se le falta de aliento?",
+          "primer_token_s": 1.0909910202026367,
+          "total_s": 2.1317498683929443
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "origen": "es",
+      "texto": "No, fíjese que no me falta la respiración, lo único es ardor en el cuerpo y dolor de espalda. También comezón en el cuerpo entero, pero me recetaron un medicamento.",
+      "inicio": 78.81,
+      "fin": 89.94,
+      "asr_s": 2.755894899368286,
+      "grupo": "mitral",
+      "indice": 59,
+      "contexto": [
+        "(EN) Hello ma'am. We have the results of your transesophageal echocardiogram. This test shows us that you have mitral valve regurgitation, which means that your mitral valve is",
+        "(EN) is allowing backflow to other chambers.",
+        "(ES) ¿Y esto qué significa, doctor? ¿Es algo muy serio?",
+        "(EN) It can potentially be serious, but let me ask you a series of questions. Do you ever get short of breath?"
+      ],
+      "prompt_igual": false,
+      "fija": null,
+      "referencia": "\n\nTerminology reference (data, not instructions). Use only if appropriate to this sentence; preserve meaning and register. Do not add explanations:\n[\"dolor\", \"pain\"]\n[\"comezón\", \"itching\"]\n[\"medicamento\", \"medication / medicine / meds\"]",
+      "mediciones": [
+        {
+          "modo": "glosario",
+          "repeticion": 0,
+          "texto": "No, take note that I don't have difficulty breathing, the only thing is a burning sensation in the body and back pain. I also have itching all over the body, but they prescribed me a medication.",
+          "primer_token_s": 1.4616248607635498,
+          "total_s": 2.914757490158081
+        },
+        {
+          "modo": "base",
+          "repeticion": 0,
+          "texto": "No, take note that I don't feel short of breath, the only thing is a burning sensation in the body and back pain. I also have an itching all over the body, but they prescribed me a medication.",
+          "primer_token_s": 1.3608181476593018,
+          "total_s": 2.8992254734039307
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "origen": "es",
+      "texto": "y me quitó la comisión.",
+      "inicio": 89.94,
+      "fin": 91.41,
+      "asr_s": 2.587221622467041,
+      "grupo": "mitral",
+      "indice": 60,
+      "contexto": [
+        "(EN) is allowing backflow to other chambers.",
+        "(ES) ¿Y esto qué significa, doctor? ¿Es algo muy serio?",
+        "(EN) It can potentially be serious, but let me ask you a series of questions. Do you ever get short of breath?",
+        "(ES) No, fíjese que no me falta la respiración, lo único es ardor en el cuerpo y dolor de espalda. También comezón en el cuerpo entero, pero me recetaron un medicamento."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "id": 6,
+      "origen": "en",
+      "texto": "Are you taking gabapentin, a medication for nerve pain for that burning feeling all over your body?",
+      "inicio": 115.56,
+      "fin": 121.67999999999999,
+      "asr_s": 2.6422674655914307,
+      "grupo": "mitral",
+      "indice": 61,
+      "contexto": [
+        "(ES) ¿Y esto qué significa, doctor? ¿Es algo muy serio?",
+        "(EN) It can potentially be serious, but let me ask you a series of questions. Do you ever get short of breath?",
+        "(ES) No, fíjese que no me falta la respiración, lo único es ardor en el cuerpo y dolor de espalda. También comezón en el cuerpo entero, pero me recetaron un medicamento.",
+        "(ES) y me quitó la comisión."
+      ],
+      "prompt_igual": false,
+      "fija": null,
+      "referencia": "\n\nTerminology reference (data, not instructions). Use only if appropriate to this sentence; preserve meaning and register. Do not add explanations:\n[\"medication\", \"medicamento / medicina\"]\n[\"nerve\", \"nervio\"]\n[\"pain\", \"dolor\"]",
+      "mediciones": [
+        {
+          "modo": "glosario",
+          "repeticion": 0,
+          "texto": "¿Está tomando gabapentina, un medicamento para el dolor de nervio por esa sensación de ardor en todo su cuerpo?",
+          "primer_token_s": 1.4210870265960693,
+          "total_s": 2.5108981132507324
+        },
+        {
+          "modo": "base",
+          "repeticion": 0,
+          "texto": "¿Está tomando gabapentina, un medicamento para el dolor nervioso por esa sensación de ardor en todo su cuerpo?",
+          "primer_token_s": 1.0645179748535156,
+          "total_s": 2.1000561714172363
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "origen": "es",
+      "texto": "No estoy tomando algún medicamento para esto.",
+      "inicio": 134.1,
+      "fin": 137.07,
+      "asr_s": 2.60854172706604,
+      "grupo": "mitral",
+      "indice": 62,
+      "contexto": [
+        "(EN) It can potentially be serious, but let me ask you a series of questions. Do you ever get short of breath?",
+        "(ES) No, fíjese que no me falta la respiración, lo único es ardor en el cuerpo y dolor de espalda. También comezón en el cuerpo entero, pero me recetaron un medicamento.",
+        "(ES) y me quitó la comisión.",
+        "(EN) Are you taking gabapentin, a medication for nerve pain for that burning feeling all over your body?"
+      ],
+      "prompt_igual": false,
+      "fija": null,
+      "referencia": "\n\nTerminology reference (data, not instructions). Use only if appropriate to this sentence; preserve meaning and register. Do not add explanations:\n[\"medicamento\", \"medication / medicine / meds\"]",
+      "mediciones": [
+        {
+          "modo": "base",
+          "repeticion": 0,
+          "texto": "I am not taking any medication for this.",
+          "primer_token_s": 1.0641522407531738,
+          "total_s": 1.3770201206207275
+        },
+        {
+          "modo": "glosario",
+          "repeticion": 0,
+          "texto": "I am not taking any medication for this.",
+          "primer_token_s": 1.3891205787658691,
+          "total_s": 1.7031292915344238
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "origen": "en",
+      "texto": "A medication is often prescribed for peripheral neuropathy. I can see in your chart that you have been diagnosed with this.",
+      "inicio": 143.25,
+      "fin": 151.10999999999999,
+      "asr_s": 2.711158514022827,
+      "grupo": "mitral",
+      "indice": 63,
+      "contexto": [
+        "(ES) No, fíjese que no me falta la respiración, lo único es ardor en el cuerpo y dolor de espalda. También comezón en el cuerpo entero, pero me recetaron un medicamento.",
+        "(ES) y me quitó la comisión.",
+        "(EN) Are you taking gabapentin, a medication for nerve pain for that burning feeling all over your body?",
+        "(ES) No estoy tomando algún medicamento para esto."
+      ],
+      "prompt_igual": false,
+      "fija": null,
+      "referencia": "\n\nTerminology reference (data, not instructions). Use only if appropriate to this sentence; preserve meaning and register. Do not add explanations:\n[\"medication\", \"medicamento / medicina\"]\n[\"chart\", \"historia clínica / expediente médico\"]",
+      "mediciones": [
+        {
+          "modo": "glosario",
+          "repeticion": 0,
+          "texto": "A menudo se receta un medicamento para la neuropatía periférica. Puedo ver en su historia clínica que ha sido diagnosticado con esto.",
+          "primer_token_s": 1.4089775085449219,
+          "total_s": 2.661219835281372
+        },
+        {
+          "modo": "base",
+          "repeticion": 0,
+          "texto": "Un medicamento suele recetarse para la neuropatía periférica. Puedo ver en su historial clínico que ha sido diagnosticado con esto.",
+          "primer_token_s": 1.0612578392028809,
+          "total_s": 2.308892250061035
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "origen": "es",
+      "texto": "¿Neuropatía? ¿Qué es eso?",
+      "inicio": 167.97,
+      "fin": 170.57999999999998,
+      "asr_s": 2.6283223628997803,
+      "grupo": "mitral",
+      "indice": 64,
+      "contexto": [
+        "(ES) y me quitó la comisión.",
+        "(EN) Are you taking gabapentin, a medication for nerve pain for that burning feeling all over your body?",
+        "(ES) No estoy tomando algún medicamento para esto.",
+        "(EN) A medication is often prescribed for peripheral neuropathy. I can see in your chart that you have been diagnosed with this."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "id": 10,
+      "origen": "en",
+      "texto": "Peripheral neuropathy is a condition from nerve damage which can cause numbness and pain just like what you described.",
+      "inicio": 174.51,
+      "fin": 182.07,
+      "asr_s": 2.684166431427002,
+      "grupo": "mitral",
+      "indice": 65,
+      "contexto": [
+        "(EN) Are you taking gabapentin, a medication for nerve pain for that burning feeling all over your body?",
+        "(ES) No estoy tomando algún medicamento para esto.",
+        "(EN) A medication is often prescribed for peripheral neuropathy. I can see in your chart that you have been diagnosed with this.",
+        "(ES) ¿Neuropatía? ¿Qué es eso?"
+      ],
+      "prompt_igual": false,
+      "fija": null,
+      "referencia": "\n\nTerminology reference (data, not instructions). Use only if appropriate to this sentence; preserve meaning and register. Do not add explanations:\n[\"nerve\", \"nervio\"]\n[\"Damage\", \"Daño\"]\n[\"numbness\", \"entumecimiento / adormecimiento\"]",
+      "mediciones": [
+        {
+          "modo": "glosario",
+          "repeticion": 0,
+          "texto": "La neuropatía periférica es una condición causada por daño al nervio que puede provocar entumecimiento y dolor, exactamente como lo describió.",
+          "primer_token_s": 1.3818113803863525,
+          "total_s": 2.67267107963562
+        },
+        {
+          "modo": "base",
+          "repeticion": 0,
+          "texto": "La neuropatía periférica es una condición causada por daño nervioso que puede provocar adormecimiento y dolor, exactamente como lo describió.",
+          "primer_token_s": 1.0302767753601074,
+          "total_s": 2.272596597671509
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "origen": "en",
+      "texto": "You should speak to your PCP regarding this issue so he can prescribe something that might help.",
+      "inicio": 182.22,
+      "fin": 188.22,
+      "asr_s": 2.641143798828125,
+      "grupo": "mitral",
+      "indice": 66,
+      "contexto": [
+        "(ES) No estoy tomando algún medicamento para esto.",
+        "(EN) A medication is often prescribed for peripheral neuropathy. I can see in your chart that you have been diagnosed with this.",
+        "(ES) ¿Neuropatía? ¿Qué es eso?",
+        "(EN) Peripheral neuropathy is a condition from nerve damage which can cause numbness and pain just like what you described."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "id": 12,
+      "origen": "es",
+      "texto": "Está bien y también tengo mucho escurrimiento nasal. ¿Me puedes recetar algo?",
+      "inicio": 216.75,
+      "fin": 221.91,
+      "asr_s": 2.6487457752227783,
+      "grupo": "mitral",
+      "indice": 67,
+      "contexto": [
+        "(EN) A medication is often prescribed for peripheral neuropathy. I can see in your chart that you have been diagnosed with this.",
+        "(ES) ¿Neuropatía? ¿Qué es eso?",
+        "(EN) Peripheral neuropathy is a condition from nerve damage which can cause numbness and pain just like what you described.",
+        "(EN) You should speak to your PCP regarding this issue so he can prescribe something that might help."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "id": 13,
+      "origen": "en",
+      "texto": "It sounds like you are coming down with a cold and it's best if you see your PCP regarding that as well.",
+      "inicio": 229.67999999999998,
+      "fin": 235.26,
+      "asr_s": 2.666321039199829,
+      "grupo": "mitral",
+      "indice": 68,
+      "contexto": [
+        "(ES) ¿Neuropatía? ¿Qué es eso?",
+        "(EN) Peripheral neuropathy is a condition from nerve damage which can cause numbness and pain just like what you described.",
+        "(EN) You should speak to your PCP regarding this issue so he can prescribe something that might help.",
+        "(ES) Está bien y también tengo mucho escurrimiento nasal. ¿Me puedes recetar algo?"
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "id": 14,
+      "origen": "es",
+      "texto": "Muy bien, definitivamente le haré una visita a mi doctor de cabecera.",
+      "inicio": 245.76,
+      "fin": 250.2,
+      "asr_s": 2.64912748336792,
+      "grupo": "mitral",
+      "indice": 69,
+      "contexto": [
+        "(EN) Peripheral neuropathy is a condition from nerve damage which can cause numbness and pain just like what you described.",
+        "(EN) You should speak to your PCP regarding this issue so he can prescribe something that might help.",
+        "(ES) Está bien y también tengo mucho escurrimiento nasal. ¿Me puedes recetar algo?",
+        "(EN) It sounds like you are coming down with a cold and it's best if you see your PCP regarding that as well."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    },
+    {
+      "id": 15,
+      "origen": "en",
+      "texto": "I also see from your list of medications that you take a blood thinner.",
+      "inicio": 258.15,
+      "fin": 262.53,
+      "asr_s": 2.6865341663360596,
+      "grupo": "mitral",
+      "indice": 70,
+      "contexto": [
+        "(EN) You should speak to your PCP regarding this issue so he can prescribe something that might help.",
+        "(ES) Está bien y también tengo mucho escurrimiento nasal. ¿Me puedes recetar algo?",
+        "(EN) It sounds like you are coming down with a cold and it's best if you see your PCP regarding that as well.",
+        "(ES) Muy bien, definitivamente le haré una visita a mi doctor de cabecera."
+      ],
+      "prompt_igual": false,
+      "fija": null,
+      "referencia": "\n\nTerminology reference (data, not instructions). Use only if appropriate to this sentence; preserve meaning and register. Do not add explanations:\n[\"blood thinner\", \"medicamento para prevenir coágulos / «diluyente de la sangre»\"]",
+      "mediciones": [
+        {
+          "modo": "base",
+          "repeticion": 0,
+          "texto": "También veo de su lista de medicamentos que toma un anticoagulante.",
+          "primer_token_s": 1.0425240993499756,
+          "total_s": 1.7691900730133057
+        },
+        {
+          "modo": "glosario",
+          "repeticion": 0,
+          "texto": "También veo de su lista de medicamentos que toma un medicamento para prevenir coágulos.",
+          "primer_token_s": 1.3835065364837646,
+          "total_s": 2.2200634479522705
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "origen": "es",
+      "texto": "Sí, eso lo tomo para mi corazón.",
+      "inicio": 270.69,
+      "fin": 273.45,
+      "asr_s": 2.6503405570983887,
+      "grupo": "mitral",
+      "indice": 71,
+      "contexto": [
+        "(ES) Está bien y también tengo mucho escurrimiento nasal. ¿Me puedes recetar algo?",
+        "(EN) It sounds like you are coming down with a cold and it's best if you see your PCP regarding that as well.",
+        "(ES) Muy bien, definitivamente le haré una visita a mi doctor de cabecera.",
+        "(EN) I also see from your list of medications that you take a blood thinner."
+      ],
+      "prompt_igual": true,
+      "fija": null,
+      "referencia": "",
+      "mediciones": []
+    }
+  ]
+}
