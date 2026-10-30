@@ -1,0 +1,1607 @@
+{
+ "0": {
+  "texto": "Buenas tardes, señora. ¿Qué lo ha traído hoy?",
+  "primer_token_s": 0.2793881893157959,
+  "total_s": 0.8571116924285889
+ },
+ "2": {
+  "texto": "Bueno, entonces solo es un examen físico. ¿Ha tenido algún cambio en su salud desde la última vez que lo vio?",
+  "primer_token_s": 0.6821794509887695,
+  "total_s": 1.7038521766662598
+ },
+ "4": {
+  "texto": "Excelente. ¿Alguna nueva alergia?",
+  "primer_token_s": 0.7104828357696533,
+  "total_s": 1.0854055881500244
+ },
+ "6": {
+  "texto": "Y usted no está tomando ningún medicamento, ¿verdad?",
+  "primer_token_s": 0.7042107582092285,
+  "total_s": 1.1819593906402588
+ },
+ "8": {
+  "texto": "¿Ha tenido dolor en el pecho o dificultad para respirar?",
+  "primer_token_s": 0.6957838535308838,
+  "total_s": 1.276587963104248
+ },
+ "10": {
+  "texto": "¿Fiebre o escalofríos?",
+  "primer_token_s": 0.7045619487762451,
+  "total_s": 1.0476839542388916
+ },
+ "12": {
+  "texto": "¿Ha estado fuera del país en los últimos 30 días?",
+  "primer_token_s": 0.7059426307678223,
+  "total_s": 1.1863353252410889
+ },
+ "14": {
+  "texto": "¿Conoce usted su estatura y peso?",
+  "primer_token_s": 0.7005352973937988,
+  "total_s": 1.0428667068481445
+ },
+ "15": {
+  "texto": "Sí, mido cinco pies con cuatro.",
+  "primer_token_s": 0.7066636085510254,
+  "total_s": 1.0472748279571533
+ },
+ "17": {
+  "texto": "No problema. Vaya adelante y suba a esa báscula por mí, por favor.",
+  "primer_token_s": 0.7201530933380127,
+  "total_s": 1.471519947052002
+ },
+ "19": {
+  "texto": "Bueno, su peso es excelente para su estatura.",
+  "primer_token_s": 0.7252969741821289,
+  "total_s": 1.1737208366394043
+ },
+ "21": {
+  "texto": "Permítame tomar sus signos vitales y escuchar sus pulmones, corazón. Revise sus orejas, garganta y nariz.",
+  "primer_token_s": 0.7354676723480225,
+  "total_s": 1.7996985912322998
+ },
+ "23": {
+  "texto": "Realmente bien. Bien, usted tiene realmente buena salud.",
+  "primer_token_s": 0.7404429912567139,
+  "total_s": 1.1555356979370117
+ },
+ "25": {
+  "texto": "Permítame echar un vistazo a su historial médico para asegurarme de que no estoy pasando por alto nada.",
+  "primer_token_s": 1.007753610610962,
+  "total_s": 1.9675583839416504
+ },
+ "27": {
+  "texto": "Así que realmente parece que usted estaba debido para muchas cosas. ¿Comió algo antes de venir aquí?",
+  "primer_token_s": 0.7394280433654785,
+  "total_s": 1.490767240524292
+ },
+ "29": {
+  "texto": "Okay, bien, necesitamos que haga algunos estudios de laboratorio en ayunas para revisar sus niveles de colesterol, azúcar, tiroides, hígado y todo eso. Entonces, ¿cuándo piensa que puede venir para eso?",
+  "primer_token_s": 1.0542166233062744,
+  "total_s": 3.0752179622650146
+ },
+ "31": {
+  "texto": "Abre a las 7:30 de la mañana. Hágale saber que no debe comer nada después de la medianoche de hoy.",
+  "primer_token_s": 1.0910224914550781,
+  "total_s": 2.150627851486206
+ },
+ "32": {
+  "texto": "Puede beber solo agua. ¿Okay?",
+  "primer_token_s": 1.0621459484100342,
+  "total_s": 1.4029028415679932
+ },
+ "34": {
+  "texto": "¡Lo tiene! También le toca una mamografía, una citología de Papanicolaou y una prueba de detección del cáncer de colon, así que va a estar muy ocupada.",
+  "primer_token_s": 1.0633227825164795,
+  "total_s": 2.568493366241455
+ },
+ "36": {
+  "texto": "Perfecto, así que para todos estos procedimientos le voy a dar una referencia y usted puede programar con la recepción al salir.",
+  "primer_token_s": 1.0805327892303467,
+  "total_s": 2.037003993988037
+ },
+ "38": {
+  "texto": "Bueno, acérquese a ellos. Ellos le van a decir si tiene que llamar o si pueden agendarlo directamente.",
+  "primer_token_s": 1.3651165962219238,
+  "total_s": 2.427732229232788
+ },
+ "40": {
+  "texto": "Sí, eso será todo y lo veré nuevamente en un año a menos que algo cambie.",
+  "primer_token_s": 1.0652520656585693,
+  "total_s": 1.8549096584320068
+ },
+ "41": {
+  "texto": "Cuide su salud y siga cuidándosela muy bien.",
+  "primer_token_s": 1.0460269451141357,
+  "total_s": 1.53126859664917
+ },
+ "43": {
+  "texto": "Si le gusta este video, no se olvide de pulsar el botón de me gusta. Esto nos ayudaría mucho. Además, si aún no forma parte de la familia Interpret Your World, vaya y suscríbase.",
+  "primer_token_s": 1.0303771495819092,
+  "total_s": 2.672556161880493
+ },
+ "44": {
+  "texto": "Pulse el timbre de notificaciones para que nunca pierda de vista nuevo contenido.",
+  "primer_token_s": 1.0278527736663818,
+  "total_s": 1.6454920768737793
+ },
+ "45": {
+  "texto": "Hola, soy su médico en el ER hoy. ¿Qué lo ha traído aquí?",
+  "primer_token_s": 0.2912881374359131,
+  "total_s": 0.904780387878418
+ },
+ "47": {
+  "texto": "¿Puede decirme más? ¿Dónde exactamente está el dolor?",
+  "primer_token_s": 0.7054421901702881,
+  "total_s": 1.2883834838867188
+ },
+ "49": {
+  "texto": "Okay, así que dolor en el cuadrante inferior izquierdo del abdomen. ¿Ha tenido algún otro síntoma como fiebre, náuseas, vómitos o diarrea?",
+  "primer_token_s": 1.0310683250427246,
+  "total_s": 2.5377659797668457
+ },
+ "51": {
+  "texto": "¿Puede describirme el dolor, por favor, para que pueda comprender qué es lo que siente? ¿Es agudo, opresivo, punzante o pulsátil?",
+  "primer_token_s": 1.0955963134765625,
+  "total_s": 2.505082130432129
+ },
+ "53": {
+  "texto": "¿Qué lo hizo venir al ER ahora? Es miércoles, a diferencia de venir aquí antes.",
+  "primer_token_s": 1.3779644966125488,
+  "total_s": 2.097707748413086
+ },
+ "56": {
+  "texto": "Entiendo. ¿Cuándo fue la última vez que tuvo una evacuación intestinal?",
+  "primer_token_s": 1.0633776187896729,
+  "total_s": 1.7474772930145264
+ },
+ "59": {
+  "texto": "Puede ser, pero necesito más información. ¿Qué número le daría a su dolor en una escala de 1 a 10?",
+  "primer_token_s": 1.0689489841461182,
+  "total_s": 2.127056121826172
+ },
+ "61": {
+  "texto": "Le daré algo para su dolor una vez que figuremos qué tiene. ¿Cuándo fue la última vez que comió algo?",
+  "primer_token_s": 1.0610911846160889,
+  "total_s": 2.020073413848877
+ },
+ "63": {
+  "texto": "¿Tiene usted irritación del estómago con frecuencia?",
+  "primer_token_s": 1.0701510906219482,
+  "total_s": 1.5512440204620361
+ },
+ "66": {
+  "texto": "Permítame escuchar su corazón y sus pulmones.",
+  "primer_token_s": 1.0116806030273438,
+  "total_s": 1.4583075046539307
+ },
+ "67": {
+  "texto": "Respire hondo.",
+  "primer_token_s": 0.7110068798065186,
+  "total_s": 0.8855507373809814
+ },
+ "68": {
+  "texto": "Y fuera.",
+  "primer_token_s": 0.6989047527313232,
+  "total_s": 0.8042142391204834
+ },
+ "69": {
+  "texto": "Okay, ahora relájese y respire normalmente.",
+  "primer_token_s": 0.7119655609130859,
+  "total_s": 1.1576576232910156
+ },
+ "70": {
+  "texto": "Sus pulmones están claros y los sonidos del corazón son buenos. Además, su pulso, oxígeno y frecuencia cardíaca están bien.",
+  "primer_token_s": 0.7210993766784668,
+  "total_s": 1.9565043449401855
+ },
+ "71": {
+  "texto": "Acústese en la mesa para que pueda palpar su abdomen. Hágale saber si le duele cada vez que toque su abdomen.",
+  "primer_token_s": 1.0086557865142822,
+  "total_s": 2.0742337703704834
+ },
+ "73": {
+  "texto": "¿Le duele cuando yo toco a usted en otro lugar o solo allí?",
+  "primer_token_s": 1.0212538242340088,
+  "total_s": 1.6388599872589111
+ },
+ "75": {
+  "texto": "Lo siento. No quiero torturarlo, pero debo saber qué siente para poder averiguar cómo hacerle sentir mejor.",
+  "primer_token_s": 1.0516462326049805,
+  "total_s": 2.006617307662964
+ },
+ "77": {
+  "texto": "Dígaselo, su sangre y orina ya han sido enviadas al laboratorio. Me gustaría que se haga una radiografía y una tomografía computarizada para ver qué podemos encontrar.",
+  "primer_token_s": 1.0659270286560059,
+  "total_s": 2.5376763343811035
+ },
+ "78": {
+  "texto": "Volveré cuando tengamos esos resultados.",
+  "primer_token_s": 1.0632352828979492,
+  "total_s": 1.377135992050171
+ },
+ "80": {
+  "texto": "No problema. Lo veo en un ratito.",
+  "primer_token_s": 1.021345615386963,
+  "total_s": 1.4021384716033936
+ },
+ "81": {
+  "texto": "Tengo los resultados de su sangre y sus radiografías están de vuelta.",
+  "primer_token_s": 1.0238697528839111,
+  "total_s": 1.6410601139068604
+ },
+ "82": {
+  "texto": "Tiene mucha materia fecal en sus intestinos. También tiene un alto recuento de células blancas, lo cual podría ser una señal de infección.",
+  "primer_token_s": 1.0180597305297852,
+  "total_s": 2.220823049545288
+ },
+ "84": {
+  "texto": "Aún no todo está claro. Quiero hacerle un ultrasonido abdominal para ver si pueden obtener una imagen más clara de lo que está pasando allí.",
+  "primer_token_s": 1.0528721809387207,
+  "total_s": 2.257316827774048
+ },
+ "86": {
+  "texto": "Por supuesto, espero que después de este examen pueda saber cómo ayudar a usted. Lo veo en un rato.",
+  "primer_token_s": 1.0947763919830322,
+  "total_s": 2.0600924491882324
+ },
+ "87": {
+  "texto": "Tengo sus resultados y tenía la sensación de que podría ser diverticulitis. Así que tuve a un médico de gastroenterología que revisara las radiografías. Tuve a un médico de gastroenterología que revisara las radiografías.",
+  "primer_token_s": 1.38222336769104,
+  "total_s": 3.231569766998291
+ },
+ "88": {
+  "texto": "Confirmó el hallazgo.",
+  "primer_token_s": 1.364983320236206,
+  "total_s": 1.6109168529510498
+ },
+ "90": {
+  "texto": "Tengo algunos paracetamol si le gustaría aliviar su dolor.",
+  "primer_token_s": 1.0572829246520996,
+  "total_s": 1.641944169998169
+ },
+ "91": {
+  "texto": "Tengo miedo de que tenga que ingresar al hospital porque el médico de gastroenterología quiere examinarlo mejor.",
+  "primer_token_s": 1.0673861503601074,
+  "total_s": 1.8897688388824463
+ },
+ "92": {
+  "texto": "No sé cuán grave es en su caso, pero puede empeorar.",
+  "primer_token_s": 1.0291409492492676,
+  "total_s": 1.613548994064331
+ },
+ "94": {
+  "texto": "La buena noticia es que ya sabemos qué es, así que podemos tratarlo y hacer que usted se sienta mejor.",
+  "primer_token_s": 1.0846354961395264,
+  "total_s": 2.043968915939331
+ },
+ "95": {
+  "texto": "El médico de la gastroenterología me indicó que comience a usted con antibióticos por vía intravenosa para tratar la infección y le dé líquidos intravenosos, ya que usted ha estado vomitando y no ha estado comiendo.",
+  "primer_token_s": 1.3626458644866943,
+  "total_s": 3.34716534614563
+ },
+ "98": {
+  "texto": "No problema, esperemos que esta vez sí le ayude y que el médico de gastroenterología pueda decirle cuán grave es.",
+  "primer_token_s": 1.0721344947814941,
+  "total_s": 2.0310561656951904
+ },
+ "100": {
+  "texto": "Un poco después de que usted sea trasladado al principal hospital.",
+  "primer_token_s": 1.0511770248413086,
+  "total_s": 1.5330941677093506
+ },
+ "102": {
+  "texto": "No lo sé. No debería tomar mucho tiempo. Ya le he hecho el pedido. Suele tardar menos de una hora.",
+  "primer_token_s": 1.063352346420288,
+  "total_s": 1.9519290924072266
+ },
+ "104": {
+  "texto": "Sí, no se preocupe. Eso debería estar en camino, ya que los ordené antes de venir a la habitación. Usted debería estar preparado en un corto tiempo.",
+  "primer_token_s": 1.0742435455322266,
+  "total_s": 2.475356340408325
+ },
+ "107": {
+  "texto": "Bien, espere a que los enfermeros le den la medicina y a que el personal del hospital venga a buscarlo. Espero que se recupere.",
+  "primer_token_s": 1.0562703609466553,
+  "total_s": 2.291512966156006
+ },
+ "109": {
+  "texto": "Buenos días, señor. ¿Cómo está usted esta mañana?",
+  "primer_token_s": 0.28758907318115234,
+  "total_s": 0.7679600715637207
+ },
+ "111": {
+  "texto": "Eso es excelente ¿Cómo fue la recuperación?",
+  "primer_token_s": 0.7013406753540039,
+  "total_s": 1.0796899795532227
+ },
+ "113": {
+  "texto": "Eso es muy bueno. Estoy seguro de que ya ha escuchado sobre la hemodiálisis que recibirá mañana.",
+  "primer_token_s": 1.0612130165100098,
+  "total_s": 1.985262393951416
+ },
+ "114": {
+  "texto": "Ahora es mi turno de darle la charla y responder todas las preguntas que pueda tener antes de su gran día mañana.",
+  "primer_token_s": 1.083571195602417,
+  "total_s": 2.0155184268951416
+ },
+ "117": {
+  "texto": "Imagino que sí.",
+  "primer_token_s": 1.0464286804199219,
+  "total_s": 1.2550370693206787
+ },
+ "118": {
+  "texto": "No hay nada de qué preocuparse. Recuerde que vendrá aquí tres días a la semana hasta que se le haga el trasplante y entonces ya no tendrá que preocuparse por ello.",
+  "primer_token_s": 1.0650973320007324,
+  "total_s": 2.4750993251800537
+ },
+ "120": {
+  "texto": "Bueno, no queremos preocuparnos por eso todavía. Usted tiene un gran día mañana, así que, ¿qué preguntas tiene usted?",
+  "primer_token_s": 1.0694406032562256,
+  "total_s": 2.1641836166381836
+ },
+ "122": {
+  "texto": "Esa es una gran pregunta. Es importante que usted revise su fistula AV cada día.",
+  "primer_token_s": 1.3816578388214111,
+  "total_s": 2.0356953144073486
+ },
+ "123": {
+  "texto": "Así que puede informarnos de inmediato si hay algo malo con ello.",
+  "primer_token_s": 1.0962810516357422,
+  "total_s": 1.7489442825317383
+ },
+ "124": {
+  "texto": "Una forma de hacerlo es colocar su oreja cerca y ver si puede escuchar un sonido de ruido de agua.",
+  "primer_token_s": 1.0958638191223145,
+  "total_s": 2.0202836990356445
+ },
+ "125": {
+  "texto": "Esto se llama un brew it.",
+  "primer_token_s": 1.0561859607696533,
+  "total_s": 1.3320708274841309
+ },
+ "127": {
+  "texto": "No necesariamente. A veces usted puede escuchar solo un bruit con el estetoscopio. En este caso, usted puede sentir la fistula por cualquier vibración o un temblor.",
+  "primer_token_s": 1.0514016151428223,
+  "total_s": 2.5237319469451904
+ },
+ "129": {
+  "texto": "Usted va a tener revisada su fistula AV cada mes por alguien aquí en el hospital.",
+  "primer_token_s": 1.0694193840026855,
+  "total_s": 1.7552413940429688
+ },
+ "130": {
+  "texto": "Tiene que revisarlo cada día.",
+  "primer_token_s": 1.070178508758545,
+  "total_s": 1.347252607345581
+ },
+ "131": {
+  "texto": "En caso de que no sienta el latido, esto podría significar que está desarrollando estenosis y tiene que llamar a su médico de inmediato.",
+  "primer_token_s": 1.1000235080718994,
+  "total_s": 2.337533950805664
+ },
+ "133": {
+  "texto": "No tiene nada de qué preocuparse.",
+  "primer_token_s": 1.0245976448059082,
+  "total_s": 1.3025171756744385
+ },
+ "134": {
+  "texto": "Estoy aquí para responder todas sus preguntas.",
+  "primer_token_s": 1.0084097385406494,
+  "total_s": 1.3503236770629883
+ },
+ "135": {
+  "texto": "La estenosis es un estrechamiento de sus venas o arterias.",
+  "primer_token_s": 1.0157768726348877,
+  "total_s": 1.6341617107391357
+ },
+ "136": {
+  "texto": "Este es un problema porque puede impedir que usted reciba diálisis.",
+  "primer_token_s": 0.7320969104766846,
+  "total_s": 1.2843735218048096
+ },
+ "138": {
+  "texto": "Sí. ¿Recuerda qué más debía revisar cada día?",
+  "primer_token_s": 1.0174343585968018,
+  "total_s": 1.5681748390197754
+ },
+ "140": {
+  "texto": "Eso es correcto. Creo que usted hará muy bien.",
+  "primer_token_s": 1.0744330883026123,
+  "total_s": 1.5906732082366943
+ },
+ "141": {
+  "texto": "¿Puede decirme en sus propias palabras qué es la hemodiálisis?",
+  "primer_token_s": 1.0757861137390137,
+  "total_s": 1.693960189819336
+ },
+ "144": {
+  "texto": "Lo entendió.",
+  "primer_token_s": 1.044800043106079,
+  "total_s": 1.1853740215301514
+ },
+ "145": {
+  "texto": "¿Cómo le está yendo con su dieta?",
+  "primer_token_s": 1.0449612140655518,
+  "total_s": 1.3891668319702148
+ },
+ "147": {
+  "texto": "¿Y el aporte de líquidos?",
+  "primer_token_s": 1.0276436805725098,
+  "total_s": 1.3718640804290771
+ },
+ "149": {
+  "texto": "Bueno, eso me hace sentir muy bien. Creo que usted está listo para la diálisis. ¿Cómo se siente usted?",
+  "primer_token_s": 1.0518033504486084,
+  "total_s": 2.118180513381958
+ },
+ "151": {
+  "texto": "Sí, yo sé cómo usted se siente.",
+  "primer_token_s": 1.0433144569396973,
+  "total_s": 1.4208753108978271
+ },
+ "152": {
+  "texto": "Pero intente relajarse y no pensar tanto en eso.",
+  "primer_token_s": 1.0561413764953613,
+  "total_s": 1.5377843379974365
+ },
+ "153": {
+  "texto": "Recuerde que durante la diálisis no sentirá dolor, pero puede experimentar mareos, náuseas, vómitos, dolores de cabeza o calambres.",
+  "primer_token_s": 1.065866470336914,
+  "total_s": 2.4362971782684326
+ },
+ "156": {
+  "texto": "Eso puede ocurrir, pero tome consuelo en el hecho de que está rodeado de personal médico capacitado que puede ayudarle cuando la situación ocurra.",
+  "primer_token_s": 1.3642396926879883,
+  "total_s": 2.601130247116089
+ },
+ "157": {
+  "texto": "Podemos siempre reducir la cantidad de líquido que se retire durante el procedimiento. Si eso ocurre, tendremos que contactar al médico para ajustar su ingesta de líquidos.",
+  "primer_token_s": 1.3852651119232178,
+  "total_s": 2.862238645553589
+ },
+ "159": {
+  "texto": "Bueno.",
+  "primer_token_s": 1.381401777267456,
+  "total_s": 1.5198118686676025
+ },
+ "160": {
+  "texto": "Recuerde que estará aquí mañana por aproximadamente cuatro horas. Le recomendaría que traiga un libro para leer o su teléfono.",
+  "primer_token_s": 1.3791468143463135,
+  "total_s": 2.342747926712036
+ },
+ "161": {
+  "texto": "Tan solo para que no se aburra.",
+  "primer_token_s": 1.0937168598175049,
+  "total_s": 1.4400365352630615
+ },
+ "163": {
+  "texto": "Debe ser un libro muy aburrido si espera quedarse dormido al leerlo. Le sugiero que traiga otro.",
+  "primer_token_s": 1.0426886081695557,
+  "total_s": 1.934844970703125
+ },
+ "165": {
+  "texto": "Yo sé, solo un poco de broma para hacer que su vida sea un poco mejor. Creo que ustedes están todos listos para mañana, a menos que tengan alguna otra pregunta.",
+  "primer_token_s": 1.069643259048462,
+  "total_s": 2.4397969245910645
+ },
+ "167": {
+  "texto": "Excelente. Luego recuerde estar aquí mañana a su hora programada para poder conocer al equipo y comenzar.",
+  "primer_token_s": 1.0683865547180176,
+  "total_s": 1.93343186378479
+ },
+ "170": {
+  "texto": "Estoy seguro de que también esperan conocerlo. Que tenga un excelente día y que se quite un poco de sueño porque mañana es un gran día.",
+  "primer_token_s": 1.0576746463775635,
+  "total_s": 2.156066417694092
+ },
+ "171": {
+  "texto": "Si le gusta este video, no se olvide de pulsar el botón de me gusta. Esto nos ayudaría mucho. Además, si aún no es parte de la familia Interpret Your World, vaya adelante y suscríbase.",
+  "primer_token_s": 1.3632535934448242,
+  "total_s": 3.0816569328308105
+ },
+ "172": {
+  "texto": "Pulse el timbre de notificaciones para que nunca pierda de vista nuevo contenido.",
+  "primer_token_s": 1.0848753452301025,
+  "total_s": 1.7042436599731445
+ },
+ "173": {
+  "texto": "Hola, estaba revisando su historial clínico justo antes de venir aquí. Leí que tiene dificultad para respirar y dolor en el pecho. Ese es el motivo por el cual su médico de atención primaria lo refirió a mí.",
+  "primer_token_s": 0.379133939743042,
+  "total_s": 2.2573182582855225
+ },
+ "174": {
+  "texto": "¿Hay algo más que esté ocurriendo?",
+  "primer_token_s": 0.7022159099578857,
+  "total_s": 1.0812523365020752
+ },
+ "177": {
+  "texto": "Sí, vi que no logró completar su prueba de esfuerzo y tuvieron que hacerle una prueba de esfuerzo sin ejercicio.",
+  "primer_token_s": 1.0909814834594727,
+  "total_s": 2.2556750774383545
+ },
+ "180": {
+  "texto": "Entiendo. ¿Y respecto al sueño? ¿Duermes bien? Veo que tienes programada una prueba de sueño.",
+  "primer_token_s": 1.0578761100769043,
+  "total_s": 2.0181081295013428
+ },
+ "184": {
+  "texto": "Él está en lo correcto. Esto podría ser un factor contribuyente, pero hay muchas otras cosas que están señalando peligro.",
+  "primer_token_s": 1.0358600616455078,
+  "total_s": 2.0653812885284424
+ },
+ "186": {
+  "texto": "Me aprovó el insomnio.",
+  "primer_token_s": 1.068220615386963,
+  "total_s": 1.3822498321533203
+ },
+ "187": {
+  "texto": "La buena noticia es que usted vino al lugar correcto y encontraremos la causa subyacente de esto. Yo sospecho que usted tiene enfermedad arterial coronaria o enfermedad cardíaca coronaria. Lo mismo, diferentes términos.",
+  "primer_token_s": 1.096238613128662,
+  "total_s": 2.9099338054656982
+ },
+ "189": {
+  "texto": "No es así. Sin embargo, no he confirmado esto y es solo una sospecha. Me gustaría recopilar más hechos para saber hacia dónde ir a continuación.",
+  "primer_token_s": 1.3785223960876465,
+  "total_s": 2.72027325630188
+ },
+ "191": {
+  "texto": "Por supuesto, la enfermedad coronaria ocurre cuando hay un bloqueo en las arterias que suministran sangre al corazón. Este bloqueo puede reducir el flujo sanguíneo al corazón y causar todos los síntomas que usted está sintiendo.",
+  "primer_token_s": 1.4221341609954834,
+  "total_s": 3.441673517227173
+ },
+ "193": {
+  "texto": "No necesariamente. Esto simplemente significa que usted corre un mayor riesgo de desarrollar un infarto de miocardio si esta enfermedad efectivamente es enfermedad coronaria.",
+  "primer_token_s": 1.3879361152648926,
+  "total_s": 2.6902947425842285
+ },
+ "195": {
+  "texto": "Buena pregunta. Para descartar la EDA debo realizar un procedimiento llamado cateterización cardíaca.",
+  "primer_token_s": 1.0962724685668945,
+  "total_s": 1.987652063369751
+ },
+ "198": {
+  "texto": "Este procedimiento también se conoce como angiografía coronaria. Consiste en un tinte que se inyectará en sus arterias para verificar si hay algún bloqueo dentro de ellas.",
+  "primer_token_s": 1.0841302871704102,
+  "total_s": 2.4224727153778076
+ },
+ "199": {
+  "texto": "Podremos ver cualquier bloqueo mediante una máquina de rayos X que estará observando su corazón mientras lo hacemos.",
+  "primer_token_s": 1.3654215335845947,
+  "total_s": 2.221752882003784
+ },
+ "202": {
+  "texto": "En caso de que encontremos alguna arteria bloqueada, podríamos atenderla allí mismo. Este procedimiento se llama angioplastia y se realiza mientras se está haciendo el angiograma coronario.",
+  "primer_token_s": 1.3609564304351807,
+  "total_s": 2.938502073287964
+ },
+ "204": {
+  "texto": "Ahora no dije eso. En caso de que no pueda tratar algunas de esas obstrucciones, usted requerirá cirugía de corazón abierto.",
+  "primer_token_s": 1.1002428531646729,
+  "total_s": 2.3015847206115723
+ },
+ "206": {
+  "texto": "Lamento decirle eso, pero hasta que terminemos con esa prueba, no hay nada definitivo que le pueda decir. Pero dígame, ¿hace ejercicio regularmente?",
+  "primer_token_s": 1.4049198627471924,
+  "total_s": 2.6783151626586914
+ },
+ "208": {
+  "texto": "Entiendo. Entonces, nunca ha tenido ejercicio antes de eso?",
+  "primer_token_s": 1.3756182193756104,
+  "total_s": 1.8932785987854004
+ },
+ "210": {
+  "texto": "¿Qué pasa con sus actividades diarias? ¿Se le dificulta la respiración entonces?",
+  "primer_token_s": 1.0934276580810547,
+  "total_s": 1.7474963665008545
+ },
+ "212": {
+  "texto": "¿Realiza un trabajo activo?",
+  "primer_token_s": 1.05104660987854,
+  "total_s": 1.3274531364440918
+ },
+ "215": {
+  "texto": "Eso no es bueno. ¿Cómo fue tu dieta? Tus triglicéridos estaban altos en la última prueba. ¿Va usted al médico regularmente?",
+  "primer_token_s": 1.3805603981018066,
+  "total_s": 2.5838398933410645
+ },
+ "218": {
+  "texto": "Ese es el motivo por el cual usted tiene que acudir al médico regularmente. Esto podría haberse detectado mucho más temprano si hubiera sido así. Veo que su médico le ha recetado un medicamento para la colesterol. ¿Cómo le ha ido con eso?",
+  "primer_token_s": 1.101532220840454,
+  "total_s": 3.279526948928833
+ },
+ "222": {
+  "texto": "Eso es perfecto. Eso es un comienzo. ¿Ha estado también trabajando en mejorar su dieta?",
+  "primer_token_s": 1.070796251296997,
+  "total_s": 1.9276602268218994
+ },
+ "224": {
+  "texto": "Eso es bueno. Siempre es difícil al principio, pero una vez que se le haga la idea, se mejorará. ¿Le gustaría que le haga una referencia a un dietista que le pueda ayudar a alcanzar sus metas dietéticas?",
+  "primer_token_s": 1.1009297370910645,
+  "total_s": 3.01745343208313
+ },
+ "226": {
+  "texto": "Perfecto, lo haré. También veo aquí que fuma. ¿Cuánto tiempo ha fumado?",
+  "primer_token_s": 1.3633625507354736,
+  "total_s": 2.223156690597534
+ },
+ "228": {
+  "texto": "Bien, eso es excelente. Debo decirle que todo lo que me está diciendo puede ser factores contribuyentes al desarrollo de enfermedad coronaria.",
+  "primer_token_s": 1.3650665283203125,
+  "total_s": 2.5012168884277344
+ },
+ "231": {
+  "texto": "Permítame hacerle una pregunta más antes de responder a eso. Además de su tío, ¿alguien en su familia tiene enfermedad cardíaca, presión arterial alta, niveles altos de colesterol o diabetes?",
+  "primer_token_s": 1.077937364578247,
+  "total_s": 2.756441831588745
+ },
+ "234": {
+  "texto": "Eso es muy lamentable. Lamento escuchar eso. ¿Querría ampliar más sobre quién tiene qué enfermedad?",
+  "primer_token_s": 1.3671355247497559,
+  "total_s": 2.326436996459961
+ },
+ "238": {
+  "texto": "Pues bien, definitivamente tenemos que realizar esa cateterización difícil para ver qué está pasando y confirmar o descartar mi sospecha.",
+  "primer_token_s": 1.03497314453125,
+  "total_s": 2.13313889503479
+ },
+ "240": {
+  "texto": "Eso no lo sé, ya que no soy yo quien programa esto. Le informaré a mi asistente médica para que le dé información al respecto. Pero ordenaré el procedimiento ahora mismo.",
+  "primer_token_s": 1.0696587562561035,
+  "total_s": 2.5426793098449707
+ },
+ "242": {
+  "texto": "De nada¡ Por favor haga todo lo que pueda para mejorar su dieta y salud, ya que eso contribuirá mucho a prevenir que esta condición empeore. Lo veo el día de la procedimiento!",
+  "primer_token_s": 1.0953185558319092,
+  "total_s": 2.6810760498046875
+ },
+ "244": {
+  "texto": "Si le gusta este video, no se olvide de pulsar el botón de me gusta. Esto nos ayudaría mucho. Además, si aún no es parte de la familia Interpret Your World, vaya y suscríbase.",
+  "primer_token_s": 1.3790388107299805,
+  "total_s": 3.0285205841064453
+ },
+ "245": {
+  "texto": "Pulse el timbre de notificación para que nunca pierda de vista nuevo contenido.",
+  "primer_token_s": 1.0798051357269287,
+  "total_s": 1.6995007991790771
+ },
+ "246": {
+  "texto": "Bienvenido a Interpret Your World, un canal diseñado por intérpretes para intérpretes con el fin de brindarle la confianza y la práctica que requiere para convertirse en un excelente intérprete. Para comenzar,",
+  "primer_token_s": 0.3742177486419678,
+  "total_s": 2.25335955619812
+ },
+ "247": {
+  "texto": "Vaya directamente a la lista de reproducción de nuestro canal y consulte la lista de reproducción del canal que le ayudará a sacar el máximo partido a este canal.",
+  "primer_token_s": 0.726151704788208,
+  "total_s": 1.9958148002624512
+ },
+ "248": {
+  "texto": "Todos nuestros playlists están organizados para ser fácilmente accesibles y ayudar con sus necesidades. Algunos de los playlists incluyen escenarios simulados para interpretadores de atención al cliente y médicos.",
+  "primer_token_s": 1.0321385860443115,
+  "total_s": 2.5058794021606445
+ },
+ "249": {
+  "texto": "Práctica de frases médicas al azar",
+  "primer_token_s": 1.046412706375122,
+  "total_s": 1.4308357238769531
+ },
+ "250": {
+  "texto": "Consejos y trucos y mucho más contenido. También puede practicar vocabulario en forma corta aquí en YouTube o en la plataforma de videos en forma corta de su elección.",
+  "primer_token_s": 1.1007161140441895,
+  "total_s": 2.5049259662628174
+ },
+ "251": {
+  "texto": "que incluyen Facebook",
+  "primer_token_s": 1.0506489276885986,
+  "total_s": 1.1895191669464111
+ },
+ "252": {
+  "texto": "Instagram, TikTok y Kuwait.",
+  "primer_token_s": 1.0209310054779053,
+  "total_s": 1.262871503829956
+ },
+ "253": {
+  "texto": "Por último, también tenemos una página de Patreon donde, con tan solo $1 de su apoyo, puede obtener acceso a una página.",
+  "primer_token_s": 1.015101432800293,
+  "total_s": 1.9750680923461914
+ },
+ "254": {
+  "texto": "El material proporcionado complementa lo que puede encontrar en nuestro canal de YouTube, que es: videos gratuitos, hojas de respuestas, listas de vocabulario,",
+  "primer_token_s": 1.0443847179412842,
+  "total_s": 2.2453930377960205
+ },
+ "255": {
+  "texto": "Y mucho más. Recuerde darle like, suscribirse y compartir nuestra página si la encuentra útil.",
+  "primer_token_s": 1.0331499576568604,
+  "total_s": 1.8567147254943848
+ },
+ "256": {
+  "texto": "¡Feliz interpretación!",
+  "primer_token_s": 1.0305426120758057,
+  "total_s": 1.2386009693145752
+ },
+ "257": {
+  "texto": "Música",
+  "primer_token_s": 1.0232279300689697,
+  "total_s": 1.129655122756958
+ },
+ "258": {
+  "texto": "Buenos días, ¿qué le ha traído hoy a verme?",
+  "primer_token_s": 0.747610330581665,
+  "total_s": 1.30051851272583
+ },
+ "260": {
+  "texto": "Sí, yo podría escuchar que usted tosía antes de que yo entrara. ¿Cuánto tiempo tiene usted la tos?",
+  "primer_token_s": 0.7342531681060791,
+  "total_s": 1.7640798091888428
+ },
+ "262": {
+  "texto": "¿Ha estado tomando algo para la tos?",
+  "primer_token_s": 1.028848648071289,
+  "total_s": 1.4077951908111572
+ },
+ "265": {
+  "texto": "¡Vaya!, usted casi se llevó todo el pasillo de los jarabes para la tos. ¿Ha visto a un médico antes que yo?",
+  "primer_token_s": 1.0774424076080322,
+  "total_s": 2.2130300998687744
+ },
+ "268": {
+  "texto": "Absolutamente. Estoy contento de que haya venido. ¿Sufre de algo más? ¿Alguna enfermedad crónica? Me refiero a cosas como asma, presión arterial alta, diabetes, algo de ese tipo?",
+  "primer_token_s": 1.3604540824890137,
+  "total_s": 3.108314275741577
+ },
+ "270": {
+  "texto": "Bueno, la enfermera también anotó que usted recientemente dejó de fumar. Fue por su tos?",
+  "primer_token_s": 1.3644568920135498,
+  "total_s": 2.3915059566497803
+ },
+ "273": {
+  "texto": "Eso suena horrible. Me sorprende que no haya visto a un médico antes. Me alegra que haya dejado de fumar.",
+  "primer_token_s": 1.3603968620300293,
+  "total_s": 2.3930015563964844
+ },
+ "274": {
+  "texto": "El tabaco nunca es bueno para usted y cuanto antes deje de fumar mejor. ¿Ha tenido algún otro síntoma además de tos, como fiebre, escalofríos, algo por el estilo?",
+  "primer_token_s": 1.3948705196380615,
+  "total_s": 2.9723472595214844
+ },
+ "276": {
+  "texto": "Apuesto. Cuéntame más sobre tu tos. ¿Es una tos productiva o una tos seca? ¿La tienes siempre o durante ciertos momentos? ¿Es peor durante el día o durante la noche?",
+  "primer_token_s": 1.3619043827056885,
+  "total_s": 3.0440735816955566
+ },
+ "280": {
+  "texto": "¿Cree que puede subir una escalera sin sentirse con dificultad para respirar?",
+  "primer_token_s": 1.381246566772461,
+  "total_s": 2.1023354530334473
+ },
+ "283": {
+  "texto": "¿Qué tal la fatiga o la sensación de cansancio? ¿Cómo está en ese sentido?",
+  "primer_token_s": 1.082808256149292,
+  "total_s": 1.835994005203247
+ },
+ "285": {
+  "texto": "¿Y el sueño? Debe ser difícil dormir con esa tos.",
+  "primer_token_s": 1.0875062942504883,
+  "total_s": 1.6701784133911133
+ },
+ "288": {
+  "texto": "Bien, permítame escuchar sus pulmones, su corazón y revisar su estado general.",
+  "primer_token_s": 1.0348618030548096,
+  "total_s": 1.757406234741211
+ },
+ "289": {
+  "texto": "Podría escuchar silbidos mientras usted respiraba. ¿Usted puede escuchar silbidos cuando usted respira?",
+  "primer_token_s": 1.0321240425109863,
+  "total_s": 1.9220871925354004
+ },
+ "291": {
+  "texto": "Es un sonido de silbido que pude escuchar cada vez que usted tomaba una respiración. ¿También usted puede escuchar ese silbido?",
+  "primer_token_s": 1.043792486190796,
+  "total_s": 2.283079147338867
+ },
+ "293": {
+  "texto": "¿Nunca ha sufrido de asma, tuberculosis o cualquier enfermedad respiratoria antes, cierto?",
+  "primer_token_s": 1.0442852973937988,
+  "total_s": 1.8675804138183594
+ },
+ "295": {
+  "texto": "¿En cuanto a alergias?",
+  "primer_token_s": 1.0825912952423096,
+  "total_s": 1.3575401306152344
+ },
+ "297": {
+  "texto": "Quiero que usted se haga algunas radiografías para ver que no estamos pasando por alto algo y también que haga una prueba de sangre y de orina.",
+  "primer_token_s": 1.0822784900665283,
+  "total_s": 2.318469524383545
+ },
+ "298": {
+  "texto": "Espere a mis nervios y una vez que tengamos todo eso hecho, espero al menos poder ayudarle a aliviar esa tos.",
+  "primer_token_s": 1.0807621479034424,
+  "total_s": 2.179295539855957
+ },
+ "300": {
+  "texto": "No pudimos ver realmente mucho en la prueba, pero me preocupa que usted pueda haber desarrollado EPOC debido a su historial de tabaquismo. ¿Cuántos años fue de nuevo?",
+  "primer_token_s": 1.0982670783996582,
+  "total_s": 2.5727882385253906
+ },
+ "302": {
+  "texto": "Es bronquitis crónica. La EPOC significa enfermedad pulmonar obstructiva crónica. Todos sus síntomas coinciden con los criterios para ella. Necesitaré que vaya a",
+  "primer_token_s": 1.3935489654541016,
+  "total_s": 2.9052088260650635
+ },
+ "303": {
+  "texto": "Le haré un estudio de spirometría y necesitará seguir con el departamento de neumología por este motivo. Le escribiré todos los referidos que necesite.",
+  "primer_token_s": 1.4000399112701416,
+  "total_s": 2.702411413192749
+ },
+ "305": {
+  "texto": "No necesariamente. Una vez que los médicos determinen qué es la tos, podríamos lograr que mejore.",
+  "primer_token_s": 1.3791935443878174,
+  "total_s": 2.3457460403442383
+ },
+ "307": {
+  "texto": "Vamos a esperar a ver qué muestran todos los estudios y luego veremos qué pasará.",
+  "primer_token_s": 1.0679304599761963,
+  "total_s": 1.8581016063690186
+ },
+ "308": {
+  "texto": "No tiene sentido asustar a usted a menos que hayamos probado, pero en cualquier caso, creo que la EPOC es la causa más probable.",
+  "primer_token_s": 1.0654520988464355,
+  "total_s": 2.2001233100891113
+ },
+ "310": {
+  "texto": "Voy a decirle a la enfermera que le dé alguna información sobre EPOC y enfermedades respiratorias superiores.",
+  "primer_token_s": 1.0499672889709473,
+  "total_s": 2.010068893432617
+ },
+ "311": {
+  "texto": "Antes de que me olvide, ese episodio donde usted casi se desmayó por la tos, solo ocurrió una vez.",
+  "primer_token_s": 1.0711557865142822,
+  "total_s": 2.0998685359954834
+ },
+ "313": {
+  "texto": "Es probable que sea nada y a menos que usted fume, estoy seguro de que no se hará tan mal. Incluso así, permítame ordenar un inhalador de rescate para usted. Esto es solo en caso de emergencia si por casualidad se le presenta otro cuadro.",
+  "primer_token_s": 1.3676128387451172,
+  "total_s": 3.494540214538574
+ },
+ "314": {
+  "texto": "Episodio de tos como ese donde no puede respirar. Usted toma dos inhalaciones de esto.",
+  "primer_token_s": 1.369537353515625,
+  "total_s": 2.230775833129883
+ },
+ "316": {
+  "texto": "Esto abrirá sus pulmones y le ayudará a respirar mejor para que no se desmaye.",
+  "primer_token_s": 1.3726115226745605,
+  "total_s": 2.194732666015625
+ },
+ "318": {
+  "texto": "Bien, pues haga todos esos estudios. Vaya con el pulmonólogo y también con su médico de atención primaria. Su médico de atención primaria también podría tener recursos mejores que los que tengo aquí.",
+  "primer_token_s": 1.0991947650909424,
+  "total_s": 2.6082499027252197
+ },
+ "320": {
+  "texto": "No problema. Espere aquí para que la enfermera le dé su documentación y lo libere. Tenga un buen día.",
+  "primer_token_s": 1.361102819442749,
+  "total_s": 2.3206450939178467
+ },
+ "321": {
+  "texto": "Hola, soy John. Seré su enfermero hoy para prepararlo para su procedimiento. ¿Qué vamos a hacer hoy con usted?",
+  "primer_token_s": 0.3676619529724121,
+  "total_s": 1.3565623760223389
+ },
+ "324": {
+  "texto": "Eso es correcto. Lo que vamos a realizar se llama colecistectomía laparoscópica.",
+  "primer_token_s": 1.010366439819336,
+  "total_s": 1.9026780128479004
+ },
+ "326": {
+  "texto": "Sí. Ahora pasamos a otro punto. ¿Es alérgico a algún medicamento?",
+  "primer_token_s": 1.018350601196289,
+  "total_s": 1.7697477340698242
+ },
+ "328": {
+  "texto": "Bueno. ¿Ha tenido alguna operación previa?",
+  "primer_token_s": 1.0267763137817383,
+  "total_s": 1.5112481117248535
+ },
+ "330": {
+  "texto": "¿Tuvo alguna reacción adversa a Buenesthesia?",
+  "primer_token_s": 0.7340102195739746,
+  "total_s": 1.1497623920440674
+ },
+ "332": {
+  "texto": "Okay, bien, esta vez vamos a darle anestesia general, la cual lo pondrá completamente dormido.",
+  "primer_token_s": 1.028352975845337,
+  "total_s": 1.8873391151428223
+ },
+ "334": {
+  "texto": "Eso está bien, señora. Todavía tenemos que revisar todo esto porque necesitamos que firme los formularios de consentimiento antes del procedimiento.",
+  "primer_token_s": 1.0654935836791992,
+  "total_s": 2.300497531890869
+ },
+ "336": {
+  "texto": "¿Cuándo fue la última vez que usted comió o bebió algo?",
+  "primer_token_s": 1.0281627178192139,
+  "total_s": 1.6134123802185059
+ },
+ "338": {
+  "texto": "Excelente. ¿Tiene diabetes o alguna otra condición médica?",
+  "primer_token_s": 1.0433602333068848,
+  "total_s": 1.5259373188018799
+ },
+ "340": {
+  "texto": "¿Está tomando algún medicamento?",
+  "primer_token_s": 1.0126988887786865,
+  "total_s": 1.3225362300872803
+ },
+ "342": {
+  "texto": "¿Se siente enfermo o está desarrollando algún síntoma similar al de la gripe o malestar?",
+  "primer_token_s": 0.7035012245178223,
+  "total_s": 1.5242300033569336
+ },
+ "344": {
+  "texto": "¿Tiene alguno de sus dientes sueltos, rotos o ausentes?",
+  "primer_token_s": 0.7053797245025635,
+  "total_s": 1.3549554347991943
+ },
+ "346": {
+  "texto": "Así será el procedimiento. Le daremos medicamentos para que se tranquilice a través de una vía intravenosa. Luego, cuando esté tranquilo, le administraremos anestesia general. Esto lo dejará completamente dormido.",
+  "primer_token_s": 1.021160364151001,
+  "total_s": 2.8338375091552734
+ },
+ "347": {
+  "texto": "Entonces procederemos a colocarle un tubo en la boca para ayudarle a respirar. El cirujano hará una pequeña incisión a través de la cual colocará un pequeño tubo con una cámara y luz en el extremo.",
+  "primer_token_s": 1.0594210624694824,
+  "total_s": 2.9135539531707764
+ },
+ "348": {
+  "texto": "Él entonces comenzará el procedimiento.",
+  "primer_token_s": 1.0710434913635254,
+  "total_s": 1.3838303089141846
+ },
+ "349": {
+  "texto": "Después del procedimiento, retiraremos el tubo antes de que despierte y luego lo llevaremos a recuperación.",
+  "primer_token_s": 1.079423427581787,
+  "total_s": 1.9718427658081055
+ },
+ "351": {
+  "texto": "Este primer formulario de consentimiento indica que usted comprende el procedimiento y sus complicaciones y nos da permiso para realizarlo.",
+  "primer_token_s": 1.0442266464233398,
+  "total_s": 1.9696900844573975
+ },
+ "352": {
+  "texto": "Cualquier complicación en que tengamos que hacer una incisión más grande de lo esperado.",
+  "primer_token_s": 1.0175871849060059,
+  "total_s": 1.739854097366333
+ },
+ "354": {
+  "texto": "Este siguiente formulario dice que usted entiende todos los riesgos involucrados con este procedimiento.",
+  "primer_token_s": 0.7500209808349609,
+  "total_s": 1.5073432922363281
+ },
+ "355": {
+  "texto": "Este procedimiento, al igual que cualquier otro, tiene el riesgo de lesionar alguno de los otros órganos cercanos.",
+  "primer_token_s": 1.0222077369689941,
+  "total_s": 1.9828121662139893
+ },
+ "356": {
+  "texto": "También existe el riesgo de infección y hemorragia.",
+  "primer_token_s": 1.0076346397399902,
+  "total_s": 1.5926339626312256
+ },
+ "357": {
+  "texto": "También existe el riesgo de que se rompan, se suelten o se desprendan los dientes, con un diente para ayudarle a respirar, pero esto raramente ocurre.",
+  "primer_token_s": 1.023585557937622,
+  "total_s": 2.5995168685913086
+ },
+ "358": {
+  "texto": "También existe riesgo con la anestesia, que incluirá la conciencia durante el procedimiento, coma o, en el peor de los casos, la muerte.",
+  "primer_token_s": 1.0542616844177246,
+  "total_s": 2.4549429416656494
+ },
+ "359": {
+  "texto": "Esto ocurre muy raramente. El anestesiólogo le hablará en detalle sobre el riesgo y los beneficios de la anestesia después de que termine con usted.",
+  "primer_token_s": 1.0760035514831543,
+  "total_s": 2.481926918029785
+ },
+ "361": {
+  "texto": "Este es solo un riesgo que podría ocurrir. No significa que ocurrirá. Estoy obligado a discutir todo esto con usted. Vamos a posponer la firma de este formulario hasta después de que usted hable con el anestesiólogo, ¿de acuerdo? ¿De acuerdo?",
+  "primer_token_s": 1.3933241367340088,
+  "total_s": 3.6235251426696777
+ },
+ "363": {
+  "texto": "El siguiente indica que si el médico determina que es necesario administrarle una transfusión de sangre o productos sanguíneos, tenemos su permiso para hacerlo.",
+  "primer_token_s": 1.3637197017669678,
+  "total_s": 2.669322967529297
+ },
+ "365": {
+  "texto": "No planeamos hacerlo. Esto es solo por si necesitamos hacerlo.",
+  "primer_token_s": 1.3832125663757324,
+  "total_s": 1.96541428565979
+ },
+ "366": {
+  "texto": "Esto no significa que vayamos a hacerlo, ¿de acuerdo?",
+  "primer_token_s": 1.0692579746246338,
+  "total_s": 1.6185991764068604
+ },
+ "368": {
+  "texto": "Justo ahí en la parte inferior, señora. Es perfectamente normal sentirse nervioso antes de cualquier procedimiento.",
+  "primer_token_s": 1.0766122341156006,
+  "total_s": 1.967325210571289
+ },
+ "369": {
+  "texto": "Pero sepa que está en buenas manos. ¿Tiene alguna pregunta o inquietud?",
+  "primer_token_s": 1.0432953834533691,
+  "total_s": 1.7635560035705566
+ },
+ "372": {
+  "texto": "Trate de no preocuparse tanto señora. Los cirujanos son muy experimentados y sabrán qué hacer en caso de cualquier complicación.",
+  "primer_token_s": 1.0318806171417236,
+  "total_s": 2.062364101409912
+ },
+ "373": {
+  "texto": "Pues bien, eso es todo por mi, señora. Usted tiene que esperar a que llegue el anestesiólogo para que le discuta información importante sobre la anestesia y firme más formularios de consentimiento.",
+  "primer_token_s": 1.0637810230255127,
+  "total_s": 2.843810558319092
+ },
+ "375": {
+  "texto": "De nada, señora.",
+  "primer_token_s": 1.0328624248504639,
+  "total_s": 1.242448329925537
+ },
+ "376": {
+  "texto": "Buenas tardes señora. Tenemos los resultados de su ecocardiograma transesofágico. Este examen nos muestra que usted tiene regurgitación mitral, lo que significa que su válvula mitral es",
+  "primer_token_s": 0.38046813011169434,
+  "total_s": 2.116830348968506
+ },
+ "377": {
+  "texto": "Está permitiendo el retroceso hacia otras cámaras.",
+  "primer_token_s": 0.7077417373657227,
+  "total_s": 1.1543669700622559
+ },
+ "379": {
+  "texto": "Puede ser potencialmente grave, pero permítame hacerle una serie de preguntas. ¿A veces se le dificulta la respiración?",
+  "primer_token_s": 1.0351686477661133,
+  "total_s": 2.0979421138763428
+ },
+ "382": {
+  "texto": "¿Está tomando gabapentina, un medicamento para el dolor de nervios por esa sensación de ardor en todo su cuerpo?",
+  "primer_token_s": 1.0782082080841064,
+  "total_s": 2.1467185020446777
+ },
+ "384": {
+  "texto": "Un medicamento suele recetarse para la neuropatía periférica. Puedo ver en su historial clínico que ha sido diagnosticado con esto.",
+  "primer_token_s": 1.0738296508789062,
+  "total_s": 2.3090178966522217
+ },
+ "386": {
+  "texto": "La neuropatía periférica es una condición causada por daño nervioso que puede provocar adormecimiento y dolor, justo como lo describió usted.",
+  "primer_token_s": 1.038092851638794,
+  "total_s": 2.2717018127441406
+ },
+ "387": {
+  "texto": "Debería hablar con su médico de atención primaria sobre este problema para que pueda recetar algo que podría ayudar.",
+  "primer_token_s": 1.0368192195892334,
+  "total_s": 1.934997320175171
+ },
+ "389": {
+  "texto": "Suena como si estuviera cogiendo un resfriado y sería mejor que viera a su PCP respecto a eso también.",
+  "primer_token_s": 1.0595436096191406,
+  "total_s": 2.0567140579223633
+ },
+ "391": {
+  "texto": "También veo de su lista de medicamentos que toma un anticoagulante.",
+  "primer_token_s": 1.0526649951934814,
+  "total_s": 1.7758924961090088
+ },
+ "393": {
+  "texto": "Puedo ver en su historial médico que tiene fibrilación auricular y esta medicación le ayudará para que no desarrolle un coágulo de sangre.",
+  "primer_token_s": 1.0491485595703125,
+  "total_s": 2.320897102355957
+ },
+ "395": {
+  "texto": "Permítame escuchar a usted.",
+  "primer_token_s": 1.0297996997833252,
+  "total_s": 1.3077542781829834
+ },
+ "396": {
+  "texto": "Sus pulmones están claros. Usted aún tiene un ritmo cardíaco irregular que apareció en su EKG. Es importante que usted tome su anticoagulante para prevenir que se forme un coágulo de sangre y vaya a su cerebro.",
+  "primer_token_s": 1.067108392715454,
+  "total_s": 3.096038579940796
+ },
+ "397": {
+  "texto": "Porque esto le causará un derrame.",
+  "primer_token_s": 1.0712580680847168,
+  "total_s": 1.4510562419891357
+ },
+ "399": {
+  "texto": "Pues ahora tiene que seguir con su cardiólogo porque tiene una válvula fuga para saber los siguientes pasos.",
+  "primer_token_s": 1.070124626159668,
+  "total_s": 1.9612717628479004
+ },
+ "400": {
+  "texto": "Usted dijo que no tiene dificultad para respirar, ¿verdad?",
+  "primer_token_s": 1.0723679065704346,
+  "total_s": 1.6555516719818115
+ },
+ "402": {
+  "texto": "¿Esto ocurre cuando usted limpia, cocina o se baña?",
+  "primer_token_s": 1.0434544086456299,
+  "total_s": 1.5941472053527832
+ },
+ "404": {
+  "texto": "Usted tiene una fuga de la válvula mitral. La buena noticia es que no tiene líquido en los pulmones ni en las piernas. La fatiga que está sintiendo podría ser debido a la afib o a la regurgitación de la válvula mitral.",
+  "primer_token_s": 1.0952610969543457,
+  "total_s": 3.3645975589752197
+ },
+ "405": {
+  "texto": "o ambos",
+  "primer_token_s": 1.0752792358398438,
+  "total_s": 1.1465404033660889
+ },
+ "407": {
+  "texto": "Espere aquí hasta que la asistente médica le haga una cita con el cardiólogo y recuerde que debe acudir a su médico de atención primaria para la anticoagulante y el medicamento para el dolor nervioso.",
+  "primer_token_s": 1.0908870697021484,
+  "total_s": 2.9067420959472656
+ },
+ "409": {
+  "texto": "Gracias. Está muy amable. Por favor, no deje de asistir a ninguna de sus futuras citas.",
+  "primer_token_s": 1.022576093673706,
+  "total_s": 1.9161484241485596
+ },
+ "411": {
+  "texto": "Puede regresar al trabajo en turnos ligeros, pero no levante más de 10 libras.",
+  "primer_token_s": 0.3522377014160156,
+  "total_s": 1.1654629707336426
+ },
+ "412": {
+  "texto": "Su copago es 25 dólares. No necesita autorización previa para esta visita.",
+  "primer_token_s": 0.2911109924316406,
+  "total_s": 0.9411554336547852
+ },
+ "413": {
+  "texto": "Tome su anticoagulante cada noche. No lo deje sin llamar primero.",
+  "primer_token_s": 0.2915685176849365,
+  "total_s": 0.9750185012817383
+ },
+ "414": {
+  "texto": "Use la faja para su brazo y el andador cuando se levante de la cama.",
+  "primer_token_s": 0.2919778823852539,
+  "total_s": 1.007049322128296
+ },
+ "415": {
+  "texto": "Tengo acidez después de las comidas, pero no tengo dolor en el pecho ni dificultad para respirar.",
+  "primer_token_s": 0.29608941078186035,
+  "total_s": 1.2165045738220215
+ },
+ "416": {
+  "texto": "La erupción es por el herpes zóster. No es una alergia a su medicación.",
+  "primer_token_s": 0.291393518447876,
+  "total_s": 1.075319766998291
+ },
+ "417": {
+  "texto": "Los beneficios de la cirugía superan los riesgos en su caso.",
+  "primer_token_s": 0.2924535274505615,
+  "total_s": 0.8749754428863525
+ },
+ "418": {
+  "texto": "¿Tiene usted secreción de sus ojos?",
+  "primer_token_s": 0.28648972511291504,
+  "total_s": 0.6643795967102051
+ },
+ "422": {
+  "texto": "Tome 5 mg a las 8 de la mañana, no 10 mg. Si se siente mareado, llámenos.",
+  "primer_token_s": 0.361952543258667,
+  "total_s": 1.422499656677246
+ },
+ "423": {
+  "texto": "Música",
+  "primer_token_s": 0.27695536613464355,
+  "total_s": 0.38326263427734375
+ },
+ "424": {
+  "texto": "Bienvenido a Interpret Your World, un canal diseñado por intérpretes para intérpretes con el fin de brindarle la confianza y la práctica que requiere para convertirse en un gran intérprete. Para comenzar,",
+  "primer_token_s": 0.6795613765716553,
+  "total_s": 2.5596961975097656
+ },
+ "425": {
+  "texto": "Vaya directamente a la lista de reproducción de nuestro canal y consulte la lista de reproducción del canal que le ayudará a sacar el máximo partido a este canal.",
+  "primer_token_s": 0.7383685111999512,
+  "total_s": 2.0088953971862793
+ },
+ "426": {
+  "texto": "Todos nuestros playlists han sido organizados para ser fácilmente accesibles para ayudar con sus necesidades. Algunos de los playlists incluyen escenarios simulados para intérpretes de atención al cliente e intérpretes médicos.",
+  "primer_token_s": 1.0429227352142334,
+  "total_s": 2.7555196285247803
+ },
+ "427": {
+  "texto": "Práctica de frases médicas al azar",
+  "primer_token_s": 1.0539376735687256,
+  "total_s": 1.4335296154022217
+ },
+ "428": {
+  "texto": "Consejos y trucos y mucho más contenido. También puede practicar vocabulario en forma corta aquí en YouTube o en la plataforma de videos en forma corta de su elección.",
+  "primer_token_s": 1.1045167446136475,
+  "total_s": 2.510648488998413
+ },
+ "429": {
+  "texto": "que incluyen Facebook,",
+  "primer_token_s": 1.0523903369903564,
+  "total_s": 1.2267954349517822
+ },
+ "430": {
+  "texto": "Instagram, TikTok y Kuwait.",
+  "primer_token_s": 1.0255210399627686,
+  "total_s": 1.2696402072906494
+ },
+ "431": {
+  "texto": "Por último, también tenemos una página de Patreon donde, con tan solo $1 de su apoyo, puede obtener acceso a todo lo que hay en la página.",
+  "primer_token_s": 1.024031162261963,
+  "total_s": 2.1585469245910645
+ },
+ "432": {
+  "texto": "El material proporcionado complementa lo que puede encontrar en nuestro canal de YouTube, que es: videos gratuitos, hojas de respuestas, listas de vocabulario,",
+  "primer_token_s": 1.0538921356201172,
+  "total_s": 2.2610106468200684
+ },
+ "433": {
+  "texto": "Y mucho más. Recuerde darle like, suscribirse y compartir nuestra página si la encuentra útil.",
+  "primer_token_s": 1.0420417785644531,
+  "total_s": 1.8648338317871094
+ },
+ "434": {
+  "texto": "¡Feliz interpretación!",
+  "primer_token_s": 1.0368669033050537,
+  "total_s": 1.2441003322601318
+ },
+ "435": {
+  "texto": "Bienvenido de nuevo Jose. ¿Cómo ha estado?",
+  "primer_token_s": 1.0360207557678223,
+  "total_s": 1.4482052326202393
+ },
+ "437": {
+  "texto": "Eso es realmente genial. Veo que se torció el tobillo. Fue hace tres semanas?",
+  "primer_token_s": 1.0160691738128662,
+  "total_s": 1.807727575302124
+ },
+ "439": {
+  "texto": "¿Le molesta si yo miro? Quiero decir, ya está aquí.",
+  "primer_token_s": 1.0136692523956299,
+  "total_s": 1.5953116416931152
+ },
+ "442": {
+  "texto": "No deberíamos apurarnos con estas cosas. Es mejor que usted descanse y si hay dolor, siempre puedo darle algo para el dolor.",
+  "primer_token_s": 1.0885639190673828,
+  "total_s": 2.222468614578247
+ },
+ "443": {
+  "texto": "Imagino que está tomando algo. ¿Le gustaría algo de ibuprofeno de venta prescrita para el dolor?",
+  "primer_token_s": 1.3704876899719238,
+  "total_s": 2.3313021659851074
+ },
+ "447": {
+  "texto": "Es una lástima que no logré verlo desde el principio para tener una base de cómo se veía. ¿Cuánto era la caída?",
+  "primer_token_s": 1.0575098991394043,
+  "total_s": 2.1899619102478027
+ },
+ "449": {
+  "texto": "Debería mantenerse alejado de ese tobillo por lo menos durante otro uno a tres semanas, máximo, dependiendo de cómo se sienta.",
+  "primer_token_s": 1.0288550853729248,
+  "total_s": 2.163806200027466
+ },
+ "451": {
+  "texto": "Quiero decir, tres semanas como máximo, pero estoy esperanzado de que usted haga progresos mejores. Usted aún es joven, saludable, y dudo que haya adquirido algún mal hábito desde la última vez que lo vi.",
+  "primer_token_s": 1.0869536399841309,
+  "total_s": 2.935159921646118
+ },
+ "453": {
+  "texto": "Sé lo que quiere decir, pero sinceramente, en este momento, nada ayudará tanto como el descanso, la elevación y la medicación si tiene dolor.",
+  "primer_token_s": 1.3843066692352295,
+  "total_s": 2.6187872886657715
+ },
+ "455": {
+  "texto": "Estoy completamente de acuerdo, pero ni siquiera puede caminar. ¿Cree que podría subir una escalera?",
+  "primer_token_s": 1.3866121768951416,
+  "total_s": 2.2801389694213867
+ },
+ "457": {
+  "texto": "Debería considerarse afortunado porque no fue una fractura, ya que se habría tenido que ausentarse más tiempo. Ahora que estamos al día.",
+  "primer_token_s": 1.3764569759368896,
+  "total_s": 2.6481399536132812
+ },
+ "458": {
+  "texto": "Quiero hablar sobre la razón real por la que está aquí. ¿Lo sabe?",
+  "primer_token_s": 1.1020958423614502,
+  "total_s": 1.6846470832824707
+ },
+ "461": {
+  "texto": "Sí, eso es correcto. Otro médico le pidió que viniera aquí para una revisión de presión arterial con la enfermera para confirmar que tiene hipertensión. Desde que fue así,",
+  "primer_token_s": 1.3648905754089355,
+  "total_s": 2.9727253913879395
+ },
+ "462": {
+  "texto": "Usted recibió una receta para hipertensión y tuvo que venir hoy para que podamos verificar si la medicación está funcionando y aclarar cualquier duda que usted pueda tener.",
+  "primer_token_s": 1.3746497631072998,
+  "total_s": 2.811173439025879
+ },
+ "465": {
+  "texto": "La hipertensión simplemente significa que por alguna razón la presión arterial está subiendo. Su cuerpo está diseñado para funcionar a una presión arterial específica y si su cuerpo está funcionando a una presión arterial más alta,",
+  "primer_token_s": 1.4048452377319336,
+  "total_s": 3.0859522819519043
+ },
+ "466": {
+  "texto": "Ese es cuando comienzan las complicaciones.",
+  "primer_token_s": 1.1002802848815918,
+  "total_s": 1.4815037250518799
+ },
+ "467": {
+  "texto": "Si usted tiene arterias débiles, pueden estirarse y usted puede tener una aneurisma. Puede estrechar los vasos sanguíneos en los riñones y incluso causar enfermedad cardíaca, un derrame cerebral.",
+  "primer_token_s": 1.3691165447235107,
+  "total_s": 3.293148994445801
+ },
+ "468": {
+  "texto": "O un ataque al corazón.",
+  "primer_token_s": 1.0660793781280518,
+  "total_s": 1.3114495277404785
+ },
+ "471": {
+  "texto": "La presión arterial alta a menudo se conoce como el asesino silencioso porque muchas personas que la tienen no lo saben.",
+  "primer_token_s": 1.0542323589324951,
+  "total_s": 2.0845983028411865
+ },
+ "472": {
+  "texto": "Pero aún siguen siendo afectados por ello.",
+  "primer_token_s": 1.0177457332611084,
+  "total_s": 1.3967647552490234
+ },
+ "473": {
+  "texto": "Si usted siente un problema debido a la presión arterial, eso significa que ya es demasiado tarde y pueden surgir complicaciones graves.",
+  "primer_token_s": 1.0329110622406006,
+  "total_s": 2.0311880111694336
+ },
+ "474": {
+  "texto": "Ese es el motivo por el cual le damos medicación para controlar su presión arterial y prevenir complicaciones futuras, porque es muy difícil tratar las complicaciones de la hipertensión no controlada a largo plazo.",
+  "primer_token_s": 1.0724282264709473,
+  "total_s": 2.825587511062622
+ },
+ "476": {
+  "texto": "En último término, no puedo obligarle a tomar algo, pero veamos la evidencia.",
+  "primer_token_s": 1.0629394054412842,
+  "total_s": 1.7484130859375
+ },
+ "477": {
+  "texto": "Las tres últimas veces que usted midió su presión arterial, en dos de esas ocasiones tenía presión arterial alta y se decidió ponerlo bajo medicación para la presión arterial.",
+  "primer_token_s": 1.3609027862548828,
+  "total_s": 2.802471876144409
+ },
+ "478": {
+  "texto": "Esta es la tercera vez que usted ha revisado su presión arterial y usted ha estado tomando el medicamento para la presión arterial durante una semana.",
+  "primer_token_s": 1.3609442710876465,
+  "total_s": 2.5283684730529785
+ },
+ "479": {
+  "texto": "Su presión arterial está bien.",
+  "primer_token_s": 1.0584890842437744,
+  "total_s": 1.3011713027954102
+ },
+ "482": {
+  "texto": "Como le dije, señor, solo puedo darle la información que conozco. Le puedo decir que si tiene presión arterial alta, tendrá complicaciones si no está bajo control.",
+  "primer_token_s": 1.0890734195709229,
+  "total_s": 2.3885066509246826
+ },
+ "483": {
+  "texto": "Usted tiene presión arterial alta y casi puedo garantizarle que algo malo ocurrirá si no toma medicamento para la presión arterial.",
+  "primer_token_s": 1.0883433818817139,
+  "total_s": 2.1880502700805664
+ },
+ "484": {
+  "texto": "Le prescribiré. He hecho mi parte. Si quiere tomarlo o no, esa es su decisión. Pero si yo fuera usted, tomaría el medicamento.",
+  "primer_token_s": 1.3963844776153564,
+  "total_s": 2.597670793533325
+ },
+ "486": {
+  "texto": "Está bien.",
+  "primer_token_s": 1.363041639328003,
+  "total_s": 1.5019376277923584
+ },
+ "487": {
+  "texto": "Tan solo mientras lo tome, estoy bien. Parece que la dosis que le dieron está funcionando bien, así que seguiremos monitoreándole para que su presión arterial no suba ni baje.",
+  "primer_token_s": 1.369692087173462,
+  "total_s": 2.949846029281616
+ },
+ "488": {
+  "texto": "Sobre esa medicación. ¿Tiene usted un tensiómetro en casa?",
+  "primer_token_s": 1.1000311374664307,
+  "total_s": 1.6863293647766113
+ },
+ "490": {
+  "texto": "Hay muchas variables que entran en juego, pero si el medicamento no está funcionando correctamente, su presión arterial subirá.",
+  "primer_token_s": 1.3671483993530273,
+  "total_s": 2.3036909103393555
+ },
+ "491": {
+  "texto": "Si el medicamento está haciendo un mejor trabajo de lo que esperamos, la dosis podría ser demasiado alta y tendríamos que reducir la dosis.",
+  "primer_token_s": 1.406510591506958,
+  "total_s": 2.578056573867798
+ },
+ "494": {
+  "texto": "Eso suena perfecto. Eso es todo a menos que usted tenga alguna otra pregunta.",
+  "primer_token_s": 1.067922592163086,
+  "total_s": 1.75754714012146
+ },
+ "496": {
+  "texto": "Estoy bien con eso. Si no tiene más preguntas, espérese aquí para que la enfermera le dé sus instrucciones de alta y la documentación.",
+  "primer_token_s": 1.1042702198028564,
+  "total_s": 2.338618278503418
+ },
+ "499": {
+  "texto": "Bienvenido a Interpret Your World, un canal diseñado por intérpretes para intérpretes con el fin de brindarle la confianza y la práctica que requiere para convertirse en un gran intérprete. Para comenzar...",
+  "primer_token_s": 0.3726046085357666,
+  "total_s": 2.245404005050659
+ },
+ "500": {
+  "texto": "Vaya directamente a la lista de reproducción de nuestro canal y consulte la lista de reproducción del canal que le ayudará a sacar el máximo partido a este canal.",
+  "primer_token_s": 0.7263741493225098,
+  "total_s": 1.995452642440796
+ },
+ "501": {
+  "texto": "Todos nuestros playlists están organizados para ser fácilmente accesibles y ayudar con sus necesidades. Algunos de los playlists incluyen escenarios simulados para interpretadores de atención al cliente y médicos.",
+  "primer_token_s": 1.0313575267791748,
+  "total_s": 2.5051088333129883
+ },
+ "502": {
+  "texto": "Práctica de frases médicas al azar",
+  "primer_token_s": 1.0435068607330322,
+  "total_s": 1.4220197200775146
+ },
+ "503": {
+  "texto": "Consejos y trucos y mucho más contenido. También puede practicar vocabulario en forma corta aquí en YouTube o en la plataforma de videos en forma corta de su elección.",
+  "primer_token_s": 1.1000986099243164,
+  "total_s": 2.5048868656158447
+ },
+ "504": {
+  "texto": "que incluyen Facebook,",
+  "primer_token_s": 1.053490161895752,
+  "total_s": 1.2301595211029053
+ },
+ "505": {
+  "texto": "Instagram, TikTok y Kuwait.",
+  "primer_token_s": 1.0251562595367432,
+  "total_s": 1.2673442363739014
+ },
+ "506": {
+  "texto": "Por último, también tenemos una página de Patreon donde, con tan solo $1 de su apoyo, puede obtener acceso a todo lo que hay en la página.",
+  "primer_token_s": 1.0191950798034668,
+  "total_s": 2.1513619422912598
+ },
+ "507": {
+  "texto": "El material proporcionado complementa lo que puede encontrar en nuestro canal de YouTube, que es: videos gratuitos, hojas de respuestas, listas de vocabulario,",
+  "primer_token_s": 1.05002760887146,
+  "total_s": 2.2543246746063232
+ },
+ "508": {
+  "texto": "Y mucho más. Recuerde darle like, suscribirse y compartir nuestra página si la encuentra útil.",
+  "primer_token_s": 1.0345208644866943,
+  "total_s": 1.855543613433838
+ },
+ "509": {
+  "texto": "¡Feliz interpretación!",
+  "primer_token_s": 1.0352652072906494,
+  "total_s": 1.241969347000122
+ },
+ "510": {
+  "texto": "Música Música Música",
+  "primer_token_s": 1.0273809432983398,
+  "total_s": 1.339172124862671
+ },
+ "511": {
+  "texto": "Hola, ¿cómo están ustedes hoy?",
+  "primer_token_s": 0.7451512813568115,
+  "total_s": 1.089536190032959
+ },
+ "513": {
+  "texto": "Hola, por supuesto. Me puse en sus zapatos. Nunca sabemos cómo manejar estas situaciones cuando ocurren. Déjeme decirle que maneja la situación muy bien y estoy contento de que ustedes puedan irse a casa hoy.",
+  "primer_token_s": 1.057875156402588,
+  "total_s": 3.012583017349243
+ },
+ "514": {
+  "texto": "Sí, así es.",
+  "primer_token_s": 1.0628032684326172,
+  "total_s": 1.2695350646972656
+ },
+ "516": {
+  "texto": "Uno nunca puede estar preparado para esto, como le expliqué ayer. A veces los alérgenos son una causa común de un ataque de asma. Él debería realmente hacer una prueba de alergias para asegurarse de mantener la alergia.",
+  "primer_token_s": 1.4399192333221436,
+  "total_s": 3.398569345474243
+ },
+ "517": {
+  "texto": "Lévalo lejos de cualquier cosa que pueda ser un desencadenante.",
+  "primer_token_s": 1.390702724456787,
+  "total_s": 2.0083627700805664
+ },
+ "519": {
+  "texto": "Quizás fue solo algo que pasó una vez. Ojala sea así. La buena noticia es que ahora estamos preparados en caso de que vuelva a pasar y sobre todo cómo prevenirla.",
+  "primer_token_s": 1.4563179016113281,
+  "total_s": 2.9684228897094727
+ },
+ "522": {
+  "texto": "Exactamente. Siempre es mejor tener la información preparada, pero siempre con la esperanza de que no tengamos que usarla. En ese sentido,",
+  "primer_token_s": 1.4494645595550537,
+  "total_s": 2.5470778942108154
+ },
+ "523": {
+  "texto": "Me gustaría repasar el plan de acción para el asma una vez más si no le importa.",
+  "primer_token_s": 1.3861207962036133,
+  "total_s": 2.139786958694458
+ },
+ "525": {
+  "texto": "Bueno, ¿ustedes se acuerdan cuáles son las tres zonas del plan?",
+  "primer_token_s": 1.0573770999908447,
+  "total_s": 1.8165605068206787
+ },
+ "527": {
+  "texto": "Eso es excelente, mamá. ¿Se acuerda qué representa cada una de las canciones?",
+  "primer_token_s": 1.0467138290405273,
+  "total_s": 1.800893783569336
+ },
+ "529": {
+  "texto": "Tiene razón nuevamente, mamá. Bien, entonces en la zona verde, la zona segura, ¿qué tenemos que hacer para evitar un ataque de asma?",
+  "primer_token_s": 1.0985453128814697,
+  "total_s": 2.3638129234313965
+ },
+ "532": {
+  "texto": "Sí, usted está absolutamente en lo cierto. Eso es genial. Tenemos el área verde bajo control. ¿Y la zona amarilla?",
+  "primer_token_s": 1.42387056350708,
+  "total_s": 2.5914485454559326
+ },
+ "535": {
+  "texto": "Sí de nuevo, usted es realmente buena mamá. Estoy seguro de que ustedes harán todo bien una vez que se vayan aquí ahora para la última parte. ¿Y la zona roja? Usted",
+  "primer_token_s": 1.375000238418579,
+  "total_s": 2.9189820289611816
+ },
+ "538": {
+  "texto": "Exactamente. Si por alguna razón el inhalador de rescate no funciona y ya ha hecho todas las dosis permitidas, la única respuesta entonces es llevarlo al servicio de emergencia más cercano. Si llama a los servicios de emergencia o",
+  "primer_token_s": 1.3944835662841797,
+  "total_s": 3.144531488418579
+ },
+ "539": {
+  "texto": "Dependerá de la situación si usted los lleva o no. Ojala no llegue a eso, pero en caso de que sí, como mencioné, ahora usted estará preparado.",
+  "primer_token_s": 1.4312708377838135,
+  "total_s": 2.8401310443878174
+ },
+ "542": {
+  "texto": "Eso es cierto, pero usted no se debe culpar a sí mismo por ello, ya que no lo sabía. Nunca había habido un ataque de asma como este, y usted no tenía necesidad de informarse al respecto. Ahora...",
+  "primer_token_s": 1.4445900917053223,
+  "total_s": 3.334418773651123
+ },
+ "543": {
+  "texto": "Sabemos qué podría pasar y estamos preparados para ello.",
+  "primer_token_s": 1.387805700302124,
+  "total_s": 1.8059182167053223
+ },
+ "546": {
+  "texto": "También estoy seguro de que esa fue la decisión correcta. Ustedes ahora están seguros. Ustedes tienen un plan para el asma y están listos para irse a casa. Estoy seguro de que ustedes harán un excelente trabajo y hay una alta probabilidad de que esto haya sido algo único.",
+  "primer_token_s": 1.447373390197754,
+  "total_s": 3.782808542251587
+ },
+ "548": {
+  "texto": "Bueno, esto es casi todo. Usted me pidió que viniera a hablar con usted una última vez antes de irse a casa. A menos que haya alguna pregunta, estamos bien.",
+  "primer_token_s": 1.4503440856933594,
+  "total_s": 2.892221450805664
+ },
+ "550": {
+  "texto": "Perfecto, creo que ustedes deben comenzar a recoger sus cosas. Yo le avisaré al enfermero que ustedes están listos para ser dados de alta. Les dejaré mi tarjeta en caso de que tengan alguna pregunta sobre el plan.",
+  "primer_token_s": 1.7002506256103516,
+  "total_s": 3.5877299308776855
+ },
+ "551": {
+  "texto": "Puede siempre llamarme o al enfermero de guardia.",
+  "primer_token_s": 1.4116389751434326,
+  "total_s": 1.893937349319458
+ },
+ "553": {
+  "texto": "Usted es demasiado amable. Es mi hora de irme, así que espero que ustedes tengan un gran día y espero no volver a verlos aquí.",
+  "primer_token_s": 1.431060552597046,
+  "total_s": 2.699087142944336
+ }
+}

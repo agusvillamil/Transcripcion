@@ -78,6 +78,10 @@ El prompt (`traductor.py`) exige «usted» singular en todo (verbos, pronombres 
 direcciones: Ollama reutiliza la parte ya procesada y las reglas extra no agregan latencia (medido: 1.53 s de
 media antes y después, sobre las 55 frases del reporte). Validado solo con qwen3:8b.
 
+Aun así qwen3:8b tuteaba en 27 de 321 frases al español de 9 videos de práctica. Con `USTED_RECORDATORIO = True`
+(`config.py`), cada pedido al español repite «usted» junto al texto y quedan 3, con +0,05 s por frase. A veces
+cambia otras palabras: ver `bench/reporte_usted.md`. `False` = como antes.
+
 ## Notas de rendimiento (RX 570, 8 GB)
 
 - ROCm/PyTorch no soporta esta GPU (Polaris, gfx803); Vulkan sí.

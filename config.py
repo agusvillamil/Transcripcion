@@ -17,6 +17,7 @@ WHISPER_AUDIO_CTX = 768  # 15 s de contexto: ~2x más rápido que 30 s en la RX 
 OLLAMA_URL = "http://127.0.0.1:11434"
 OLLAMA_MODELO = "qwen3:8b"  # el más fiel en el benchmark médico; ver README
 OLLAMA_CONTEXTO = 2048
+USTED_RECORDATORIO = True  # repite «usted» en cada pedido al español; False = como antes
 
 # --- Segmentación por voz (VAD por energía) ---
 VAD_FRAME_MS = 30

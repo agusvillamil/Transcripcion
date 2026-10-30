@@ -1,0 +1,2580 @@
+{
+ "fuentes": [
+  "https://www.youtube.com/watch?v=d5Gyoz8k2V8",
+  "https://www.youtube.com/watch?v=0TnW51ja2j8",
+  "https://www.youtube.com/watch?v=2FiO2jiOpMI",
+  "https://www.youtube.com/watch?v=7ZPHFsz4DLo",
+  "https://www.youtube.com/watch?v=8VFxNXmOz-s"
+ ],
+ "whisper": "ggml-large-v3-turbo-q5_0.bin",
+ "lineas": [
+  {
+   "texto": "Hello ma'am. What brings you here today?",
+   "origen": "en",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 11.55,
+   "fin": 14.55,
+   "t_asr": 2.608
+  },
+  {
+   "texto": "Hola, solo vine a mi examen físico anual.",
+   "origen": "es",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 20.94,
+   "fin": 24.57,
+   "t_asr": 2.603
+  },
+  {
+   "texto": "Okay, so just a physical. Any health changes since I saw you last?",
+   "origen": "en",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 30.81,
+   "fin": 36.27,
+   "t_asr": 2.612
+  },
+  {
+   "texto": "no ninguno",
+   "origen": "es",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 46.38,
+   "fin": 48.18,
+   "t_asr": 2.567
+  },
+  {
+   "texto": "Great. Any new allergies?",
+   "origen": "en",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 50.07,
+   "fin": 52.44,
+   "t_asr": 2.573
+  },
+  {
+   "texto": "No, tampoco.",
+   "origen": "es",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 56.28,
+   "fin": 58.23,
+   "t_asr": 2.567
+  },
+  {
+   "texto": "And you are not taking any medications, right?",
+   "origen": "en",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 59.94,
+   "fin": 62.67,
+   "t_asr": 2.586
+  },
+  {
+   "texto": "No, doctor.",
+   "origen": "es",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 66.54,
+   "fin": 67.86,
+   "t_asr": 2.566
+  },
+  {
+   "texto": "Have you had any chest pain or shortness of breath?",
+   "origen": "en",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 69.66,
+   "fin": 72.9,
+   "t_asr": 2.591
+  },
+  {
+   "texto": "No, doctor. Nada de eso.",
+   "origen": "es",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 76.59,
+   "fin": 79.05,
+   "t_asr": 2.58
+  },
+  {
+   "texto": "Fever or chills?",
+   "origen": "en",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 82.77,
+   "fin": 84.66,
+   "t_asr": 2.569
+  },
+  {
+   "texto": "No.",
+   "origen": "es",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 86.34,
+   "fin": 87.27,
+   "t_asr": 2.555
+  },
+  {
+   "texto": "Have you been out of the country in the past 30 days?",
+   "origen": "en",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 87.93,
+   "fin": 91.17,
+   "t_asr": 2.603
+  },
+  {
+   "texto": "No, aquí he estado.",
+   "origen": "es",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 94.83,
+   "fin": 96.39,
+   "t_asr": 2.576
+  },
+  {
+   "texto": "Do you know your height and weight?",
+   "origen": "en",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 97.95,
+   "fin": 100.23,
+   "t_asr": 2.58
+  },
+  {
+   "texto": "Si, mido cinco pies con cuatro.",
+   "origen": "en",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 101.97,
+   "fin": 106.08,
+   "t_asr": 2.587
+  },
+  {
+   "texto": "Y no recuerdo la última vez que me pisé.",
+   "origen": "es",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 106.38,
+   "fin": 109.44,
+   "t_asr": 2.598
+  },
+  {
+   "texto": "No problem. Go ahead and step up on that scale for me, please.",
+   "origen": "en",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 123.84,
+   "fin": 127.65,
+   "t_asr": 2.614
+  },
+  {
+   "texto": "Claro que sí.",
+   "origen": "es",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 133.56,
+   "fin": 134.82,
+   "t_asr": 2.581
+  },
+  {
+   "texto": "Well, your weight is excellent for your height.",
+   "origen": "en",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 136.53,
+   "fin": 139.98,
+   "t_asr": 2.663
+  },
+  {
+   "texto": "¡Oh, qué bien!",
+   "origen": "es",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 145.77,
+   "fin": 147.36,
+   "t_asr": 2.631
+  },
+  {
+   "texto": "Let me take your vitals and listen to your lungs, heart. Check your ears, throat and nose.",
+   "origen": "en",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 149.01,
+   "fin": 155.58,
+   "t_asr": 2.698
+  },
+  {
+   "texto": "Muy bien, doctor. Gracias.",
+   "origen": "es",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 168.0,
+   "fin": 170.04,
+   "t_asr": 2.645
+  },
+  {
+   "texto": "Really good. Well, you have really good health.",
+   "origen": "en",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 171.75,
+   "fin": 174.51,
+   "t_asr": 2.732
+  },
+  {
+   "texto": "Muchas gracias, doctor.",
+   "origen": "es",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 178.53,
+   "fin": 180.3,
+   "t_asr": 2.615
+  },
+  {
+   "texto": "Let me take a look at your chart to make sure that I'm not missing anything.",
+   "origen": "en",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 181.98,
+   "fin": 186.57,
+   "t_asr": 2.708
+  },
+  {
+   "texto": "Muy bien.",
+   "origen": "es",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 191.46,
+   "fin": 192.63,
+   "t_asr": 2.652
+  },
+  {
+   "texto": "So it actually looks like you were due for many things. Did you eat anything before coming here?",
+   "origen": "en",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 194.49,
+   "fin": 200.25,
+   "t_asr": 2.743
+  },
+  {
+   "texto": "Sí, sí desayuné. No puedo salir de la casa sin desayuno.",
+   "origen": "es",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 210.24,
+   "fin": 215.52,
+   "t_asr": 2.686
+  },
+  {
+   "texto": "Okay, well we need you to do some fasting lab work to check your cholesterol levels, sugar levels, thyroid, liver and all of that. So when do you think you can come in for that?",
+   "origen": "en",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 223.56,
+   "fin": 235.35,
+   "t_asr": 2.774
+  },
+  {
+   "texto": "Pues podría venir mañana. ¿A qué hora abren el laboratorio?",
+   "origen": "es",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 257.85,
+   "fin": 262.5,
+   "t_asr": 2.734
+  },
+  {
+   "texto": "It opens at 7.30 a.m. Just make sure not to eat anything after 12 midnight tonight.",
+   "origen": "en",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 270.48,
+   "fin": 276.63,
+   "t_asr": 2.714
+  },
+  {
+   "texto": "You can drink water only. Okay?",
+   "origen": "en",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 276.72,
+   "fin": 279.54,
+   "t_asr": 2.667
+  },
+  {
+   "texto": "Está bien, entonces a primera hora aquí estoy. Nada de comida después de las 12 hoy en la noche.",
+   "origen": "es",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 295.77,
+   "fin": 302.43,
+   "t_asr": 2.707
+  },
+  {
+   "texto": "You got it! Also you're due for a mammogram, a pap smear and a colon cancer screening so you're going to be quite busy.",
+   "origen": "en",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 314.52,
+   "fin": 322.68,
+   "t_asr": 2.747
+  },
+  {
+   "texto": "Ah, sí. Le iba a mencionar acerca de eso, pero ya me la ganó.",
+   "origen": "es",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 336.84,
+   "fin": 341.49,
+   "t_asr": 2.69
+  },
+  {
+   "texto": "Great, so for all of these procedures I'm gonna give you a referral and you can schedule with the front desk on your way out.",
+   "origen": "en",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 349.47,
+   "fin": 356.73,
+   "t_asr": 2.729
+  },
+  {
+   "texto": "Muy bien, entonces ahí me van a hacer las citas. No voy a tener que hablar yo para agendarlas.",
+   "origen": "es",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 368.88,
+   "fin": 374.37,
+   "t_asr": 2.728
+  },
+  {
+   "texto": "Well, check in with them. They will let you know if you have to call or if they can schedule you right in.",
+   "origen": "en",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 384.42,
+   "fin": 390.54,
+   "t_asr": 2.71
+  },
+  {
+   "texto": "Muchas gracias. Doctor, ¿sería todo?",
+   "origen": "es",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 400.59,
+   "fin": 403.44,
+   "t_asr": 2.659
+  },
+  {
+   "texto": "Yes, that will be it and I will see you back in a year unless anything changes.",
+   "origen": "en",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 407.22,
+   "fin": 412.5,
+   "t_asr": 2.671
+  },
+  {
+   "texto": "Take care and keep on taking excellent care of your health.",
+   "origen": "en",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 420.42,
+   "fin": 424.2,
+   "t_asr": 2.662
+  },
+  {
+   "texto": "Goodbye.",
+   "origen": "en",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 430.05,
+   "fin": 430.95,
+   "t_asr": 2.614
+  },
+  {
+   "texto": "If you like this video, don't forget to smash that like button. This would help us a lot. Also, if you're still not part of the Interpret Your World family, go ahead and subscribe.",
+   "origen": "en",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 431.61,
+   "fin": 442.53,
+   "t_asr": 2.776
+  },
+  {
+   "texto": "Hit that notification bell so you never miss new content.",
+   "origen": "en",
+   "grupo": "d5Gyoz8k2V8",
+   "inicio": 442.53,
+   "fin": 447.39,
+   "t_asr": 2.623
+  },
+  {
+   "texto": "Hi, I'm your doctor in the ER today. So what brings you here?",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 17.13,
+   "fin": 21.99,
+   "t_asr": 2.666
+  },
+  {
+   "texto": "Hola doctora, he tenido mucho dolor en mi panza desde el domingo.",
+   "origen": "es",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 30.18,
+   "fin": 35.19,
+   "t_asr": 2.661
+  },
+  {
+   "texto": "Can you tell me more? Where exactly is this pain?",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 42.96,
+   "fin": 46.86,
+   "t_asr": 2.623
+  },
+  {
+   "texto": "Me duele mucho en la parte inferior izquierda del abdomen.",
+   "origen": "es",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 52.8,
+   "fin": 56.28,
+   "t_asr": 2.66
+  },
+  {
+   "texto": "Okay, so lower left quadrant abdominal pain. Have you had any other symptoms like a fever, nausea, vomiting, or diarrhea?",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 62.16,
+   "fin": 71.76,
+   "t_asr": 2.695
+  },
+  {
+   "texto": "Si, tengo todos los síntomas que me mencionan, fiebre, náusea, vómito, pero no diarrea, al contrario, ando bien estreñido.",
+   "origen": "es",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 90.12,
+   "fin": 99.39,
+   "t_asr": 2.779
+  },
+  {
+   "texto": "Can you describe the pain please, so I can grasp an idea of what you're feeling. Is it sharp, dull, stinging, or throbbing?",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 113.61,
+   "fin": 122.97,
+   "t_asr": 2.688
+  },
+  {
+   "texto": "Es un dolor muy agudo, en veces se siente como un calambre.",
+   "origen": "es",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 139.23,
+   "fin": 143.43,
+   "t_asr": 2.642
+  },
+  {
+   "texto": "What made you come to the ER now? It's Wednesday, as opposed to coming here before.",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 149.34,
+   "fin": 154.74,
+   "t_asr": 2.639
+  },
+  {
+   "texto": "Honestamente pensé que me pasaría el dolor. Intenté tomar té para relajar un poco mi panza.",
+   "origen": "es",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 164.82,
+   "fin": 170.94,
+   "t_asr": 2.644
+  },
+  {
+   "texto": "Y también intenté tomar acetaminofeno e ibuprofeno para calmar el dolor. Nada de eso funcionó y hoy el dolor es mayor.",
+   "origen": "es",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 171.0,
+   "fin": 179.79,
+   "t_asr": 2.678
+  },
+  {
+   "texto": "I see. When was the last time you had a bowel movement?",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 208.8,
+   "fin": 213.21,
+   "t_asr": 2.633
+  },
+  {
+   "texto": "Creo que desde el sábado no he evacuado.",
+   "origen": "es",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 221.34,
+   "fin": 223.95,
+   "t_asr": 2.605
+  },
+  {
+   "texto": "¿Podrá ser que estoy constipado y por eso tengo tanto dolor y fiebre?",
+   "origen": "es",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 224.25,
+   "fin": 228.48,
+   "t_asr": 2.625
+  },
+  {
+   "texto": "It can be, but I need more information. What number would you give your pain on a scale from 1 to 10?",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 242.73,
+   "fin": 251.13,
+   "t_asr": 2.662
+  },
+  {
+   "texto": "Es un 8, si me duele demasiado, ¿no me puede dar algo para el dolor?",
+   "origen": "es",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 267.42,
+   "fin": 272.31,
+   "t_asr": 2.628
+  },
+  {
+   "texto": "I will give you something for your pain once I figure out what you have. When was the last time you ate something?",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 280.29,
+   "fin": 286.98,
+   "t_asr": 2.653
+  },
+  {
+   "texto": "No he comido mucho desde el domingo que comenzó el dolor, pensé que probablemente traía irritado el estómago o algo.",
+   "origen": "es",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 299.16,
+   "fin": 306.51,
+   "t_asr": 2.679
+  },
+  {
+   "texto": "Do you have irritation of the stomach often?",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 319.83,
+   "fin": 322.59,
+   "t_asr": 2.615
+  },
+  {
+   "texto": "No.",
+   "origen": "es",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 326.37,
+   "fin": 327.36,
+   "t_asr": 2.598
+  },
+  {
+   "texto": "He llegado a sentir dolor en mi abdomen, pero nunca como este.",
+   "origen": "es",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 327.66,
+   "fin": 331.17,
+   "t_asr": 2.631
+  },
+  {
+   "texto": "Let me listen to your heart and lungs.",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 339.3,
+   "fin": 341.79,
+   "t_asr": 2.606
+  },
+  {
+   "texto": "Breathe deep in.",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 342.09,
+   "fin": 343.92,
+   "t_asr": 3.583
+  },
+  {
+   "texto": "and out.",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 344.22,
+   "fin": 345.36,
+   "t_asr": 2.584
+  },
+  {
+   "texto": "Okay, now relax and breathe normally.",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 355.41,
+   "fin": 359.28,
+   "t_asr": 2.612
+  },
+  {
+   "texto": "Your lungs are clear and your heart sounds great. In addition, your pulse, oxygen and heart rate are okay.",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 365.19,
+   "fin": 372.81,
+   "t_asr": 2.698
+  },
+  {
+   "texto": "Lay down on the table so I can feel your abdomen. Let me know if it hurts whenever I touch your abdomen.",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 386.97,
+   "fin": 394.02,
+   "t_asr": 2.701
+  },
+  {
+   "texto": "Ay, exactamente ahí es donde me duele.",
+   "origen": "es",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 406.17,
+   "fin": 408.63,
+   "t_asr": 2.632
+  },
+  {
+   "texto": "Does it hurt when I touch you somewhere else or just there?",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 412.47,
+   "fin": 416.28,
+   "t_asr": 2.635
+  },
+  {
+   "texto": "No, solo ahí, por favor, ya no lo vuelva a hacer.",
+   "origen": "es",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 422.19,
+   "fin": 425.04,
+   "t_asr": 2.643
+  },
+  {
+   "texto": "I'm sorry. I don't mean to torture you, but I have to know what you feel so that I can figure out how to make you feel better.",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 428.91,
+   "fin": 436.41,
+   "t_asr": 3.62
+  },
+  {
+   "texto": "Lo sé, pero sí duele demasiado.",
+   "origen": "es",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 450.69,
+   "fin": 453.51,
+   "t_asr": 2.607
+  },
+  {
+   "texto": "Tell you what, your blood and urine have already been sent to the lab. I would like you to get an x-ray and a CT scan to see what we can find.",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 457.44,
+   "fin": 466.11,
+   "t_asr": 2.721
+  },
+  {
+   "texto": "I'll be back once we have those results.",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 466.23,
+   "fin": 469.02,
+   "t_asr": 2.629
+  },
+  {
+   "texto": "Me parece bien. Muchas gracias, doctora.",
+   "origen": "es",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 491.64,
+   "fin": 495.51,
+   "t_asr": 2.625
+  },
+  {
+   "texto": "No problem. See you in a little bit.",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 501.36,
+   "fin": 503.82,
+   "t_asr": 2.624
+  },
+  {
+   "texto": "We have your blood work and your x-rays are back.",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 507.51,
+   "fin": 510.87,
+   "t_asr": 2.621
+  },
+  {
+   "texto": "You have a lot of stool in your intestines. You also have a high white blood cell count, which could be a sign of infection.",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 511.17,
+   "fin": 521.04,
+   "t_asr": 2.677
+  },
+  {
+   "texto": "Muy bien doctora, entonces, ¿qué sigue de aquí?",
+   "origen": "es",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 547.68,
+   "fin": 551.88,
+   "t_asr": 2.61
+  },
+  {
+   "texto": "It's still not all clear. I want to get an ultrasound of your abdomen to see if they can get a clearer picture of what's going on in there.",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 557.67,
+   "fin": 567.24,
+   "t_asr": 2.685
+  },
+  {
+   "texto": "Sí, doctora, por favor, haga lo que sea, pero por favor, quíteme este dolor.",
+   "origen": "es",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 585.54,
+   "fin": 590.76,
+   "t_asr": 2.653
+  },
+  {
+   "texto": "Of course, I hope that after this test, I can know how to help you. See you in a little bit.",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 598.68,
+   "fin": 605.22,
+   "t_asr": 2.655
+  },
+  {
+   "texto": "I have your results and I had a feeling it could be diverticulitis. So I had a GI doctor have a look at the x-rays. I had a GI doctor have a look at the x-rays.",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 617.25,
+   "fin": 625.83,
+   "t_asr": 2.727
+  },
+  {
+   "texto": "He confirmed the finding.",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 625.89,
+   "fin": 627.51,
+   "t_asr": 2.583
+  },
+  {
+   "texto": "¿Y eso es malo o sí me recuperaré pronto?",
+   "origen": "es",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 645.87,
+   "fin": 649.56,
+   "t_asr": 2.608
+  },
+  {
+   "texto": "I have some acetaminophen if you like to ease your pain.",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 655.62,
+   "fin": 659.52,
+   "t_asr": 2.608
+  },
+  {
+   "texto": "I'm afraid you're going to have to be admitted into the hospital because the GI doctor would like to have a better look at you.",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 659.82,
+   "fin": 667.77,
+   "t_asr": 2.764
+  },
+  {
+   "texto": "I don't know how serious it is in your case, but it can get bad.",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 668.01,
+   "fin": 672.72,
+   "t_asr": 2.628
+  },
+  {
+   "texto": "Bueno, si es así pues ni modo, esperaba no tener que quedarme aquí, pero siempre y cuando sea para mi bienestar pues no hay problema.",
+   "origen": "es",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 705.66,
+   "fin": 714.45,
+   "t_asr": 2.677
+  },
+  {
+   "texto": "The good thing is that we already know what it is so we can treat it and get you feeling better.",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 730.71,
+   "fin": 736.62,
+   "t_asr": 2.638
+  },
+  {
+   "texto": "The GI doctor told me to start you on IV antibiotics to treat the infection and give you IV fluids since you have been vomiting and not eating.",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 736.71,
+   "fin": 746.46,
+   "t_asr": 2.672
+  },
+  {
+   "texto": "Muy bien, de nuevo muchas gracias doctora. Y si, tomaré la acetaminofén.",
+   "origen": "es",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 777.39,
+   "fin": 783.45,
+   "t_asr": 2.645
+  },
+  {
+   "texto": "Aunque no me ayudó mucho los días pasados.",
+   "origen": "es",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 783.51,
+   "fin": 786.45,
+   "t_asr": 2.597
+  },
+  {
+   "texto": "No problem, let's hope it helps this time and that the GI doctor can let you know how bad it is.",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 802.92,
+   "fin": 809.22,
+   "t_asr": 2.642
+  },
+  {
+   "texto": "Espero que sí me ayude con el dolor porque es mucho. ¿A qué hora me verá el gastroenterólogo?",
+   "origen": "es",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 821.58,
+   "fin": 827.79,
+   "t_asr": 2.658
+  },
+  {
+   "texto": "Just a little after you're transferred to the main hospital.",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 837.78,
+   "fin": 841.23,
+   "t_asr": 2.598
+  },
+  {
+   "texto": "Entiendo. ¿Y eso se irá a tardar demasiado?",
+   "origen": "es",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 847.26,
+   "fin": 851.16,
+   "t_asr": 2.616
+  },
+  {
+   "texto": "I don't know. It shouldn't take long. I have already put the order in. It usually takes less than an hour.",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 857.07,
+   "fin": 864.06,
+   "t_asr": 2.657
+  },
+  {
+   "texto": "Entonces te espero, ¿y ya me darán los antibióticos y el líquido intravenoso?",
+   "origen": "es",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 876.27,
+   "fin": 881.64,
+   "t_asr": 2.643
+  },
+  {
+   "texto": "Yes, don't worry. Those should be on their way since I ordered them before coming to the room. You should be set up in a short while.",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 891.99,
+   "fin": 899.58,
+   "t_asr": 2.672
+  },
+  {
+   "texto": "Do you have any questions?",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 899.64,
+   "fin": 901.47,
+   "t_asr": 2.59
+  },
+  {
+   "texto": "No, de nuevo muchas gracias.",
+   "origen": "es",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 919.89,
+   "fin": 922.65,
+   "t_asr": 2.588
+  },
+  {
+   "texto": "Alright, wait for the nurses to give you the medicine and for the hospital staff to come get you. I hope you get better.",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 926.82,
+   "fin": 933.93,
+   "t_asr": 2.656
+  },
+  {
+   "texto": "Goodbye.",
+   "origen": "en",
+   "grupo": "0TnW51ja2j8",
+   "inicio": 933.99,
+   "fin": 934.68,
+   "t_asr": 2.562
+  },
+  {
+   "texto": "Hello, sir. How are you this morning?",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 11.31,
+   "fin": 14.19,
+   "t_asr": 2.611
+  },
+  {
+   "texto": "Estoy muy bien, ya listo para recibir la diálisis, ya cuento con una fístula arteriovenosa.",
+   "origen": "es",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 18.06,
+   "fin": 23.82,
+   "t_asr": 2.665
+  },
+  {
+   "texto": "That's excellent! How was the recovery?",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 33.81,
+   "fin": 36.66,
+   "t_asr": 2.593
+  },
+  {
+   "texto": "Estuvo bien, tenía miedo de que no me fuera a dañar al principio, pero ya me he acostumbrado a ella.",
+   "origen": "es",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 40.59,
+   "fin": 46.38,
+   "t_asr": 2.664
+  },
+  {
+   "texto": "That's very good. I'm sure you've already heard about the hemodialysis you will be getting tomorrow.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 56.37,
+   "fin": 62.85,
+   "t_asr": 2.645
+  },
+  {
+   "texto": "Now it's my turn to give you the talk and answer all of the questions you may have before your big day tomorrow.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 62.91,
+   "fin": 70.08,
+   "t_asr": 2.65
+  },
+  {
+   "texto": "Muy bien, me proporcionaron un libreto y ya me han hablado al respecto, así es que no tengo muchas preguntas.",
+   "origen": "es",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 96.9,
+   "fin": 103.14,
+   "t_asr": 2.658
+  },
+  {
+   "texto": "Pero me quedan algunas dudas y muchos nervios.",
+   "origen": "es",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 103.2,
+   "fin": 107.01,
+   "t_asr": 2.604
+  },
+  {
+   "texto": "I would imagine so.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 125.58,
+   "fin": 127.47,
+   "t_asr": 2.584
+  },
+  {
+   "texto": "Nothing to be nervous about. Remember that you will be coming here three days a week until you get your transplant and then you no longer need to worry about it.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 127.77,
+   "fin": 137.22,
+   "t_asr": 2.684
+  },
+  {
+   "texto": "Lo sé, pero de igual manera tengo nervios. Pero es verdad, no sé cómo me voy a encontrar el día de la cirugía.",
+   "origen": "es",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 159.66,
+   "fin": 165.57,
+   "t_asr": 2.667
+  },
+  {
+   "texto": "Well, let's not worry about that just yet. You have a big day tomorrow, so shoot, what questions do you have?",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 175.77,
+   "fin": 183.15,
+   "t_asr": 2.665
+  },
+  {
+   "texto": "Una de las preguntas está relacionada con la revisión del fremito y soplo. En la lectura me pide que le pregunte a usted por eso.",
+   "origen": "es",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 195.12,
+   "fin": 203.64,
+   "t_asr": 2.686
+  },
+  {
+   "texto": "That's a great question. It's important that you check your AV fistula every day.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 219.99,
+   "fin": 226.2,
+   "t_asr": 2.638
+  },
+  {
+   "texto": "So you can inform us right away if there is anything wrong with it.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 226.26,
+   "fin": 230.76,
+   "t_asr": 2.616
+  },
+  {
+   "texto": "One way to do this is to put your ear to it and see if you can hear a whooshing sound.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 231.06,
+   "fin": 237.78,
+   "t_asr": 2.648
+  },
+  {
+   "texto": "This is called a brew it.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 237.84,
+   "fin": 239.73,
+   "t_asr": 2.587
+  },
+  {
+   "texto": "Pues no escucho nada. ¿Eso es malo?",
+   "origen": "es",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 278.94,
+   "fin": 281.04,
+   "t_asr": 2.6
+  },
+  {
+   "texto": "Not necessarily. Sometimes you may only hear a bruit with a stethoscope. In this case, you may feel the fistula for any vibrations or a thrill.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 282.69,
+   "fin": 294.6,
+   "t_asr": 2.698
+  },
+  {
+   "texto": "Ah, está bien. Sí, sí puedo sentir esas vibraciones que usted menciona. ¿Y cuál es la importancia de eso?",
+   "origen": "es",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 317.01,
+   "fin": 323.94,
+   "t_asr": 2.678
+  },
+  {
+   "texto": "You'll be getting your AV fistula checked every month by someone here in the hospital.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 336.12,
+   "fin": 341.94,
+   "t_asr": 2.638
+  },
+  {
+   "texto": "You have to check it every day though.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 342.12,
+   "fin": 345.06,
+   "t_asr": 2.602
+  },
+  {
+   "texto": "In case you don't happen to feel the thrill, this could mean that you are developing stenosis and have to call your doctor right away.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 345.36,
+   "fin": 353.73,
+   "t_asr": 2.664
+  },
+  {
+   "texto": "Disculpe la ignorancia, pero ¿qué es estenosis?",
+   "origen": "es",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 388.56,
+   "fin": 391.83,
+   "t_asr": 2.61
+  },
+  {
+   "texto": "Nothing to worry about.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 395.7,
+   "fin": 397.41,
+   "t_asr": 2.577
+  },
+  {
+   "texto": "I'm here to answer all your questions.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 397.71,
+   "fin": 400.68,
+   "t_asr": 2.592
+  },
+  {
+   "texto": "Stenosis is a narrowing of your veins or arteries.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 400.98,
+   "fin": 406.05,
+   "t_asr": 2.599
+  },
+  {
+   "texto": "This is a problem because it can prevent you from getting dialysis.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 406.44,
+   "fin": 411.3,
+   "t_asr": 2.611
+  },
+  {
+   "texto": "Ah, ahora entiendo la importancia de revisar mi fístula arteriovenosa todos los días.",
+   "origen": "es",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 442.17,
+   "fin": 447.84,
+   "t_asr": 2.652
+  },
+  {
+   "texto": "Yes. Do you remember what else you were supposed to check every day?",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 457.74,
+   "fin": 462.87,
+   "t_asr": 2.634
+  },
+  {
+   "texto": "Debo revisar si hay enrojecimiento o hinchazón alrededor de la fístula. También debo revisar de no tener dolor al tocar la fístula o sentirla más caliente.",
+   "origen": "es",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 470.88,
+   "fin": 480.09,
+   "t_asr": 2.724
+  },
+  {
+   "texto": "That's correct. I think you will do very well.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 496.26,
+   "fin": 500.04,
+   "t_asr": 2.607
+  },
+  {
+   "texto": "Can you tell me in your own words what hemodialysis is?",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 500.34,
+   "fin": 504.69,
+   "t_asr": 2.621
+  },
+  {
+   "texto": "La hemodiálisis es un proceso donde se filtra la sangre en un riñón artificial. Una vez filtrada la sangre se devuelve al cuerpo humano. Se limpia la sangre para que las personas puedan",
+   "origen": "es",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 521.04,
+   "fin": 533.01,
+   "t_asr": 2.74
+  },
+  {
+   "texto": "puedan seguirlo viviendo aún con insuficiencia renal.",
+   "origen": "es",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 533.01,
+   "fin": 535.95,
+   "t_asr": 2.611
+  },
+  {
+   "texto": "You got it.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 564.69,
+   "fin": 566.04,
+   "t_asr": 2.582
+  },
+  {
+   "texto": "How is it going with your diet?",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 566.34,
+   "fin": 568.41,
+   "t_asr": 2.588
+  },
+  {
+   "texto": "Muy bien. Me peso todos los días y mi peso sigue en el mismo rango. Apenas me estoy acostumbrando a los alimentos sin sal, pero no está tan mal.",
+   "origen": "es",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 574.26,
+   "fin": 583.35,
+   "t_asr": 2.702
+  },
+  {
+   "texto": "What about the fluid intake?",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 599.49,
+   "fin": 601.5,
+   "t_asr": 2.591
+  },
+  {
+   "texto": "eso también va bien no soy de tomar mucha agua así es que en eso no batalle",
+   "origen": "es",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 603.12,
+   "fin": 608.49,
+   "t_asr": 2.635
+  },
+  {
+   "texto": "Well, that makes me feel very good. I think you're ready for dialysis. How do you feel?",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 616.32,
+   "fin": 622.89,
+   "t_asr": 2.644
+  },
+  {
+   "texto": "Yo también me siento igual, espero no sentirme mal durante la diálisis. Me gustaría ya contar con la experiencia y no estar esperando hasta mañana.",
+   "origen": "es",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 634.98,
+   "fin": 642.69,
+   "t_asr": 2.679
+  },
+  {
+   "texto": "Yes, I know how you feel.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 656.82,
+   "fin": 659.07,
+   "t_asr": 2.59
+  },
+  {
+   "texto": "but try to relax and not think about it so much.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 659.37,
+   "fin": 662.67,
+   "t_asr": 2.606
+  },
+  {
+   "texto": "Remember that you will not feel pain during dialysis, but you may experience dizziness, nausea, vomiting, headaches, or cramps.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 662.97,
+   "fin": 671.73,
+   "t_asr": 2.677
+  },
+  {
+   "texto": "Eso es lo que me preocupa, que se me baje la presión y me den todos esos síntomas que me acaba de mencionar.",
+   "origen": "es",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 700.47,
+   "fin": 706.77,
+   "t_asr": 2.673
+  },
+  {
+   "texto": "Náuseas, vómitos, dolor de cabeza, mareos o calambres. ¡Ay no imagínese!",
+   "origen": "es",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 706.83,
+   "fin": 710.91,
+   "t_asr": 2.654
+  },
+  {
+   "texto": "That may happen, but take comfort in the fact that you are surrounded by trained medical personnel that can assist you when the situation arises.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 731.34,
+   "fin": 743.16,
+   "t_asr": 2.675
+  },
+  {
+   "texto": "We can always reduce your fluid level removal during the procedure. If that happens, we will have to contact the doctor to adjust your fluid intake.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 743.22,
+   "fin": 752.82,
+   "t_asr": 2.676
+  },
+  {
+   "texto": "Ahora que recuerdo, el doctor sí me mencionó esto. Me dijo que si no seguía el régimen de líquidos, me podía sentir mal. Y no digo que fue difícil, pero sí lo he seguido al pie de la letra.",
+   "origen": "es",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 796.53,
+   "fin": 807.54,
+   "t_asr": 2.773
+  },
+  {
+   "texto": "Good.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 827.88,
+   "fin": 828.87,
+   "t_asr": 4.533
+  },
+  {
+   "texto": "Remember that you will be here tomorrow for about four hours. I would suggest you bring a book to read or your phone will do.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 829.17,
+   "fin": 837.27,
+   "t_asr": 2.667
+  },
+  {
+   "texto": "Just so you don't get bored.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 837.33,
+   "fin": 839.34,
+   "t_asr": 2.593
+  },
+  {
+   "texto": "Muy bien, conozco el libro perfecto, y 4 horas si es un buen rato. Espero no quedarme dormido.",
+   "origen": "es",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 861.84,
+   "fin": 867.42,
+   "t_asr": 2.664
+  },
+  {
+   "texto": "It must be a boring book if you expect to fall asleep from reading it. I would suggest you bring another one.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 877.95,
+   "fin": 885.12,
+   "t_asr": 2.649
+  },
+  {
+   "texto": "¡Eso no es a lo que me refería!",
+   "origen": "es",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 899.46,
+   "fin": 902.31,
+   "t_asr": 2.603
+  },
+  {
+   "texto": "I know, just a little joke to make your life a little better. I think you are all ready for tomorrow, unless you have any other questions.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 906.42,
+   "fin": 915.99,
+   "t_asr": 2.675
+  },
+  {
+   "texto": "No, ninguna pregunta. Todo se me ha explicado muy muy bien.",
+   "origen": "es",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 937.05,
+   "fin": 940.89,
+   "t_asr": 2.61
+  },
+  {
+   "texto": "Excellent. Then remember to be here tomorrow at your schedule time so you can meet the team and you can get started.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 946.68,
+   "fin": 955.32,
+   "t_asr": 2.652
+  },
+  {
+   "texto": "Excelente, muy bien. Es usted muy amable. Me gustaría conocer al resto del equipo. Adiós, que tenga un agradable día.",
+   "origen": "es",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 971.52,
+   "fin": 978.45,
+   "t_asr": 2.678
+  },
+  {
+   "texto": "Thank you.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 990.72,
+   "fin": 991.95,
+   "t_asr": 2.598
+  },
+  {
+   "texto": "I'm sure they look forward to meeting you as well. Have a great day and get some rest because tomorrow is a big day.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 992.25,
+   "fin": 999.21,
+   "t_asr": 2.706
+  },
+  {
+   "texto": "If you like this video, don't forget to smash that like button. This would help us a lot. Also, if you're still not part of the Interpret Your World family, go ahead and subscribe.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 1015.38,
+   "fin": 1026.3,
+   "t_asr": 2.752
+  },
+  {
+   "texto": "Hit that notification bell so you never miss new content.",
+   "origen": "en",
+   "grupo": "2FiO2jiOpMI",
+   "inicio": 1026.3,
+   "fin": 1031.13,
+   "t_asr": 2.601
+  },
+  {
+   "texto": "Hello, I was reviewing your chart just before coming in here. I read that you have shortness of breath and chest pain. That is the reason why your PCP referred you to me.",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 11.28,
+   "fin": 22.08,
+   "t_asr": 2.733
+  },
+  {
+   "texto": "Is there anything else going on?",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 22.08,
+   "fin": 23.64,
+   "t_asr": 2.593
+  },
+  {
+   "texto": "Sí, todo lo que menciono es correcto. También he tenido mucho dolor en el brazo y en mi hombro.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 46.08,
+   "fin": 53.4,
+   "t_asr": 2.671
+  },
+  {
+   "texto": "Otra cosa es que me fatigo mucho al intentar hacer poco ejercicio.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 53.64,
+   "fin": 58.68,
+   "t_asr": 2.628
+  },
+  {
+   "texto": "Yes, I saw that you were not able to complete your exercise stress test and they had to do a stress test without exercise.",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 83.28,
+   "fin": 90.57,
+   "t_asr": 2.684
+  },
+  {
+   "texto": "Sí, tuve que parar la prueba ya que no pude continuar.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 102.57,
+   "fin": 106.47,
+   "t_asr": 2.618
+  },
+  {
+   "texto": "Fue demasiado la falta de aliento y el cansancio que me ocasionó.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 106.77,
+   "fin": 111.15,
+   "t_asr": 2.639
+  },
+  {
+   "texto": "I see. What about sleeping? Are you sleeping okay? I see that you are scheduled for a sleep test.",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 127.5,
+   "fin": 133.44,
+   "t_asr": 2.646
+  },
+  {
+   "texto": "Eso es correcto.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 143.49,
+   "fin": 144.93,
+   "t_asr": 2.58
+  },
+  {
+   "texto": "El doctor piensa que aparte de mi corazón, también puede ser que tenga apnea del sueño.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 145.23,
+   "fin": 151.17,
+   "t_asr": 2.651
+  },
+  {
+   "texto": "y que esto esté contribuyendo a mis síntomas.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 151.23,
+   "fin": 155.04,
+   "t_asr": 2.613
+  },
+  {
+   "texto": "He is correct. This could be a contributing factor, but there are many other things that are signaling danger.",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 177.51,
+   "fin": 184.59,
+   "t_asr": 2.65
+  },
+  {
+   "texto": "No me diga eso, doctor. Deme buenas noticias. Aparte de la apnea del sueño, el pensar que tenía que ver a un cardiólogo...",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 196.89,
+   "fin": 207.72,
+   "t_asr": 2.707
+  },
+  {
+   "texto": "Me aprovou ka linsomnio.",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 207.72,
+   "fin": 209.55,
+   "t_asr": 3.929
+  },
+  {
+   "texto": "The good news is that you came to the right place and we'll find the underlying cause of this. I suspect that you have coronary artery disease or coronary heart disease. Same thing, different terms.",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 234.0,
+   "fin": 245.01,
+   "t_asr": 2.73
+  },
+  {
+   "texto": "Porque me da la impresión de que la enfermedad de arteria coronaria no es nada bueno.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 265.65,
+   "fin": 272.58,
+   "t_asr": 2.642
+  },
+  {
+   "texto": "It is not. However, I have not confirmed this and it's just a suspicion. I would like to gather more facts to know where to go next.",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 284.67,
+   "fin": 292.5,
+   "t_asr": 2.689
+  },
+  {
+   "texto": "Está bien, doctor. Pero, ¿me podría explicar qué es eso de la enfermedad de arteria coronaria, por favor?",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 306.75,
+   "fin": 314.28,
+   "t_asr": 2.671
+  },
+  {
+   "texto": "Of course, coronary heart disease occurs when there is a blockage in the arteries that supplies blood to the heart. This blockage can reduce the blood flow to the heart and cause all of the symptoms you're feeling.",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 328.41,
+   "fin": 339.6,
+   "t_asr": 2.732
+  },
+  {
+   "texto": "Oh no, eso quiere decir que me dará un paro cardíaco.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 359.97,
+   "fin": 364.5,
+   "t_asr": 2.631
+  },
+  {
+   "texto": "Not necessarily. This just means that you're at a higher risk for developing a heart attack if this indeed is coronary heart disease.",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 372.36,
+   "fin": 380.82,
+   "t_asr": 2.665
+  },
+  {
+   "texto": "¿Y cómo le va a hacer para identificar esta enfermedad?",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 394.92,
+   "fin": 398.4,
+   "t_asr": 2.615
+  },
+  {
+   "texto": "Good question. To rule out CHD I have to perform a procedure called a heart catheterization.",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 404.13,
+   "fin": 409.71,
+   "t_asr": 2.641
+  },
+  {
+   "texto": "O. A mi tío le realizaron ese procedimiento. O. A mi tío le realizaron ese procedimiento.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 419.67,
+   "fin": 423.6,
+   "t_asr": 2.664
+  },
+  {
+   "texto": "Solo recuerdo el nombre del procedimiento, cateterismo cardíaco, pero no recuerdo en qué consiste.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 423.9,
+   "fin": 431.43,
+   "t_asr": 2.661
+  },
+  {
+   "texto": "This procedure is also known as coronary angiogram. It consists of a dye which will be injected into your arteries to check for any blockage within them.",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 454.14,
+   "fin": 463.38,
+   "t_asr": 2.697
+  },
+  {
+   "texto": "We will be able to view any blockages through an x-ray machine that will be looking at your heart while we do this.",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 463.44,
+   "fin": 468.93,
+   "t_asr": 2.656
+  },
+  {
+   "texto": "Muy bien.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 487.29,
+   "fin": 488.49,
+   "t_asr": 2.573
+  },
+  {
+   "texto": "Y en caso de que sí estén tapadas las arterias, me van a tener que operar.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 488.79,
+   "fin": 493.59,
+   "t_asr": 2.704
+  },
+  {
+   "texto": "In case that we happen to come upon any blocked arteries, we might be able to take care of them right there and then. This procedure is called an angioplasty and it's performed while doing the coronary angiogram.",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 505.65,
+   "fin": 517.53,
+   "t_asr": 2.75
+  },
+  {
+   "texto": "Ah, muy bien. Por lo menos eso me tranquiliza un poco que no necesitaré de otra cirugía.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 539.97,
+   "fin": 546.72,
+   "t_asr": 2.684
+  },
+  {
+   "texto": "Now I did not say that. In case that I might not be able to treat some of those blockages, you will require open heart surgery.",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 558.72,
+   "fin": 566.25,
+   "t_asr": 2.69
+  },
+  {
+   "texto": "Ay, Dios. Creo que no voy a poder dormir hasta saber qué sucederá con esto.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 580.41,
+   "fin": 586.29,
+   "t_asr": 2.685
+  },
+  {
+   "texto": "I'm sorry to say that, but until we get that test done, there's nothing definite that I can tell you. But tell me, do you exercise regularly?",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 596.28,
+   "fin": 604.41,
+   "t_asr": 2.695
+  },
+  {
+   "texto": "No regularmente. Hace tres semanas que quise comenzar un programa de ejercicio y no pude a causa de la fatiga y la falta de aliento que esto me provoca.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 618.48,
+   "fin": 629.7,
+   "t_asr": 2.718
+  },
+  {
+   "texto": "I see. So you've never had exercise before that?",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 650.01,
+   "fin": 653.37,
+   "t_asr": 2.618
+  },
+  {
+   "texto": "Honestamente no le podría decir cuándo fue la última vez que realicé el ejercicio antes de esto.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 657.15,
+   "fin": 663.81,
+   "t_asr": 2.687
+  },
+  {
+   "texto": "What about your daily activities? Do you become shorter breath then?",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 675.87,
+   "fin": 679.26,
+   "t_asr": 2.626
+  },
+  {
+   "texto": "Sí, de hecho eso es lo que me empujó a querer ejercitarme. Pensé que un poco de ejercicio me vendría bien ya que estoy tan fuera de condición.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 685.11,
+   "fin": 695.37,
+   "t_asr": 2.733
+  },
+  {
+   "texto": "And do you perform an active job?",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 713.64,
+   "fin": 715.71,
+   "t_asr": 2.613
+  },
+  {
+   "texto": "No, pues es un trabajo de oficina. Me encuentro sentada casi todo el día. Me levanto de la cama, voy a trabajar en mi automóvil y me siento en mi silla de oficina hasta que me quedo en mi casa.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 717.33,
+   "fin": 728.82,
+   "t_asr": 2.769
+  },
+  {
+   "texto": "a la hora de salida.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 728.82,
+   "fin": 730.05,
+   "t_asr": 2.591
+  },
+  {
+   "texto": "That is no good. How was your diet? Your triglycerides were high on the last test. Do you go to the doctor regularly?",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 754.5,
+   "fin": 761.58,
+   "t_asr": 2.668
+  },
+  {
+   "texto": "Pues ahora es el momento de lamentarme, ya que no cuido mi dieta como lo que me plazca.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 773.64,
+   "fin": 780.24,
+   "t_asr": 2.65
+  },
+  {
+   "texto": "Y no soy de ir seguido al doctor solo cuando algo no anda bien, como en este caso.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 780.3,
+   "fin": 786.12,
+   "t_asr": 2.643
+  },
+  {
+   "texto": "That is the reason why you have to go to the doctor regularly. This might have been detected much earlier had it been the case. I see that your doctor has prescribed you a cholesterol medication. How has that been going?",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 810.57,
+   "fin": 821.88,
+   "t_asr": 2.725
+  },
+  {
+   "texto": "Lo sé, pero jamás hice caso de eso.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 842.16,
+   "fin": 845.73,
+   "t_asr": 2.622
+  },
+  {
+   "texto": "He estado tomando mi medicamento justo como me lo recetó el doctor.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 846.03,
+   "fin": 850.32,
+   "t_asr": 2.646
+  },
+  {
+   "texto": "No me ha faltado ninguna dosis hasta hoy.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 850.62,
+   "fin": 853.23,
+   "t_asr": 2.634
+  },
+  {
+   "texto": "Well that is perfect. That's a start. Have you also been working on improving your diet?",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 873.78,
+   "fin": 878.49,
+   "t_asr": 2.653
+  },
+  {
+   "texto": "Es más difícil de lo que pensaba. El doctor y la enfermera brevemente me explicaron qué comer y qué no comer.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 886.32,
+   "fin": 893.97,
+   "t_asr": 2.663
+  },
+  {
+   "texto": "That is good. It's always hard at the start, but once you get the hang of it, it will get better. Would you like me to refer you to a dietitian that can help you reach your diet goals?",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 908.34,
+   "fin": 917.22,
+   "t_asr": 2.768
+  },
+  {
+   "texto": "Sí, creo que eso será de gran ayuda.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 933.54,
+   "fin": 936.45,
+   "t_asr": 2.617
+  },
+  {
+   "texto": "Great, I'll do that. I see also here that you're a smoker. How long have you been smoking for?",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 940.17,
+   "fin": 945.42,
+   "t_asr": 2.654
+  },
+  {
+   "texto": "He fumado por 15 años, pero ya lo dejé la semana pasada que fui con el doctor.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 953.28,
+   "fin": 959.25,
+   "t_asr": 2.651
+  },
+  {
+   "texto": "Great, that's excellent. I have to say that all that you're telling me can be contributing factors to developing coronary heart disease.",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 969.15,
+   "fin": 976.92,
+   "t_asr": 2.68
+  },
+  {
+   "texto": "¡Qué mal!",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 991.02,
+   "fin": 992.13,
+   "t_asr": 2.585
+  },
+  {
+   "texto": "Eso no es lo que yo esperaba escuchar. Y bueno, ¿qué procede?",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 992.43,
+   "fin": 997.17,
+   "t_asr": 2.648
+  },
+  {
+   "texto": "Let me ask you one more question before I answer that. Besides your uncle, does anyone in your family have heart disease, high blood pressure, high cholesterol levels, or diabetes?",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 1007.25,
+   "fin": 1017.03,
+   "t_asr": 2.696
+  },
+  {
+   "texto": "Sí, muchas personas de mi familia, incluyendo a mis padres y hermanos, sufren de una enfermedad de las que usted menciona.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 1035.33,
+   "fin": 1044.66,
+   "t_asr": 2.681
+  },
+  {
+   "texto": "De hecho, mi padre murió de un paro cardíaco.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 1044.78,
+   "fin": 1047.78,
+   "t_asr": 2.609
+  },
+  {
+   "texto": "That's so unfortunate. I'm sorry to hear that. Would you care to elaborate more as who has what disease?",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 1072.35,
+   "fin": 1079.28,
+   "t_asr": 2.657
+  },
+  {
+   "texto": "Gracias.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 1091.46,
+   "fin": 1092.72,
+   "t_asr": 2.568
+  },
+  {
+   "texto": "Claro que no.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 1093.02,
+   "fin": 1093.98,
+   "t_asr": 2.568
+  },
+  {
+   "texto": "Mi madre sufre de diabetes y colesterol. Un hermano tiene alta presión y una hermana también tiene colesterol alto.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 1094.28,
+   "fin": 1102.23,
+   "t_asr": 2.669
+  },
+  {
+   "texto": "Well, we definitely have to perform that hard cath to see what's going on and confirm or rule out my suspicion.",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 1122.57,
+   "fin": 1129.5,
+   "t_asr": 2.667
+  },
+  {
+   "texto": "Está bien, doctor. ¿Y cuándo sería ese cateterismo cardíaco?",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 1141.62,
+   "fin": 1145.91,
+   "t_asr": 2.633
+  },
+  {
+   "texto": "That I do not know since I'm not the one to schedule this I will inform my medical assistant to give you information on that But I will order the procedure right now",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 1151.76,
+   "fin": 1161.03,
+   "t_asr": 2.685
+  },
+  {
+   "texto": "Muchas gracias, doctor.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 1177.29,
+   "fin": 1179.12,
+   "t_asr": 2.578
+  },
+  {
+   "texto": "You're welcome! Please do all you can to improve your diet and health since that will go a long way to prevent worsening this condition. See you the day of the procedure!",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 1180.8,
+   "fin": 1189.89,
+   "t_asr": 2.698
+  },
+  {
+   "texto": "Lo haré. Y de nuevo, muchas gracias, doctor. Adiós.",
+   "origen": "es",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 1206.06,
+   "fin": 1209.84,
+   "t_asr": 2.634
+  },
+  {
+   "texto": "If you like this video, don't forget to smash that like button. This would help us a lot. Also, if you're still not part of the Interpret Your World family, go ahead and subscribe.",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 1215.75,
+   "fin": 1226.64,
+   "t_asr": 2.751
+  },
+  {
+   "texto": "Hit that notification bell so you never miss new content.",
+   "origen": "en",
+   "grupo": "7ZPHFsz4DLo",
+   "inicio": 1226.64,
+   "fin": 1231.5,
+   "t_asr": 2.62
+  },
+  {
+   "texto": "Welcome to Interpret Your World, a channel designed by interpreters for interpreters to give you the confidence and practice you require to become a great interpreter. To get started,",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 0.48,
+   "fin": 11.73,
+   "t_asr": 2.714
+  },
+  {
+   "texto": "Head on over to the playlist on our channel and view the channel guide playlist that will help you get the most out of this channel.",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 11.73,
+   "fin": 19.59,
+   "t_asr": 2.662
+  },
+  {
+   "texto": "All of our playlists have an organized to be easily accessed to help your needs. Some of the playlists include mock scenarios for customer service and medical interpreters.",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 19.65,
+   "fin": 30.78,
+   "t_asr": 2.686
+  },
+  {
+   "texto": "medical random phrase practice",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 30.84,
+   "fin": 33.27,
+   "t_asr": 2.589
+  },
+  {
+   "texto": "tips and tricks and much more content. You can also practice short form vocabulary here on YouTube or on the short form video platform of your choice.",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 33.57,
+   "fin": 43.56,
+   "t_asr": 2.695
+  },
+  {
+   "texto": "which include Facebook,",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 43.62,
+   "fin": 45.57,
+   "t_asr": 2.595
+  },
+  {
+   "texto": "Instagram, TikTok and Kuwait.",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 45.87,
+   "fin": 49.23,
+   "t_asr": 2.607
+  },
+  {
+   "texto": "Lastly, we also have a Patreon page where for as little as $1 of your support, you can get access to a page.",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 49.53,
+   "fin": 57.18,
+   "t_asr": 2.676
+  },
+  {
+   "texto": "The material provided complements what you can find on our YouTube channel which is: Add free videos, answer sheets, vocabulary lists,",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 57.24,
+   "fin": 65.7,
+   "t_asr": 2.654
+  },
+  {
+   "texto": "and much more. Remember to like, subscribe and share our page if you find it useful.",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 65.76,
+   "fin": 71.91,
+   "t_asr": 2.632
+  },
+  {
+   "texto": "Happy interpreting!",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 71.97,
+   "fin": 73.47,
+   "t_asr": 2.569
+  },
+  {
+   "texto": "Music",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 73.98,
+   "fin": 82.56,
+   "t_asr": 2.611
+  },
+  {
+   "texto": "Hello sir, what brings you to see me today?",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 94.44,
+   "fin": 97.83,
+   "t_asr": 2.606
+  },
+  {
+   "texto": "Hola, tengo una tos que nomás no se me quita.",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 103.74,
+   "fin": 107.07,
+   "t_asr": 2.62
+  },
+  {
+   "texto": "Yes, I could hear you coughing before I came in. How long have you had the cough?",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 113.46,
+   "fin": 118.38,
+   "t_asr": 2.64
+  },
+  {
+   "texto": "Creo que tal vez ha sido ya un mes que no he dejado de toser.",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 126.9,
+   "fin": 131.16,
+   "t_asr": 2.633
+  },
+  {
+   "texto": "Have you been taking anything for the cough?",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 138.54,
+   "fin": 141.12,
+   "t_asr": 2.598
+  },
+  {
+   "texto": "Solo jarabes para la tos, pero ninguno ha funcionado. Ya he probado tres. El primero sí funcionó un rato y después ya no. Le seguí con otro que igual funcionó y después ya no.",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 145.95,
+   "fin": 157.83,
+   "t_asr": 2.748
+  },
+  {
+   "texto": "El último, ese sí de plano no me ayudó con la tos.",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 157.83,
+   "fin": 161.4,
+   "t_asr": 2.621
+  },
+  {
+   "texto": "Wow, you pretty much cleared the cough syrup aisle. Have you seen a doctor before me?",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 181.23,
+   "fin": 186.54,
+   "t_asr": 2.636
+  },
+  {
+   "texto": "No, doctor. Usted es con el primero que vengo, ya que después de un mes no he mejorado y me preocupé. Dije, mejor voy con el doctor. No vaya a ser algo peor. Esto es lo que me gusta.",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 194.82,
+   "fin": 206.13,
+   "t_asr": 2.752
+  },
+  {
+   "texto": "Esto no me parece normal.",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 206.13,
+   "fin": 207.63,
+   "t_asr": 2.581
+  },
+  {
+   "texto": "Absolutely. I'm glad you came in. Do you suffer from anything else? Any chronic diseases? I mean like asthma, high blood pressure, diabetes, anything like that?",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 225.3,
+   "fin": 235.86,
+   "t_asr": 2.702
+  },
+  {
+   "texto": "Solo alta presión pero ya por la edad me imagino yo.",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 251.43,
+   "fin": 255.87,
+   "t_asr": 2.617
+  },
+  {
+   "texto": "Alright, the nurse also wrote down that you recently quit smoking. Was it because of your cough?",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 264.72,
+   "fin": 270.69,
+   "t_asr": 2.642
+  },
+  {
+   "texto": "Así es doctor, cada vez que fumaba la tos no se quería parar, en una de esas casi me desmayé, pero se me controló la tos, así que pues por lo pronto yo creo que el síndrome de la tos se me ha ido.",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 280.62,
+   "fin": 291.81,
+   "t_asr": 2.784
+  },
+  {
+   "texto": "Cigarro es lo último en mi mente.",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 291.81,
+   "fin": 294.42,
+   "t_asr": 2.605
+  },
+  {
+   "texto": "That sounds horrible. I am surprised you did not see a doctor sooner. I am glad you quit.",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 312.69,
+   "fin": 318.63,
+   "t_asr": 2.642
+  },
+  {
+   "texto": "Smoking is never good for you and the sooner you quit the better. Have you had any other symptoms besides a cough like fever, chills, anything like that?",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 318.69,
+   "fin": 327.9,
+   "t_asr": 2.697
+  },
+  {
+   "texto": "No he tenido ningún síntoma, solo la tos es todo. Realmente quiero que se me quite esta tos.",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 349.32,
+   "fin": 356.13,
+   "t_asr": 2.667
+  },
+  {
+   "texto": "I bet. Tell me more about your cough. Is it a productive or a dry cough? Do you get it all the time or during certain times? Is it worse during the day or night?",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 365.19,
+   "fin": 376.68,
+   "t_asr": 2.711
+  },
+  {
+   "texto": "Es una tos productiva. Siempre siento las flemas aunque no siempre las puedo sacar. Es en cualquier momento cuando puedo toser, no importa lo que esté haciendo.",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 392.49,
+   "fin": 403.23,
+   "t_asr": 2.699
+  },
+  {
+   "texto": "Obviamente si hago algún esfuerzo físico como correr, sí resulta en una tos más severa.",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 403.23,
+   "fin": 410.07,
+   "t_asr": 2.647
+  },
+  {
+   "texto": "No sabría decirle si es peor durante el día o la noche.",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 410.13,
+   "fin": 414.33,
+   "t_asr": 2.61
+  },
+  {
+   "texto": "Alright, do you think you can walk up a flight of stairs without being short of breath?",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 441.27,
+   "fin": 447.33,
+   "t_asr": 2.637
+  },
+  {
+   "texto": "Es gracioso que lo mencione, ya que justo ayer tuve que subir los escalones para ayudar a la vecina de arriba y me quedé sin aire al subir. La tos no empeoró.",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 456.57,
+   "fin": 467.28,
+   "t_asr": 2.768
+  },
+  {
+   "texto": "pero sentí como si hubiera hecho el esfuerzo de mi vida.",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 467.28,
+   "fin": 470.58,
+   "t_asr": 2.613
+  },
+  {
+   "texto": "What about fatigue or tiredness? How are you in that sense?",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 489.84,
+   "fin": 493.8,
+   "t_asr": 2.611
+  },
+  {
+   "texto": "Pues más o menos, pero desde que tengo la tos, sí me siento con mayor cansancio.",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 502.26,
+   "fin": 507.9,
+   "t_asr": 2.654
+  },
+  {
+   "texto": "What about sleep? It must be difficult to sleep with that cough.",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 517.86,
+   "fin": 521.97,
+   "t_asr": 2.62
+  },
+  {
+   "texto": "Sí, la verdad es que no descanso.",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 528.42,
+   "fin": 531.0,
+   "t_asr": 2.603
+  },
+  {
+   "texto": "Duermo en ratos ya que hay momentos que sí me despierta la tos.",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 531.3,
+   "fin": 535.32,
+   "t_asr": 2.632
+  },
+  {
+   "texto": "Alright, let me listen to your lungs, your heart, and check you out.",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 545.64,
+   "fin": 550.65,
+   "t_asr": 2.647
+  },
+  {
+   "texto": "I could hear wheezing as you were breathing. Can you hear yourself wheezing when you breathe?",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 560.25,
+   "fin": 565.44,
+   "t_asr": 2.659
+  },
+  {
+   "texto": "¿Qué es eso de sibilancia?",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 576.03,
+   "fin": 578.46,
+   "t_asr": 2.609
+  },
+  {
+   "texto": "It's a whistling sound that I could hear every time you took a breath. Can you also hear that whistle?",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 582.99,
+   "fin": 589.38,
+   "t_asr": 2.669
+  },
+  {
+   "texto": "Sí, de vez en cuando sí logro escuchar un pitido.",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 599.07,
+   "fin": 602.58,
+   "t_asr": 2.65
+  },
+  {
+   "texto": "You have never suffered from asthma, TB, or any respiratory illnesses before, right?",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 609.45,
+   "fin": 615.42,
+   "t_asr": 2.643
+  },
+  {
+   "texto": "No que yo sepa, rara vez voy al doctor como ahora que tengo una tos eterna. De hecho, no recuerdo la última vez que fui al doctor. Bueno, aparte de la revisión de la presión arterial.",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 625.14,
+   "fin": 637.05,
+   "t_asr": 2.768
+  },
+  {
+   "texto": "What about allergies?",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 653.79,
+   "fin": 655.83,
+   "t_asr": 2.588
+  },
+  {
+   "texto": "Eso sí no, nunca he sido alérgico a nada.",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 660.78,
+   "fin": 663.9,
+   "t_asr": 2.613
+  },
+  {
+   "texto": "I want to have you get some x-rays to see that we are not missing anything and also do a blood and urine test.",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 669.78,
+   "fin": 676.5,
+   "t_asr": 2.683
+  },
+  {
+   "texto": "wait for my nerves and once we have all that done hopefully i can at least help you lessen that cough",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 676.56,
+   "fin": 682.98,
+   "t_asr": 2.659
+  },
+  {
+   "texto": "Muy bien doctor, claro que sí. Aquí espero a la enfermera y me hago todo lo que sea necesario.",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 701.13,
+   "fin": 707.73,
+   "t_asr": 2.688
+  },
+  {
+   "texto": "We could not really see much on the test, but I worry that you may have developed COPD because of your smoking history. How many years was it again?",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 719.1,
+   "fin": 729.45,
+   "t_asr": 2.704
+  },
+  {
+   "texto": "Sí, fueron varios años. Fumé todos los días por 25 años. ¿Qué es EPOC?",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 745.2,
+   "fin": 751.8,
+   "t_asr": 2.659
+  },
+  {
+   "texto": "It is chronic bronchitis. COPD stands for chronic obstructive pulmonary disease. All of your symptoms match the criteria for it. I'm going to need you to get a",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 762.03,
+   "fin": 772.95,
+   "t_asr": 2.714
+  },
+  {
+   "texto": "spirometry test and you will need to follow up with the pulmonology department for this. I will write you up all the referrals that you need.",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 772.95,
+   "fin": 781.56,
+   "t_asr": 2.716
+  },
+  {
+   "texto": "Entonces ya esta tos llegó para quedarse, es lo que me está queriendo dar a entender.",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 807.54,
+   "fin": 812.88,
+   "t_asr": 2.675
+  },
+  {
+   "texto": "Not necessarily. Once the doctors figure out what the cough is, we might be able to make it better.",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 823.23,
+   "fin": 829.44,
+   "t_asr": 2.649
+  },
+  {
+   "texto": "Muy bien, pues espero que todo salga bien entonces.",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 840.96,
+   "fin": 844.41,
+   "t_asr": 2.621
+  },
+  {
+   "texto": "Let's just wait to see what all the studies show and then we can see what will happen.",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 851.61,
+   "fin": 857.7,
+   "t_asr": 2.652
+  },
+  {
+   "texto": "It does not make any sense to scare you unless we have proved, but nonetheless, I think that COPD is most likely the culprit.",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 857.76,
+   "fin": 866.1,
+   "t_asr": 2.735
+  },
+  {
+   "texto": "Entendido. Ustedes quien sabe y espero los resultados.",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 887.16,
+   "fin": 892.02,
+   "t_asr": 2.622
+  },
+  {
+   "texto": "I'm gonna tell the nurse to give you some information on COPD and upper respiratory illnesses.",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 901.98,
+   "fin": 908.46,
+   "t_asr": 2.642
+  },
+  {
+   "texto": "Before I forget, that one episode where you almost passed out from the cough, it only happened that one time.",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 908.52,
+   "fin": 915.72,
+   "t_asr": 2.657
+  },
+  {
+   "texto": "Sí, solo fue esa sola vez con el cigarro, pero sí me sentí muy mal con la tos.",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 934.71,
+   "fin": 940.89,
+   "t_asr": 2.664
+  },
+  {
+   "texto": "It's probably nothing and unless you smoke, I'm sure it will not get so bad. Even so, let me order a rescue inhaler for you. This is only in case of an emergency if you happen to get another car.",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 951.54,
+   "fin": 963.48,
+   "t_asr": 2.774
+  },
+  {
+   "texto": "Puff episode like that where you cannot breathe. You take two puffs of this.",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 963.48,
+   "fin": 968.91,
+   "t_asr": 2.638
+  },
+  {
+   "texto": "Muy bien, pues espero no tener que usarlo yo tampoco. ¿Y eso qué es lo que hace?",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 992.67,
+   "fin": 998.04,
+   "t_asr": 2.648
+  },
+  {
+   "texto": "This will open up your lungs and help you breathe better so you do not pass out.",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 1006.29,
+   "fin": 1010.91,
+   "t_asr": 2.648
+  },
+  {
+   "texto": "Yo ya no vuelvo a fumar, pero es bueno que me dé el inhalador ya que uno nunca sabe.",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 1019.31,
+   "fin": 1025.61,
+   "t_asr": 2.657
+  },
+  {
+   "texto": "Alright, well, get all those tests done. Go with the pulmonologist and go with your PCP as well. Your PCP might also have better resources than I have here.",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 1036.35,
+   "fin": 1046.79,
+   "t_asr": 2.714
+  },
+  {
+   "texto": "Claro que sí, doctor. Haré todo lo que me ha dicho. Espero mejorarme pronto. Muchas gracias.",
+   "origen": "es",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 1062.33,
+   "fin": 1067.85,
+   "t_asr": 2.656
+  },
+  {
+   "texto": "No problem. Wait here for the nurse to give you your paperwork and discharge you. Have a great day.",
+   "origen": "en",
+   "grupo": "8VFxNXmOz-s",
+   "inicio": 1076.55,
+   "fin": 1083.15,
+   "t_asr": 2.66
+  }
+ ]
+}

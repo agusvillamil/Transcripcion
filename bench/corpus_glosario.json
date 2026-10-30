@@ -1,0 +1,684 @@
+{
+  "fuentes": [
+    "bench/reporte_colecistectomia.md",
+    "https://www.youtube.com/watch?v=lj1ObXJKDgA",
+    "bench/casos_glosario.json"
+  ],
+  "whisper": "ggml-large-v3-turbo-q5_0.bin",
+  "lineas": [
+    {
+      "grupo": "colecistectomia",
+      "texto": "Hello, I am John. I will be your nurse today to get you ready for your procedure. What are we going to be doing to you today?",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Hola.",
+      "origen": "es"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Me van a remover la vesícula y a quitar las piedras.",
+      "origen": "es"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "That is correct. What we are going to perform is called a laparoscopic cholecystectomy.",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Muy bien, entonces es una colexistectomía laparoscópica.",
+      "origen": "es"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Yes. Now moving on. Are you allergic to any medication?",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Pues no que yo sepa, hasta ahorita nada.",
+      "origen": "es"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Good. Have you had any previous operations?",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "No, solo una cesárea.",
+      "origen": "es"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Did you have any adverse reactions to Buenesthesia?",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Pues no, pero no me durmieron, solo me pusieron la raquia. Nunca me han dormido con anestesia.",
+      "origen": "es"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Okay, well this time we are going to give you general anesthesia, which will put you completely asleep.",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Ok, sí, está bien. Ya me habían explicado eso.",
+      "origen": "es"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "That's fine ma'am. We still have to go over all of this because we need you to sign consent forms before the procedure.",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Entendido.",
+      "origen": "es"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "When was the last time you had anything to eat or drink?",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Pues me dijeron que no comiera ni bebiera nada después de la medianoche ayer. Desde las 9 p.m. ya no he comido nada.",
+      "origen": "es"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Excellent. Do you have diabetes or any other medical conditions?",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "No.",
+      "origen": "es"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Are you taking any medications?",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "No.",
+      "origen": "es"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Do you feel ill or coming down with any flu-like symptoms or sickness?",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "No.",
+      "origen": "es"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Do you have any loose, chipped or missing teeth?",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "No, aún no.",
+      "origen": "es"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "So the procedure will go like this. We're going to give you medicine to calm you down through an IV. Then when you are calm, we will administer general anesthesia. This will put you completely asleep.",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "We will then proceed to put a tube in your mouth to help you breathe. The surgeon will make a small incision through which he will put a small tube with a camera and light on the end.",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "He will then start the procedure.",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "After the procedure we will remove the tube before you wake up and then we will take you to recovery.",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Muy bien.",
+      "origen": "es"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "This first consent form states that you are understanding the procedure and complications and give us permission to perform this.",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Any complications being that we might have to make a larger incision than expected.",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Ok, listo.",
+      "origen": "es"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "This next one says that you understand all risks involved with this procedure.",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "This like any other procedure has the risk to injure any of the other organs nearby.",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "There is also a risk for infection and hemorrhage.",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Also, there is a risk of chipping, loosening, or knocking out teeth with a tooth to help you breathe, but this rarely happens.",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "There is also risk with the anesthesia which will include awareness during the procedure, coma or in the worst case scenario, death.",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "This very rarely occurs. The anesthesiologist will speak to you in detail about the risk and benefits of anesthesia after I am done with you.",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Todo eso se escucha muy feo.",
+      "origen": "es"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "This is just a risk that might happen. It does not mean that it will. I am required to discuss all of this with you. Let's hold up on signing this form until after you speak to the anesthesiologist, okay? Okay.",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Muy bien. Entonces, ¿qué sigue?",
+      "origen": "es"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Next one states that if the doctor finds the need to administer a blood transfusion or blood products, we have your permission to do so.",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Ya me estoy preocupando, ¿entonces me van a hacer una transfusión de sangre? A mí me dijeron que era una operación fácil y con pocas complicaciones.",
+      "origen": "es"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "We are not planning on doing so. This is just in case we need to.",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "This does not mean that we are going to, okay?",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Muy bien, es que ya me estoy asustando. Entonces, ¿dónde firmo este?",
+      "origen": "es"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Right there at the bottom ma'am. It's perfectly normal to feel nervous before any procedure.",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "But just know you are in good hands. Do you have any questions or concerns?",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "No, solo que estoy muy nerviosa.",
+      "origen": "es"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Eso es todo. Ya van a empezar.",
+      "origen": "es"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Try not to worry so much ma'am. The surgeons are very experienced and will know what to do in case of any complications.",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Well, that's it for me, ma'am. You have to wait for the anesthesiologist to come and discuss with you important information about anesthesia and sign more consent forms.",
+      "origen": "en"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "Muchas gracias.",
+      "origen": "es"
+    },
+    {
+      "grupo": "colecistectomia",
+      "texto": "You are very welcome, ma'am.",
+      "origen": "en"
+    },
+    {
+      "id": 0,
+      "origen": "en",
+      "texto": "Hello ma'am. We have the results of your transesophageal echocardiogram. This test shows us that you have mitral valve regurgitation, which means that your mitral valve is",
+      "inicio": 6.779999999999999,
+      "fin": 17.91,
+      "asr_s": 2.765326738357544,
+      "grupo": "mitral"
+    },
+    {
+      "id": 1,
+      "origen": "en",
+      "texto": "is allowing backflow to other chambers.",
+      "inicio": 17.91,
+      "fin": 20.79,
+      "asr_s": 2.607656478881836,
+      "grupo": "mitral"
+    },
+    {
+      "id": 2,
+      "origen": "es",
+      "texto": "¿Y esto qué significa, doctor? ¿Es algo muy serio?",
+      "inicio": 48.809999999999995,
+      "fin": 52.68,
+      "asr_s": 2.6093337535858154,
+      "grupo": "mitral"
+    },
+    {
+      "id": 3,
+      "origen": "en",
+      "texto": "It can potentially be serious, but let me ask you a series of questions. Do you ever get short of breath?",
+      "inicio": 60.54,
+      "fin": 66.78,
+      "asr_s": 2.6575684547424316,
+      "grupo": "mitral"
+    },
+    {
+      "id": 4,
+      "origen": "es",
+      "texto": "No, fíjese que no me falta la respiración, lo único es ardor en el cuerpo y dolor de espalda. También comezón en el cuerpo entero, pero me recetaron un medicamento.",
+      "inicio": 78.81,
+      "fin": 89.94,
+      "asr_s": 2.755894899368286,
+      "grupo": "mitral"
+    },
+    {
+      "id": 5,
+      "origen": "es",
+      "texto": "y me quitó la comisión.",
+      "inicio": 89.94,
+      "fin": 91.41,
+      "asr_s": 2.587221622467041,
+      "grupo": "mitral"
+    },
+    {
+      "id": 6,
+      "origen": "en",
+      "texto": "Are you taking gabapentin, a medication for nerve pain for that burning feeling all over your body?",
+      "inicio": 115.56,
+      "fin": 121.67999999999999,
+      "asr_s": 2.6422674655914307,
+      "grupo": "mitral"
+    },
+    {
+      "id": 7,
+      "origen": "es",
+      "texto": "No estoy tomando algún medicamento para esto.",
+      "inicio": 134.1,
+      "fin": 137.07,
+      "asr_s": 2.60854172706604,
+      "grupo": "mitral"
+    },
+    {
+      "id": 8,
+      "origen": "en",
+      "texto": "A medication is often prescribed for peripheral neuropathy. I can see in your chart that you have been diagnosed with this.",
+      "inicio": 143.25,
+      "fin": 151.10999999999999,
+      "asr_s": 2.711158514022827,
+      "grupo": "mitral"
+    },
+    {
+      "id": 9,
+      "origen": "es",
+      "texto": "¿Neuropatía? ¿Qué es eso?",
+      "inicio": 167.97,
+      "fin": 170.57999999999998,
+      "asr_s": 2.6283223628997803,
+      "grupo": "mitral"
+    },
+    {
+      "id": 10,
+      "origen": "en",
+      "texto": "Peripheral neuropathy is a condition from nerve damage which can cause numbness and pain just like what you described.",
+      "inicio": 174.51,
+      "fin": 182.07,
+      "asr_s": 2.684166431427002,
+      "grupo": "mitral"
+    },
+    {
+      "id": 11,
+      "origen": "en",
+      "texto": "You should speak to your PCP regarding this issue so he can prescribe something that might help.",
+      "inicio": 182.22,
+      "fin": 188.22,
+      "asr_s": 2.641143798828125,
+      "grupo": "mitral"
+    },
+    {
+      "id": 12,
+      "origen": "es",
+      "texto": "Está bien y también tengo mucho escurrimiento nasal. ¿Me puedes recetar algo?",
+      "inicio": 216.75,
+      "fin": 221.91,
+      "asr_s": 2.6487457752227783,
+      "grupo": "mitral"
+    },
+    {
+      "id": 13,
+      "origen": "en",
+      "texto": "It sounds like you are coming down with a cold and it's best if you see your PCP regarding that as well.",
+      "inicio": 229.67999999999998,
+      "fin": 235.26,
+      "asr_s": 2.666321039199829,
+      "grupo": "mitral"
+    },
+    {
+      "id": 14,
+      "origen": "es",
+      "texto": "Muy bien, definitivamente le haré una visita a mi doctor de cabecera.",
+      "inicio": 245.76,
+      "fin": 250.2,
+      "asr_s": 2.64912748336792,
+      "grupo": "mitral"
+    },
+    {
+      "id": 15,
+      "origen": "en",
+      "texto": "I also see from your list of medications that you take a blood thinner.",
+      "inicio": 258.15,
+      "fin": 262.53,
+      "asr_s": 2.6865341663360596,
+      "grupo": "mitral"
+    },
+    {
+      "id": 16,
+      "origen": "es",
+      "texto": "Sí, eso lo tomo para mi corazón.",
+      "inicio": 270.69,
+      "fin": 273.45,
+      "asr_s": 2.6503405570983887,
+      "grupo": "mitral"
+    },
+    {
+      "id": 17,
+      "origen": "en",
+      "texto": "I can see in your chart that you have atrial fibrillation and this medication will help you so you do not develop a blood clot.",
+      "inicio": 277.38,
+      "fin": 284.64,
+      "asr_s": 2.8005080223083496,
+      "grupo": "mitral"
+    },
+    {
+      "id": 18,
+      "origen": "es",
+      "texto": "Sí, fue lo que me dijo el doctor cuando me diagnosticaron con fibrilación atrial.",
+      "inicio": 299.03999999999996,
+      "fin": 304.2,
+      "asr_s": 2.6410465240478516,
+      "grupo": "mitral"
+    },
+    {
+      "id": 19,
+      "origen": "en",
+      "texto": "Let me listen to you.",
+      "inicio": 314.61,
+      "fin": 316.17,
+      "asr_s": 2.534989833831787,
+      "grupo": "mitral"
+    },
+    {
+      "id": 20,
+      "origen": "en",
+      "texto": "Your lungs sound clear. You still have an irregular heartbeat that showed up on your EKG. It is important for you to take your blood thinner to prevent a blood clot from forming and going to your brain.",
+      "inicio": 318.33,
+      "fin": 330.09,
+      "asr_s": 2.677320718765259,
+      "grupo": "mitral"
+    },
+    {
+      "id": 21,
+      "origen": "en",
+      "texto": "because this will cause you to suffer a stroke.",
+      "inicio": 330.09,
+      "fin": 332.94,
+      "asr_s": 2.5575289726257324,
+      "grupo": "mitral"
+    },
+    {
+      "id": 22,
+      "origen": "es",
+      "texto": "¡Ah! Que ni lo mande Dios. Claro que sí tomaré el anticoagulante.",
+      "inicio": 360.47999999999996,
+      "fin": 365.52,
+      "asr_s": 2.6071479320526123,
+      "grupo": "mitral"
+    },
+    {
+      "id": 23,
+      "origen": "en",
+      "texto": "Well, now you have to follow up with your cardiologist because you have a leaky valve to know the next steps.",
+      "inicio": 377.76,
+      "fin": 384.53999999999996,
+      "asr_s": 2.6179730892181396,
+      "grupo": "mitral"
+    },
+    {
+      "id": 24,
+      "origen": "en",
+      "texto": "You said you're not short of breath, right?",
+      "inicio": 385.14,
+      "fin": 387.24,
+      "asr_s": 2.556889772415161,
+      "grupo": "mitral"
+    },
+    {
+      "id": 25,
+      "origen": "es",
+      "texto": "No en lo absoluto. Lo único es que me da fatiga después de realizar un poco de trabajo.",
+      "inicio": 405.35999999999996,
+      "fin": 412.32,
+      "asr_s": 2.5940232276916504,
+      "grupo": "mitral"
+    },
+    {
+      "id": 26,
+      "origen": "en",
+      "texto": "Does this happen when you clean, cook or shower?",
+      "inicio": 424.62,
+      "fin": 427.28999999999996,
+      "asr_s": 2.5584824085235596,
+      "grupo": "mitral"
+    },
+    {
+      "id": 27,
+      "origen": "es",
+      "texto": "Sí, en todas esas ocasiones me sucede. Entonces, ¿salí mal de la prueba de la cámara del corazón?",
+      "inicio": 431.43,
+      "fin": 438.33,
+      "asr_s": 2.608583688735962,
+      "grupo": "mitral"
+    },
+    {
+      "id": 28,
+      "origen": "en",
+      "texto": "You have a leak of your mitral valve. The good thing is you have no fluid in your lungs or legs. The fatigue that you are feeling could either be from your afib or from the mitral valve regurgitation.",
+      "inicio": 452.31,
+      "fin": 463.79999999999995,
+      "asr_s": 2.6991586685180664,
+      "grupo": "mitral"
+    },
+    {
+      "id": 29,
+      "origen": "en",
+      "texto": "or both",
+      "inicio": 463.79999999999995,
+      "fin": 464.49,
+      "asr_s": 2.521524667739868,
+      "grupo": "mitral"
+    },
+    {
+      "id": 30,
+      "origen": "es",
+      "texto": "Está bien. ¿Y entonces qué procede?",
+      "inicio": 488.90999999999997,
+      "fin": 491.82,
+      "asr_s": 2.5598466396331787,
+      "grupo": "mitral"
+    },
+    {
+      "id": 31,
+      "origen": "en",
+      "texto": "Wait here for the medical assistant to make you an appointment with the cardiologist and remember to go to your PCP for the blood thinner and nerve pain medication.",
+      "inicio": 496.10999999999996,
+      "fin": 505.28999999999996,
+      "asr_s": 2.634901762008667,
+      "grupo": "mitral"
+    },
+    {
+      "id": 32,
+      "origen": "es",
+      "texto": "Claro que sí, muchas gracias. Es usted muy amable.",
+      "inicio": 523.29,
+      "fin": 526.8,
+      "asr_s": 2.5646755695343018,
+      "grupo": "mitral"
+    },
+    {
+      "id": 33,
+      "origen": "en",
+      "texto": "Thank you. You are very welcome. Please do not miss any of your future appointments.",
+      "inicio": 532.71,
+      "fin": 537.72,
+      "asr_s": 2.5831377506256104,
+      "grupo": "mitral"
+    },
+    {
+      "id": 34,
+      "origen": "en",
+      "texto": "Goodbye.",
+      "inicio": 538.02,
+      "fin": 538.8,
+      "asr_s": 2.5196337699890137,
+      "grupo": "mitral"
+    },
+    {
+      "grupo": "contraste",
+      "sin_contexto": true,
+      "origen": "en",
+      "texto": "You can return to work on light duty, but do not lift more than 10 pounds.",
+      "criterio": "Restricciones laborales, negación y 10 libras; usted."
+    },
+    {
+      "grupo": "contraste",
+      "sin_contexto": true,
+      "origen": "en",
+      "texto": "Your copay is 25 dollars. You do not need prior authorization for this visit.",
+      "criterio": "Copago de 25 dólares; no requiere autorización previa."
+    },
+    {
+      "grupo": "contraste",
+      "sin_contexto": true,
+      "origen": "en",
+      "texto": "Take your blood thinner every evening. Do not stop it without calling us.",
+      "criterio": "Anticoagulante o equivalente claro; cada noche; no suspender sin llamar."
+    },
+    {
+      "grupo": "contraste",
+      "sin_contexto": true,
+      "origen": "en",
+      "texto": "Use the sling for your arm and the walker when you get out of bed.",
+      "criterio": "Cabestrillo para brazo, andador al levantarse de la cama; usted."
+    },
+    {
+      "grupo": "contraste",
+      "sin_contexto": true,
+      "origen": "en",
+      "texto": "I have heartburn after meals, but no chest pain or shortness of breath.",
+      "criterio": "Primera persona; acidez después de comer; niega dolor de pecho y disnea."
+    },
+    {
+      "grupo": "contraste",
+      "sin_contexto": true,
+      "origen": "en",
+      "texto": "The rash is from shingles. It is not an allergy to your medication.",
+      "criterio": "Herpes zóster/culebrilla, erupción; no alergia al medicamento."
+    },
+    {
+      "grupo": "contraste",
+      "sin_contexto": true,
+      "origen": "en",
+      "texto": "The benefits of surgery outweigh the risks in your case.",
+      "criterio": "Beneficios clínicos, no prestaciones del seguro; superan riesgos."
+    },
+    {
+      "grupo": "contraste",
+      "sin_contexto": true,
+      "origen": "en",
+      "texto": "Please tell us if you see discharge from your eye.",
+      "criterio": "Secreción ocular; no alta hospitalaria ni ultrasonido por us."
+    },
+    {
+      "grupo": "contraste",
+      "sin_contexto": true,
+      "origen": "es",
+      "texto": "Me dieron un andador y un cabestrillo, pero todavía no puedo volver al trabajo.",
+      "criterio": "Walker y sling; primera persona; todavía no puede volver."
+    },
+    {
+      "grupo": "contraste",
+      "sin_contexto": true,
+      "origen": "es",
+      "texto": "No tengo dolor de pecho. La acidez empezó después de tomar el medicamento.",
+      "criterio": "Niega dolor de pecho; heartburn tras medicamento; sin causalidad añadida."
+    },
+    {
+      "grupo": "contraste",
+      "sin_contexto": true,
+      "origen": "es",
+      "texto": "¿Debo venir en ayunas para la cita de seguimiento?",
+      "criterio": "Pregunta sobre fasting y follow-up appointment; no responderla."
+    },
+    {
+      "grupo": "contraste",
+      "sin_contexto": true,
+      "origen": "en",
+      "texto": "Take 5 mg at 8 AM, not 10 mg. If you feel dizzy, call us.",
+      "criterio": "5 mg, 8 AM, no 10 mg; llamar si mareo; no ultrasonido por us."
+    }
+  ]
+}

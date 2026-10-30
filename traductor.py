@@ -32,6 +32,10 @@ Rules:
 - Output only the translation, with no quotes, notes or labels."""
 
 _PEDIDO = "Translate this {origen} text into {destino}:\n\n{texto}"
+# Con la regla solo en _SISTEMA, qwen3:8b igual tuteaba 27 de 321 frases al español; con este recordatorio, 3
+# (bench/reporte_usted.md). Va junto al texto (config.USTED_RECORDATORIO) y no cambia _SISTEMA, así que el prefijo
+# reutilizado es el mismo. La variante «addressing the listener as "usted" (never "tú")» dejaba frases sin traducir.
+_PEDIDO_USTED = 'Translate this {origen} text into {destino}, using "usted" for "you":\n\n{texto}'
 
 # Formato recomendado por Google para TranslateGemma.
 _TRANSLATEGEMMA = (
@@ -143,7 +147,8 @@ class Traductor:
 		if contexto:
 			sistema += "\n\nPrevious lines of the conversation, for context only (do not translate them):\n"
 			sistema += "\n".join(f"- {linea}" for linea in contexto)
-		pedido = _PEDIDO.format(origen=o, destino=d, texto=texto)
+		plantilla = _PEDIDO_USTED if destino == "es" and config.USTED_RECORDATORIO else _PEDIDO
+		pedido = plantilla.format(origen=o, destino=d, texto=texto)
 		return [{"role": "system", "content": sistema}, {"role": "user", "content": pedido}]
 
 	def _soporta_pensar(self) -> bool:

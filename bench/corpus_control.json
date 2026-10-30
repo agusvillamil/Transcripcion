@@ -1,0 +1,1073 @@
+{
+ "fuentes": [
+  "https://www.youtube.com/watch?v=4YxFUaXJb4g",
+  "https://www.youtube.com/watch?v=Eb4Rd2wF0OA"
+ ],
+ "whisper": "ggml-large-v3-turbo-q5_0.bin",
+ "lineas": [
+  {
+   "texto": "Music",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 0.0,
+   "fin": 8.34,
+   "t_asr": 1.09
+  },
+  {
+   "texto": "Welcome to Interpret Your World, a channel designed by interpreters for interpreters to give you the confidence and practice you require to become a great interpreter. To get started,",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 9.45,
+   "fin": 20.7,
+   "t_asr": 1.172
+  },
+  {
+   "texto": "Head on over to the playlist on our channel and view the channel guide playlist that will help you get the most out of this channel.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 20.7,
+   "fin": 28.56,
+   "t_asr": 1.138
+  },
+  {
+   "texto": "All of our playlists have been organized to be easily accessed to help your needs. Some of the playlists include mock scenarios for customer service and medical interpreters,",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 28.62,
+   "fin": 39.72,
+   "t_asr": 1.163
+  },
+  {
+   "texto": "medical random phrase practice",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 39.78,
+   "fin": 42.24,
+   "t_asr": 1.054
+  },
+  {
+   "texto": "tips and tricks and much more content. You can also practice short form vocabulary here on YouTube or on the short form video platform of your choice.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 42.54,
+   "fin": 52.53,
+   "t_asr": 1.157
+  },
+  {
+   "texto": "which include Facebook,",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 52.59,
+   "fin": 54.54,
+   "t_asr": 1.053
+  },
+  {
+   "texto": "Instagram, TikTok and Kuwait.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 54.84,
+   "fin": 58.2,
+   "t_asr": 1.076
+  },
+  {
+   "texto": "Lastly, we also have a Patreon page where for as little as $1 of your support, you can get access to everything on the page.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 58.5,
+   "fin": 67.02,
+   "t_asr": 1.188
+  },
+  {
+   "texto": "The material provided complements what you can find on our YouTube channel which is: Add free videos, answer sheets, vocabulary lists,",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 67.08,
+   "fin": 75.54,
+   "t_asr": 1.142
+  },
+  {
+   "texto": "and much more. Remember to like, subscribe and share our page if you find it useful.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 75.6,
+   "fin": 81.75,
+   "t_asr": 1.107
+  },
+  {
+   "texto": "Happy interpreting.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 81.81,
+   "fin": 83.28,
+   "t_asr": 1.052
+  },
+  {
+   "texto": "Welcome back Jose. How have you been?",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 93.9,
+   "fin": 96.78,
+   "t_asr": 1.075
+  },
+  {
+   "texto": "He estado bien, doctor. Ya casi puedo caminar sin las muletas.",
+   "origen": "es",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 103.77,
+   "fin": 108.45,
+   "t_asr": 1.105
+  },
+  {
+   "texto": "That is really awesome. I see that just sprained your ankle. Was it three weeks ago?",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 116.16,
+   "fin": 121.98,
+   "t_asr": 1.117
+  },
+  {
+   "texto": "Ya van tres semanas del accidente.",
+   "origen": "es",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 130.89,
+   "fin": 133.5,
+   "t_asr": 1.074
+  },
+  {
+   "texto": "Do you mind if I have a look? I mean, you're already here.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 137.49,
+   "fin": 140.85,
+   "t_asr": 1.1
+  },
+  {
+   "texto": "Sí, doctor, por favor. Dígame cómo lo ve. Como le digo, cada día se ve mejor, pero aún no puedo caminar sin la muleta.",
+   "origen": "es",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 150.27,
+   "fin": 158.28,
+   "t_asr": 1.18
+  },
+  {
+   "texto": "El dolor todavía lo siento, pero solo si no uso la muleta, no como antes que lo sentía en todo momento.",
+   "origen": "es",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 158.34,
+   "fin": 165.21,
+   "t_asr": 1.135
+  },
+  {
+   "texto": "We should not rush these things. It's best if you rest and if there is pain, I can always give you something for pain.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 189.51,
+   "fin": 197.4,
+   "t_asr": 1.148
+  },
+  {
+   "texto": "I would imagine you're taking something. Would you like some prescription strength ibuprofen for the pain?",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 197.46,
+   "fin": 203.19,
+   "t_asr": 1.122
+  },
+  {
+   "texto": "No gracias. Ya cuento con ibuprofeno de mayor concentración porque vine una semana después de haberme resbalado de la escalera.",
+   "origen": "es",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 224.52,
+   "fin": 233.04,
+   "t_asr": 1.156
+  },
+  {
+   "texto": "pero usted no estaba aquí",
+   "origen": "es",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 233.1,
+   "fin": 234.78,
+   "t_asr": 1.06
+  },
+  {
+   "texto": "No tengo dolor, al menos que ponga peso sobre el pie.",
+   "origen": "es",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 235.14,
+   "fin": 238.44,
+   "t_asr": 1.097
+  },
+  {
+   "texto": "It's a shame that I did not get to see it since the beginning to have a baseline of what it looked like. How high was the fall?",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 260.7,
+   "fin": 267.48,
+   "t_asr": 1.161
+  },
+  {
+   "texto": "Entre dos y tres pies de altura.",
+   "origen": "es",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 279.84,
+   "fin": 282.36,
+   "t_asr": 1.078
+  },
+  {
+   "texto": "You should stay off that ankle for at least another one to three weeks at maximum depending on how you feel.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 288.0,
+   "fin": 294.21,
+   "t_asr": 1.129
+  },
+  {
+   "texto": "Espero sentirme bien, pero tres semanas se me hace mucho tiempo.",
+   "origen": "es",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 302.58,
+   "fin": 306.9,
+   "t_asr": 1.096
+  },
+  {
+   "texto": "I mean three weeks maximum, but I am hopeful you will make better progress. You're still young, healthy, and I doubt you have picked up any bad habits since the last time I saw you.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 320.76,
+   "fin": 331.14,
+   "t_asr": 1.19
+  },
+  {
+   "texto": "No, ¿cómo cree? Todavía sigo cuidando mi dieta y no tengo ningún vicio aparte de encontrar maneras para mejorar mi tobillo.",
+   "origen": "es",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 347.16,
+   "fin": 355.62,
+   "t_asr": 1.163
+  },
+  {
+   "texto": "I know what you mean, but honestly, at this point, nothing will help it like rest, elevation, and medication if you have pain.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 366.93,
+   "fin": 374.82,
+   "t_asr": 1.146
+  },
+  {
+   "texto": "Sí, lo sé, pero es demasiado tiempo el tener que aguantar y luego sin trabajar.",
+   "origen": "es",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 383.91,
+   "fin": 388.98,
+   "t_asr": 1.118
+  },
+  {
+   "texto": "I completely agree, but you cannot even walk. Do you think you could climb up a ladder?",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 398.34,
+   "fin": 403.26,
+   "t_asr": 1.116
+  },
+  {
+   "texto": "No, pues obviamente no podría subir una escalera si no puedo caminar, pero se me hace mucho. Jamás había estado incapacitado por un periodo tan largo.",
+   "origen": "es",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 413.52,
+   "fin": 422.94,
+   "t_asr": 1.182
+  },
+  {
+   "texto": "You should consider yourself lucky that it was not a fracture because you would have been out longer. Now that we're all caught up.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 437.07,
+   "fin": 444.57,
+   "t_asr": 1.14
+  },
+  {
+   "texto": "I want to talk about the real reason that you are here. Do you know what it is?",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 444.63,
+   "fin": 448.44,
+   "t_asr": 1.118
+  },
+  {
+   "texto": "Pues sí, sé la razón exacta por la que estoy aquí, pero me da gusto haberle visto también para eso, doctor.",
+   "origen": "es",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 465.39,
+   "fin": 472.23,
+   "t_asr": 1.146
+  },
+  {
+   "texto": "En realidad esta cita es porque estoy tomando una pastilla para la presión arterial.",
+   "origen": "es",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 472.29,
+   "fin": 476.91,
+   "t_asr": 1.12
+  },
+  {
+   "texto": "Yes, that is correct. Another doctor asked you to come in here for a blood pressure check with the nurse to confirm that you have hypertension. Since that was the case,",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 493.32,
+   "fin": 503.34,
+   "t_asr": 1.171
+  },
+  {
+   "texto": "You were given a prescription for hypertension and had to come back today so we can check if the medication is working and to clear up any doubts you may have.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 503.4,
+   "fin": 512.16,
+   "t_asr": 1.165
+  },
+  {
+   "texto": "Entiendo, pero la verdad, pues yo no sé qué es la hipertensión y no me he sentido mal aparte de la pata, vea.",
+   "origen": "es",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 545.58,
+   "fin": 553.38,
+   "t_asr": 1.166
+  },
+  {
+   "texto": "Me he estado tomando medicamento, pero honestamente no siento ninguna diferencia.",
+   "origen": "es",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 553.44,
+   "fin": 558.21,
+   "t_asr": 1.106
+  },
+  {
+   "texto": "Hypertension just means that for some reason your blood pressure is rising. Your body is designed to work at a certain blood pressure and if your body is working at a higher blood pressure,",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 580.32,
+   "fin": 591.6,
+   "t_asr": 1.188
+  },
+  {
+   "texto": "That is when complications begin.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 591.6,
+   "fin": 594.06,
+   "t_asr": 1.071
+  },
+  {
+   "texto": "If you have weak arteries, they can stretch out and you can have an aneurysm. It can narrow the blood vessels in the kidneys and can even cause heart disease, a stroke.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 614.79,
+   "fin": 625.74,
+   "t_asr": 1.187
+  },
+  {
+   "texto": "or a heart attack.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 625.74,
+   "fin": 626.85,
+   "t_asr": 1.061
+  },
+  {
+   "texto": "entonces porque no siento nada",
+   "origen": "es",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 647.58,
+   "fin": 650.01,
+   "t_asr": 1.068
+  },
+  {
+   "texto": "Yo me siento muy bien y si no fuera por estas muletas y el tobillo, yo no estaría aquí.",
+   "origen": "es",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 650.31,
+   "fin": 655.17,
+   "t_asr": 1.14
+  },
+  {
+   "texto": "High blood pressure is often dubbed the silent killer because many people that have it don't know it.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 668.91,
+   "fin": 675.09,
+   "t_asr": 1.122
+  },
+  {
+   "texto": "but they are still being affected by it.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 675.15,
+   "fin": 677.34,
+   "t_asr": 1.081
+  },
+  {
+   "texto": "If you feel a problem due to blood pressure, that means it is too late and serious complications may arise.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 695.64,
+   "fin": 702.3,
+   "t_asr": 1.131
+  },
+  {
+   "texto": "That is the reason why we give you medication to control your blood pressure to prevent future complications because it is very hard to treat the complications of long-term uncontrolled hypertension.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 702.36,
+   "fin": 713.85,
+   "t_asr": 1.185
+  },
+  {
+   "texto": "No estoy muy convencido. ¿Para qué voy a tomar un medicamento si no siento nada?",
+   "origen": "es",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 739.56,
+   "fin": 744.54,
+   "t_asr": 1.124
+  },
+  {
+   "texto": "Ultimately, I cannot force you to take anything, but let's look at the evidence.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 755.49,
+   "fin": 760.74,
+   "t_asr": 1.115
+  },
+  {
+   "texto": "The last three times you checked your blood pressure, two of those times you had high blood pressure and it was decided to put you on a blood pressure medication.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 771.33,
+   "fin": 780.57,
+   "t_asr": 1.165
+  },
+  {
+   "texto": "This is the third time that you have checked your blood pressure and you have been taking the blood pressure medication for a week.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 780.63,
+   "fin": 786.6,
+   "t_asr": 1.142
+  },
+  {
+   "texto": "Your blood pressure is fine.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 786.66,
+   "fin": 788.22,
+   "t_asr": 1.07
+  },
+  {
+   "texto": "Yo sé y veo que sí, el medicamento está ayudando a bajar mi presión, pero aparte de eso no siento que haga nada.",
+   "origen": "es",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 811.86,
+   "fin": 818.94,
+   "t_asr": 1.16
+  },
+  {
+   "texto": "Yo no estoy seguro de tomar algo que no me hace sentir mejor.",
+   "origen": "es",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 819.0,
+   "fin": 822.69,
+   "t_asr": 1.104
+  },
+  {
+   "texto": "Like I said, sir, I can only give you the information that I know. I can tell you that if you have high blood pressure, you will have complications if it is not under control.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 845.13,
+   "fin": 855.63,
+   "t_asr": 1.194
+  },
+  {
+   "texto": "You have high blood pressure and I can almost guarantee that something bad will happen if you do not take blood pressure medication.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 855.69,
+   "fin": 862.29,
+   "t_asr": 1.138
+  },
+  {
+   "texto": "I will prescribe it. I have done my part. If you want to take it or not, that is your choice. But if I were you, I would take it.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 862.5,
+   "fin": 870.39,
+   "t_asr": 1.181
+  },
+  {
+   "texto": "Está bien, le voy a tomar la palabra y me voy a tomar el medicamento, pero la verdad no estoy muy convencido.",
+   "origen": "es",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 908.76,
+   "fin": 915.42,
+   "t_asr": 1.15
+  },
+  {
+   "texto": "Fair enough.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 931.59,
+   "fin": 932.73,
+   "t_asr": 1.065
+  },
+  {
+   "texto": "Just as long as you take it, I'm good. It seems like the dose that you were given is working fine, so we will keep on monitoring you so that your blood pressure does not go up or down.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 933.03,
+   "fin": 943.77,
+   "t_asr": 1.214
+  },
+  {
+   "texto": "on that medication. Do you have a blood pressure cuff at home?",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 943.77,
+   "fin": 947.43,
+   "t_asr": 1.1
+  },
+  {
+   "texto": "Muy bien, y no, no cuento con un esfigmomanómetro en casa. Una pregunta, ¿cómo es que la presión arterial puede subir o bajar si tomo el medicamento?",
+   "origen": "es",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 968.4,
+   "fin": 978.6,
+   "t_asr": 1.209
+  },
+  {
+   "texto": "There are many variables that come into play, but if the medication is not working correctly, your blood pressure will go up.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 997.11,
+   "fin": 1004.34,
+   "t_asr": 1.137
+  },
+  {
+   "texto": "If the medication is doing a better job than we expect, the dose might be too high and we would have to lower the dose.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 1004.4,
+   "fin": 1011.3,
+   "t_asr": 1.147
+  },
+  {
+   "texto": "Está bien, está bien.",
+   "origen": "es",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 1032.24,
+   "fin": 1034.16,
+   "t_asr": 1.07
+  },
+  {
+   "texto": "Entonces tengo que comprar un esfigmomanómetro para revisar mi presión arterial y si está baja o alta, me comunico con usted, ¿verdad?",
+   "origen": "es",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 1034.46,
+   "fin": 1042.71,
+   "t_asr": 1.182
+  },
+  {
+   "texto": "That sounds perfect. That is all unless you have any other questions.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 1061.4,
+   "fin": 1065.48,
+   "t_asr": 1.096
+  },
+  {
+   "texto": "No, doctor. Todavía no estoy muy seguro del medicamento para la presión, pero usted se quemó las pestañas para ayudar a la gente, así que le haré caso.",
+   "origen": "es",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 1074.3,
+   "fin": 1083.27,
+   "t_asr": 1.188
+  },
+  {
+   "texto": "I'm good with that. If there are no more questions, then wait here for the nurse to give you your discharge instructions and paperwork.",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 1097.16,
+   "fin": 1104.39,
+   "t_asr": 1.146
+  },
+  {
+   "texto": "Goodbye",
+   "origen": "en",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 1104.45,
+   "fin": 1105.62,
+   "t_asr": 1.051
+  },
+  {
+   "texto": "Claro que sí, doctor. Muchas gracias. Adiós.",
+   "origen": "es",
+   "grupo": "4YxFUaXJb4g",
+   "inicio": 1117.74,
+   "fin": 1121.37,
+   "t_asr": 1.099
+  },
+  {
+   "texto": "Welcome to Interpret Your World, a channel designed by interpreters for interpreters to give you the confidence and practice you require to become a great interpreter. To get started...",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 0.48,
+   "fin": 11.73,
+   "t_asr": 1.188
+  },
+  {
+   "texto": "Head on over to the playlist on our channel and view the channel guide playlist that will help you get the most out of this channel.",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 11.73,
+   "fin": 19.59,
+   "t_asr": 1.151
+  },
+  {
+   "texto": "All of our playlists have an organized to be easily accessed to help your needs. Some of the playlists include mock scenarios for customer service and medical interpreters.",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 19.65,
+   "fin": 30.78,
+   "t_asr": 1.171
+  },
+  {
+   "texto": "medical random phrase practice,",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 30.84,
+   "fin": 33.27,
+   "t_asr": 1.066
+  },
+  {
+   "texto": "tips and tricks and much more content. You can also practice short form vocabulary here on YouTube or on the short form video platform of your choice.",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 33.57,
+   "fin": 43.56,
+   "t_asr": 1.162
+  },
+  {
+   "texto": "which include Facebook,",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 43.62,
+   "fin": 45.57,
+   "t_asr": 1.065
+  },
+  {
+   "texto": "Instagram, TikTok and Kuwait.",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 45.87,
+   "fin": 49.23,
+   "t_asr": 1.075
+  },
+  {
+   "texto": "Lastly, we also have a Patreon page where for as little as $1 of your support, you can get access to everything on the page.",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 49.53,
+   "fin": 58.08,
+   "t_asr": 1.168
+  },
+  {
+   "texto": "The material provided complements what you can find on our YouTube channel which is: Add free videos, answer sheets, vocabulary lists,",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 58.14,
+   "fin": 66.57,
+   "t_asr": 1.145
+  },
+  {
+   "texto": "and much more. Remember to like, subscribe and share our page if you find it useful.",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 66.63,
+   "fin": 72.81,
+   "t_asr": 1.118
+  },
+  {
+   "texto": "Happy interpreting.",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 72.87,
+   "fin": 74.34,
+   "t_asr": 1.06
+  },
+  {
+   "texto": "Music Music Music",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 82.89,
+   "fin": 91.47,
+   "t_asr": 1.074
+  },
+  {
+   "texto": "Hi, how are you guys today?",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 96.12,
+   "fin": 98.34,
+   "t_asr": 1.078
+  },
+  {
+   "texto": "Pues ya estamos bien hoy. Ya él no se encuentra tan nervioso. Creo que ya estamos listos para ir a casa, pero sí fue un gran susto el que pasamos.",
+   "origen": "es",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 102.36,
+   "fin": 111.33,
+   "t_asr": 1.19
+  },
+  {
+   "texto": "Hey, for sure. I put myself in your shoes. We never know how to handle these situations when they happen. Let me tell you that you handle the situation really well and I am glad you guys get to go home today.",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 123.66,
+   "fin": 135.66,
+   "t_asr": 1.222
+  },
+  {
+   "texto": "Yay, right?",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 135.66,
+   "fin": 137.1,
+   "t_asr": 1.061
+  },
+  {
+   "texto": "Sí, yo también me siento ya más tranquila. Ya estuvimos hablando ayer del plan que hicieron. Creo que eso nos ha tranquilizado más ya que no teníamos idea que esto podría pasar.",
+   "origen": "es",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 155.16,
+   "fin": 166.89,
+   "t_asr": 1.208
+  },
+  {
+   "texto": "One can never be ready for this, like I explained yesterday. Sometimes allergens are a common cause of an asthma attack. He should really get an allergy test to make sure to keep the allergy.",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 181.44,
+   "fin": 191.97,
+   "t_asr": 1.194
+  },
+  {
+   "texto": "Keep him away from anything that might be a trigger.",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 191.97,
+   "fin": 194.67,
+   "t_asr": 1.085
+  },
+  {
+   "texto": "Sí, ya contamos con un referido con un alergista para revisar eso. Se me hace raro. Le vuelvo a mencionar, ya que él no tiene ninguna alergia que le conozcamos hasta hoy.",
+   "origen": "es",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 212.49,
+   "fin": 223.68,
+   "t_asr": 1.234
+  },
+  {
+   "texto": "Maybe it was just a one-time thing. Let's hope so. The good thing is that we are now ready in case it happens again and most importantly how to prevent it.",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 239.43,
+   "fin": 249.12,
+   "t_asr": 1.184
+  },
+  {
+   "texto": "Sí, muchas gracias por todo lo que nos enseñó ayer. Hemos aprendido mucho acerca del asma estos días. Esperemos nunca tener que usar toda la información, solo la de prevención, pero ya contamos con...",
+   "origen": "es",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 261.69,
+   "fin": 272.94,
+   "t_asr": 1.227
+  },
+  {
+   "texto": "con la información en caso de que las cosas se empeoren.",
+   "origen": "es",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 272.94,
+   "fin": 276.3,
+   "t_asr": 1.097
+  },
+  {
+   "texto": "Exactly. It is always better to have the information ready, but always hopeful that we won't have to use it. On that note,",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 293.7,
+   "fin": 301.68,
+   "t_asr": 1.15
+  },
+  {
+   "texto": "I would like to go over the asthma action plan one more time if you don't mind.",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 301.74,
+   "fin": 305.91,
+   "t_asr": 1.117
+  },
+  {
+   "texto": "Claro que no, con mucho gusto. De esta forma nos cercioramos que conozcamos el plan.",
+   "origen": "es",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 321.27,
+   "fin": 326.85,
+   "t_asr": 1.137
+  },
+  {
+   "texto": "Alright, do you guys remember what are the three zones of the plan?",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 334.74,
+   "fin": 338.7,
+   "t_asr": 1.103
+  },
+  {
+   "texto": "Claro que sí, son las zonas verde, amarillo y rojo.",
+   "origen": "es",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 345.06,
+   "fin": 348.48,
+   "t_asr": 1.103
+  },
+  {
+   "texto": "That is excellent, mom. Do you remember what each of the songs stands for?",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 353.85,
+   "fin": 358.08,
+   "t_asr": 1.111
+  },
+  {
+   "texto": "Sí, la zona verde es lo que hay que hacer para prevenir un ataque de asma. La zona amarilla es de precaución. Y por último, la zona roja es de emergencia.",
+   "origen": "es",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 365.25,
+   "fin": 375.66,
+   "t_asr": 1.203
+  },
+  {
+   "texto": "You're right again, mom. Okay, so in the green zone, the safe zone, what do we have to do to keep an asthma attack away?",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 390.03,
+   "fin": 398.01,
+   "t_asr": 1.167
+  },
+  {
+   "texto": "Él tiene que usar el inhalador de todos los días. Después de tres meses puede dejar de usarlo solo si lo recomienda el doctor. Hay que usar el inhalador en la mañana y antes de realizar algún ejercicio.",
+   "origen": "es",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 409.68,
+   "fin": 421.41,
+   "t_asr": 1.214
+  },
+  {
+   "texto": "también se puede usar este otro inhalador en caso de ser necesario por algún problema para respirar.",
+   "origen": "es",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 421.41,
+   "fin": 428.1,
+   "t_asr": 1.124
+  },
+  {
+   "texto": "Yes, you are absolutely correct. That is awesome. We have the green zone down. What about the yellow zone?",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 450.33,
+   "fin": 456.45,
+   "t_asr": 1.137
+  },
+  {
+   "texto": "La zona amarilla es de precaución, por ejemplo que tenga que usar el inhalador de rescate más de dos veces en un día, también si se ha dejado de usar el inhalador de prevención.",
+   "origen": "es",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 467.01,
+   "fin": 477.93,
+   "t_asr": 1.212
+  },
+  {
+   "texto": "Hay que volverlo a usar todos los días hasta consultar al doctor.",
+   "origen": "es",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 477.93,
+   "fin": 481.95,
+   "t_asr": 1.101
+  },
+  {
+   "texto": "Yes again, you're really good mom. I'm sure you guys will do just fine once you leave here now for the last part What about the red zone? You",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 499.68,
+   "fin": 507.27,
+   "t_asr": 1.172
+  },
+  {
+   "texto": "La zona roja es una emergencia. Es el momento que el inhalador de rescate ya no surte de efecto y está teniendo un problema para respirar.",
+   "origen": "es",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 519.12,
+   "fin": 528.21,
+   "t_asr": 1.178
+  },
+  {
+   "texto": "Esto significa que hay que hablar al 911 o llevarlo a la sala de emergencia.",
+   "origen": "es",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 528.27,
+   "fin": 533.79,
+   "t_asr": 1.113
+  },
+  {
+   "texto": "Exactly. If for some reason the rescue inhaler is not working and you have already done all the puffs allowed, the only answer then is to get him to the nearest emergency room. If you call for EMS or",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 552.33,
+   "fin": 564.03,
+   "t_asr": 1.213
+  },
+  {
+   "texto": "or you take them will depend on the situation. Let's hope it does not come to that, but in case it does, like I mentioned, you will now be ready.",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 564.03,
+   "fin": 572.31,
+   "t_asr": 1.178
+  },
+  {
+   "texto": "Esperemos que no. Por lo menos algo bueno salió de esto. Ya estamos preparados para una situación similar.",
+   "origen": "es",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 598.92,
+   "fin": 606.09,
+   "t_asr": 1.136
+  },
+  {
+   "texto": "De haber sabido, le hubiéramos traído de inmediato a la sala de emergencia. No habríamos demorado tanto.",
+   "origen": "es",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 606.15,
+   "fin": 612.27,
+   "t_asr": 1.158
+  },
+  {
+   "texto": "That is true, but you cannot beat yourself up about it since you did not know. There had never been an asthma attack like this one, and you had no need to inform yourself on the subject. Now...",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 628.89,
+   "fin": 639.9,
+   "t_asr": 1.207
+  },
+  {
+   "texto": "We know what might happen and we are ready for it.",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 639.9,
+   "fin": 642.93,
+   "t_asr": 1.088
+  },
+  {
+   "texto": "Sí, definitivamente me asusté. No supe qué hacer y lo último que pasó por mi mente fue hablar a la ambulancia. El tener que traerlo yo misma fue una experiencia aterradora.",
+   "origen": "es",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 661.8,
+   "fin": 672.84,
+   "t_asr": 1.213
+  },
+  {
+   "texto": "De igual manera, creo que fue la decisión correcta y pues no pasó a mayores. Ya parece que nos libramos.",
+   "origen": "es",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 672.84,
+   "fin": 679.11,
+   "t_asr": 1.147
+  },
+  {
+   "texto": "I'm also sure that that was the right call. You guys are safe now. You have an asthma plan and are ready to go home. I'm sure you guys will do great and there is a high chance that this was just a one-time thing.",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 699.99,
+   "fin": 711.75,
+   "t_asr": 1.243
+  },
+  {
+   "texto": "Sí, así esperamos nosotros también. Ya estamos listos para ir a casa y esperemos que no vuelva a pasar.",
+   "origen": "es",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 731.13,
+   "fin": 738.33,
+   "t_asr": 1.14
+  },
+  {
+   "texto": "Well, this is pretty much it. You asked me to come speak to you one last time before you go home. Unless there are any questions, we are good.",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 749.88,
+   "fin": 757.86,
+   "t_asr": 1.171
+  },
+  {
+   "texto": "Yo creo que no nos queda duda alguna. Todo se nos ha explicado muy bien y todos han sido muy amables. Nos vamos muy contentos ya que todo el equipo ha sido muy atento también.",
+   "origen": "es",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 772.53,
+   "fin": 783.63,
+   "t_asr": 1.206
+  },
+  {
+   "texto": "Great, I think you should start gathering up your things. I will let the nurse know you guys are ready for discharge. I will leave you my card in case there are any questions about the plan.",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 798.99,
+   "fin": 809.79,
+   "t_asr": 1.201
+  },
+  {
+   "texto": "You can always give me or the after hours nurse a call.",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 809.79,
+   "fin": 813.24,
+   "t_asr": 1.099
+  },
+  {
+   "texto": "Muchas gracias. Ustedes son de lo mejor. Son un gran equipo de doctores y enfermeros. Nos vamos con un gran gusto sabiendo que contamos con un gran equipo que nos respalda.",
+   "origen": "es",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 834.84,
+   "fin": 845.1,
+   "t_asr": 1.211
+  },
+  {
+   "texto": "You are just too nice. It is my time to go so I hope you guys have a great day and hope not to see you here again.",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 859.59,
+   "fin": 866.43,
+   "t_asr": 1.16
+  },
+  {
+   "texto": "Goodbye.",
+   "origen": "en",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 866.49,
+   "fin": 867.21,
+   "t_asr": 1.057
+  },
+  {
+   "texto": "Adiós doctora, que usted también tenga un buen día.",
+   "origen": "es",
+   "grupo": "Eb4Rd2wF0OA",
+   "inicio": 879.54,
+   "fin": 882.84,
+   "t_asr": 1.101
+  }
+ ]
+}
