@@ -35,6 +35,7 @@ _PEDIDO = "Translate this {origen} text into {destino}:\n\n{texto}"
 # Con la regla solo en _SISTEMA, qwen3:8b igual tuteaba 27 de 321 frases al español; con este recordatorio, 3
 # (bench/reporte_usted.md). Va junto al texto (config.USTED_RECORDATORIO) y no cambia _SISTEMA, así que el prefijo
 # reutilizado es el mismo. La variante «addressing the listener as "usted" (never "tú")» dejaba frases sin traducir.
+# Apagado: en llamadas reales quitó el tuteo, pero agregó más errores de sentido de los que corrigió.
 _PEDIDO_USTED = 'Translate this {origen} text into {destino}, using "usted" for "you":\n\n{texto}'
 
 # Formato recomendado por Google para TranslateGemma.

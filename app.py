@@ -9,6 +9,7 @@ import re
 import sys
 import threading
 from datetime import datetime
+from itertools import pairwise
 
 from PySide6.QtCore import QObject, Qt, QTimer, Signal
 from PySide6.QtGui import QGuiApplication, QKeySequence, QShortcut
@@ -28,6 +29,7 @@ from traductor import Traductor
 C = {
 	"fondo": "#0E1116", "panel": "#161B22", "tarjeta": "#1B222C", "borde": "#2A3441",
 	"texto": "#E6EDF3", "tenue": "#8B98A5", "numero": "#FFD166", "error": "#F85149",
+	"duda": "#F0883E",  # palabra que Whisper no oyó clara
 	"en": "#58A6FF",  # EN → ES
 	"es": "#3FB950",  # ES → EN
 }
@@ -75,14 +77,30 @@ _UNIDAD = (
 _RE_NUMERO = re.compile(rf"\b{_NUM}(?:[\s-]+{_NUM})*(?:\s*{_UNIDAD}(?!\w))?", re.I)
 
 
-def resaltar(texto: str) -> str:
-	"""Texto → HTML con números y unidades resaltados."""
-	partes, fin = [], 0
-	for m in _RE_NUMERO.finditer(texto):
-		partes.append(html.escape(texto[fin:m.start()]))
-		partes.append(f'<span style="color:{C["numero"]};font-weight:700">{html.escape(m.group())}</span>')
-		fin = m.end()
-	partes.append(html.escape(texto[fin:]))
+def resaltar(texto: str, dudosas=(), alertas=()) -> str:
+	"""Texto → HTML con números y unidades resaltados.
+
+	`dudosas` y `alertas` son tramos (inicio, fin) de `texto`: las palabras que Whisper no oyó
+	claras van subrayadas y las cifras que no coinciden con el otro idioma, en rojo.
+	"""
+	numeros = [m.span() for m in _RE_NUMERO.finditer(texto)]
+	cortes = {0, len(texto)}
+	for tramo in (*numeros, *dudosas, *alertas):
+		cortes.update(c for c in tramo if 0 < c < len(texto))
+	partes = []
+	for a, b in pairwise(sorted(cortes)):
+		def dentro(tramos) -> bool:
+			return any(inicio <= a and b <= fin for inicio, fin in tramos)
+
+		estilo = ""
+		if dentro(alertas):
+			estilo = f"color:{C['error']};font-weight:700;text-decoration:underline"
+		elif dentro(numeros):
+			estilo = f"color:{C['numero']};font-weight:700"
+		if dentro(dudosas) and not dentro(alertas):
+			estilo += ";text-decoration:underline" if estilo else f"color:{C['duda']};text-decoration:underline"
+		trozo = html.escape(texto[a:b])
+		partes.append(f'<span style="{estilo}">{trozo}</span>' if estilo else trozo)
 	return "".join(partes)
 
 
@@ -98,6 +116,8 @@ class Tarjeta(QFrame):
 		self.origen = origen
 		self.escala = escala
 		self.lineas: dict[int, list[str]] = {}  # id de línea -> [original, traducción]
+		# id de línea -> tramos para marcar (config.AVISO_*): (dudosas, cifras del original, cifras de la traducción)
+		self.marcas: dict[int, tuple[list, list, list]] = {}
 		self.traduciendo: set[int] = set()
 		self.inicio = self.fin = datetime.now()  # para la duración de la llamada al guardar
 		self._px = 0.0  # tamaño de letra ya aplicado: setStyleSheet es caro, solo se llama si cambia
@@ -109,6 +129,10 @@ class Tarjeta(QFrame):
 		self.hora.setObjectName("tenue")
 		self.tiempos = QLabel()
 		self.tiempos.setObjectName("tenue")
+		self.aviso = QLabel("⚠ cifras")
+		self.aviso.setStyleSheet(f"color: {C['error']}; font-size: 12px; font-weight: 700;")
+		self.aviso.setToolTip("Un número en rojo no está del otro lado: comparar original y traducción.")
+		self.aviso.hide()
 		self.boton_idioma = QPushButton()
 		self.boton_idioma.setObjectName("mini")
 		self.boton_idioma.setCursor(Qt.PointingHandCursor)
@@ -127,6 +151,7 @@ class Tarjeta(QFrame):
 		cabecera.addWidget(self.badge)
 		cabecera.addWidget(self.hora)
 		cabecera.addWidget(self.tiempos)
+		cabecera.addWidget(self.aviso)
 		cabecera.addStretch()
 		cabecera.addWidget(self.boton_repasar)
 		cabecera.addWidget(self.boton_idioma)
@@ -162,13 +187,17 @@ class Tarjeta(QFrame):
 		self.boton_idioma.setText("⇄ Es español" if origen == "en" else "⇄ Es inglés")
 		self._render()
 
-	def poner_linea(self, linea_id: int, original: str, traduccion: str, traduciendo: bool) -> None:
-		self.lineas[linea_id] = [original, traduccion]
+	def poner_linea(self, linea: Linea, traduccion: str, traduciendo: bool) -> None:
+		self.lineas[linea.id] = [linea.original, traduccion]
+		# Las cifras se comparan con la traducción completa: mientras se escribe, no se marcan.
+		cifras = ([], []) if traduciendo else (linea.cifras_original, linea.cifras_traduccion)
+		self.marcas[linea.id] = (linea.dudosas, *cifras)
 		self.fin = datetime.now()
 		if traduciendo:
-			self.traduciendo.add(linea_id)
+			self.traduciendo.add(linea.id)
 		else:
-			self.traduciendo.discard(linea_id)
+			self.traduciendo.discard(linea.id)
+		self.aviso.setVisible(any(m[1] or m[2] for m in self.marcas.values()))
 		self._render()
 
 	def agregar_token(self, linea_id: int, token: str) -> None:
@@ -190,17 +219,32 @@ class Tarjeta(QFrame):
 			" ".join(self.lineas[i][1].strip() for i in orden).strip(),
 		)
 
+	def _tramos(self, lado: int, *cuales: int) -> list[list]:
+		"""Tramos de cada línea llevados a su posición en el texto de la tarjeta (ver texto_plano)."""
+		salida: list[list] = [[] for _ in cuales]
+		orden = sorted(self.lineas)
+		textos = [self.lineas[i][lado] if lado == 0 else self.lineas[i][lado].strip() for i in orden]
+		unido = " ".join(textos)
+		base = len(unido.lstrip()) - len(unido)  # texto_plano quita los espacios del principio
+		for i, texto in zip(orden, textos):
+			for destino, cual in zip(salida, cuales):
+				destino += [(a + base, b + base) for a, b in self.marcas.get(i, ((), (), ()))[cual]]
+			base += len(texto) + 1
+		return salida
+
 	def _render(self) -> None:
 		self._pintar_luego.stop()
 		original, traduccion = self.texto_plano()
+		dudosas, cifras_original = self._tramos(0, 0, 1)
+		(cifras_traduccion,) = self._tramos(1, 2)
 		px = FUENTE_BASE_PX * self.escala
 		if px != self._px:
 			self._px = px
 			self.original.setStyleSheet(f"color: {C['tenue']}; font-size: {px:.0f}px;")
 			self.traduccion.setStyleSheet(f"color: {C['texto']}; font-size: {px * 1.4:.0f}px; font-weight: 600;")
-		self.original.setText(resaltar(original))
+		self.original.setText(resaltar(original, dudosas, cifras_original))
 		cursor = f' <span style="color:{C[self.origen]}">▍</span>' if self.traduciendo else ""
-		self.traduccion.setText(resaltar(traduccion) + cursor)
+		self.traduccion.setText(resaltar(traduccion, alertas=cifras_traduccion) + cursor)
 
 	def _copiar(self) -> None:
 		QGuiApplication.clipboard().setText(self.texto_plano()[1])
@@ -358,6 +402,10 @@ class Ventana(QMainWindow):
 			f'<span style="color:{C["en"]}">■</span> Lo que se diga en inglés se traduce al español.<br>'
 			f'<span style="color:{C["es"]}">■</span> Lo que se diga en español se traduce al inglés.<br><br>'
 			"Si una frase se detecta en el idioma equivocado, usá «⇄» en su tarjeta."
+			+ (f'<br><br><span style="color:{C["duda"]};text-decoration:underline">Subrayado</span>'
+			   " = palabra que Whisper no oyó clara." if config.AVISO_PALABRA_DUDOSA else "")
+			+ (f'<br><span style="color:{C["error"]};font-weight:700">⚠ cifras</span>'
+			   " = un número no coincide entre el original y la traducción." if config.AVISO_CIFRAS else "")
 		)
 		self.vacio.setAlignment(Qt.AlignCenter)
 		self.vacio.setStyleSheet(f"color: {C['tenue']}; font-size: 16px; padding: 60px;")
@@ -524,7 +572,7 @@ class Ventana(QMainWindow):
 
 	def _linea_nueva(self, linea: Linea) -> None:
 		if tarjeta := self._tarjeta(linea):
-			tarjeta.poner_linea(linea.id, linea.original, "", traduciendo=True)
+			tarjeta.poner_linea(linea, "", traduciendo=True)
 
 	def _token(self, linea: Linea, token: str) -> None:
 		if tarjeta := self._tarjeta(linea):
@@ -533,7 +581,7 @@ class Ventana(QMainWindow):
 	def _linea_traducida(self, linea: Linea) -> None:
 		if not (tarjeta := self._tarjeta(linea)):
 			return
-		tarjeta.poner_linea(linea.id, linea.original, linea.traduccion, traduciendo=False)
+		tarjeta.poner_linea(linea, linea.traduccion, traduciendo=False)
 		tarjeta.tiempos.setText(f"· Whisper {linea.t_asr:.1f}s · traducción {linea.t_traduccion:.1f}s")
 
 	def _linea_actualizada(self, linea: Linea) -> None:
@@ -541,7 +589,7 @@ class Ventana(QMainWindow):
 			return
 		tarjeta.set_origen(linea.origen)
 		tarjeta.setVisible(self.filtro in ("todo", linea.origen))
-		tarjeta.poner_linea(linea.id, linea.original, "", traduciendo=True)
+		tarjeta.poner_linea(linea, "", traduciendo=True)
 
 	def _estado(self, texto: str) -> None:
 		self.etiqueta_estado.setStyleSheet("")

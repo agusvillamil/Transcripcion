@@ -14,11 +14,13 @@ import urllib.request
 import uuid
 import wave
 from collections import deque
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 import numpy as np
 
 import config
+
+Tramo = tuple[int, int]  # posición [inicio, fin) dentro de un texto
 
 # Nombres que devuelve whisper.cpp -> código. Idiomas cercanos al español se
 # tratan como español (Whisper a veces confunde es con pt/gl/ca/it).
@@ -48,6 +50,7 @@ class Transcripcion:
 	idioma: str          # "en" o "es"
 	idioma_whisper: str  # lo que detectó Whisper (ej. "english")
 	segundos: float      # tiempo de inferencia
+	dudosas: list[Tramo] = field(default_factory=list)  # palabras de `texto` de las que Whisper dudó
 
 
 class ServidorWhisper:
@@ -119,11 +122,13 @@ class ServidorWhisper:
 		if idioma is None and detectado not in ("english", "spanish"):
 			# Whisper transcribió en otro idioma: se repite forzando el más probable.
 			respuesta = self._pedir(audio, codigo)
+		texto = limpiar_texto(str(respuesta.get("text", "")))
 		return Transcripcion(
-			texto=limpiar_texto(str(respuesta.get("text", ""))),
+			texto=texto,
 			idioma=codigo,
 			idioma_whisper=detectado,
 			segundos=time.time() - t0,
+			dudosas=palabras_dudosas(texto, respuesta.get("segments") or [], config.AVISO_PALABRA_DUDOSA),
 		)
 
 	def _pedir(self, audio: np.ndarray, idioma: str) -> dict:
@@ -189,6 +194,38 @@ def limpiar_texto(texto: str) -> str:
 		if not limpias or o.lower() != limpias[-1].lower():
 			limpias.append(o)
 	return " ".join(limpias)
+
+
+def palabras_dudosas(texto: str, segmentos: list[dict], umbral: float) -> list[Tramo]:
+	"""Tramos de `texto` cuyas palabras Whisper escribió con probabilidad menor que `umbral`.
+
+	Solo lee lo que el servidor ya devuelve con cada transcripción: no cambia el pedido ni el
+	texto. La probabilidad de una palabra es la de su trozo menos seguro; la puntuación no
+	cuenta (entre "," y "." Whisper duda siempre). Si las palabras del servidor no coinciden
+	una a una con las de `texto` (limpiar_texto quitó una oración repetida), no marca nada.
+	"""
+	if not umbral or not texto:
+		return []
+	probabilidades: list[float] = []  # una por palabra, en orden
+	for segmento in segmentos:
+		for trozo in segmento.get("words") or []:
+			pieza = str(trozo.get("word", ""))
+			p = float(trozo.get("probability", 1.0))
+			if not pieza.strip():
+				continue
+			if pieza[0].isspace() or not probabilidades:
+				probabilidades.append(1.0)  # un trozo que empieza con espacio abre palabra
+			if re.search(r"\w", pieza):
+				probabilidades[-1] = min(probabilidades[-1], p)
+	palabras = list(re.finditer(r"\S+", texto))
+	if len(palabras) != len(probabilidades):
+		return []
+	tramos = []
+	for m, p in zip(palabras, probabilidades):
+		letras = re.search(r"\w(?:.*\w)?", m.group())  # sin la puntuación pegada: "Hernandes." → "Hernandes"
+		if p < umbral and letras:
+			tramos.append((m.start() + letras.start(), m.start() + letras.end()))
+	return tramos
 
 
 def es_ambiguo(texto: str) -> bool:

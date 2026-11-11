@@ -16,7 +16,8 @@ from typing import Callable
 import numpy as np
 
 import config
-from asr import ServidorWhisper, es_ambiguo
+from asr import ServidorWhisper, Tramo, es_ambiguo
+from avisos import cifras_distintas
 from frases import traduccion_fija
 from segmentador import Fragmento
 from traductor import Traduccion, Traductor
@@ -39,6 +40,10 @@ class Linea:
 	t_traduccion: float = 0.0
 	t_fin_habla: float = 0.0  # reloj de pared cuando terminó la voz (para latencia total)
 	t_listo: float = 0.0
+	# Avisos (config.AVISO_*): tramos de texto para mirar dos veces. No cambian `original` ni `traduccion`.
+	dudosas: list[Tramo] = field(default_factory=list)          # palabras de `original` de las que Whisper dudó
+	cifras_original: list[Tramo] = field(default_factory=list)  # números de `original` que no están en `traduccion`
+	cifras_traduccion: list[Tramo] = field(default_factory=list)  # números de `traduccion` que no están en `original`
 
 	@property
 	def destino(self) -> str:
@@ -159,6 +164,7 @@ class Sesion:
 				audio=fragmento.audio,
 				t_asr=tr.segundos,
 				t_fin_habla=t_fin_habla,
+				dudosas=tr.dudosas,
 			)
 			self.lineas.append(linea)
 			if config.AUDIO_TARJETAS:
@@ -178,6 +184,7 @@ class Sesion:
 			with self._gpu:
 				tr = self.asr.transcribir(linea.audio, idioma=idioma)
 			linea.origen, linea.original, linea.traduccion = idioma, tr.texto, ""
+			linea.dudosas, linea.cifras_original, linea.cifras_traduccion = tr.dudosas, [], []
 			self.cb.linea_actualizada(linea)
 			self._cola_trad.put(linea)
 
@@ -197,6 +204,8 @@ class Sesion:
 					linea.original, linea.origen, linea.destino, contexto, al_token=lambda t: self.cb.token(linea, t)
 				)
 		linea.traduccion = tr.texto
+		if config.AVISO_CIFRAS and fija is None:
+			linea.cifras_original, linea.cifras_traduccion = cifras_distintas(linea.original, tr.texto)
 		linea.t_primer_token = tr.primer_token
 		linea.t_traduccion = tr.total
 		linea.t_listo = time.time()

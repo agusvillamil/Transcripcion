@@ -19,6 +19,8 @@ python3 app.py
    - «⇄ Es español / Es inglés» corrige una frase detectada en el idioma equivocado.
    - Fórmulas de cortesía y respuestas cortas («Thank you.», «No, ninguna. Muchas gracias, doctora.») salen al
      instante de una tabla fija (`frases.py`), sin pasar por el LLM. Se pueden agregar frases ahí.
+   - Avisos: una palabra subrayada en naranja en el original es una que Whisper no oyó clara; «⚠ cifras» y un
+     número en rojo indican que ese número no está del otro lado. Ver «Avisos».
    - Filtros Todo / EN→ES / ES→EN, A−/A+ (Ctrl +/−), Guardar sesión (Ctrl+S), Limpiar (Ctrl+L).
 4. Al terminar la llamada, **Guardar sesión (Ctrl+S)**: la guarda como nota en la bóveda de Obsidian
    (`~/Documentos/Obsidian Vault/Llamadas/DD-MM-YYYY - HH.MM.md`, con fecha, duración y turnos como propiedades)
@@ -52,6 +54,7 @@ python3 app.py
 | `traductor.py` | Traducción con Ollama (prompt de intérprete médico) |
 | `frases.py` | Traducciones fijas de fórmulas de cortesía (editable) |
 | `sesion.py` | Orquesta transcripción → traducción; turna la GPU entre ambos |
+| `avisos.py` | Compara las cifras del original con las de la traducción |
 | `repaso.py` | Arma `Repaso.md` con horas, turnos marcados y términos frecuentes |
 | `config.py` | Modelos, umbrales y parámetros |
 | `bench/probar_video.py` | Prueba/benchmark sobre un archivo de audio |
@@ -78,9 +81,9 @@ El prompt (`traductor.py`) exige «usted» singular en todo (verbos, pronombres 
 direcciones: Ollama reutiliza la parte ya procesada y las reglas extra no agregan latencia (medido: 1.53 s de
 media antes y después, sobre las 55 frases del reporte). Validado solo con qwen3:8b.
 
-Aun así qwen3:8b tuteaba en 27 de 321 frases al español de 9 videos de práctica. Con `USTED_RECORDATORIO = True`
-(`config.py`), cada pedido al español repite «usted» junto al texto y quedan 3, con +0,05 s por frase. A veces
-cambia otras palabras: ver `bench/reporte_usted.md`. `False` = como antes.
+Aun así qwen3:8b tutea a veces: 27 de 321 frases al español en 9 videos de práctica y 8 de 212 en llamadas reales.
+`USTED_RECORDATORIO = True` (`config.py`) repite «usted» en cada pedido al español y casi elimina el tuteo, pero está
+apagado porque en llamadas reales agregó más errores de sentido de los que corrigió: ver `bench/reporte_usted.md`.
 
 ## Notas de rendimiento (RX 570, 8 GB)
 
@@ -105,6 +108,28 @@ estos ajustes: las 73 transcripciones y las 73 traducciones salen idénticas. No
   frase el 7-oct de madrugada y 1.1 s al mediodía, tras reiniciar, con el mismo código, modelo y `config.py`
   (73 líneas y 1307 palabras las dos veces). Causa sin identificar; la traducción tardó lo mismo (2.3 s).
 - Mientras procesa una frase la GPU está al ~100 % y `llama-server` ocupa ~0.8 núcleos. VRAM máxima: 6.1 de 8 GB.
+
+## Avisos
+
+Marcan en la tarjeta qué conviene mirar dos veces. No cambian los pedidos a Whisper ni al LLM, ni el texto
+transcripto o traducido, ni la nota que se guarda: solo cambia cómo se pinta la tarjeta.
+
+| Ajuste (`config.py`) | Qué marca | Apagado |
+|---|---|---|
+| `AVISO_PALABRA_DUDOSA = 0.5` | Subraya en naranja, en el original, las palabras que Whisper escribió con probabilidad menor que ese valor. Usa la probabilidad por palabra que `whisper-server` ya devolvía con cada frase | `0` |
+| `AVISO_CIFRAS = True` | «⚠ cifras» en la cabecera y el número en rojo cuando un número escrito con cifras no está del otro lado (`avisos.py`) | `False` |
+
+- **Cifras.** Un número se da por bueno si del otro lado está con cifras o con palabras («2» ↔ «dos», «1,000» ↔
+  «mil», «10/15» ↔ «15 de octubre», «8.30» ↔ «8:30», «94» ↔ «1994»). Sí avisa de «25 mg» → «250 mg», «2.5» → «25»
+  o un teléfono con dos dígitos cruzados. No compara números que están en palabras de los dos lados («two» →
+  «tres» no avisa), ni las frases de la tabla fija.
+- Medido sobre el texto ya guardado: en las 229 llamadas de octubre marca 8 de 1215 turnos con cifras, y en las
+  321 traducciones de los videos de práctica (`bench/resultados_usted_b1.json`), 0 de 9.
+- **Palabra dudosa.** Es una pista, no una garantía: Whisper también se equivoca con seguridad, así que una
+  palabra sin subrayar puede estar mal. Prueba sintética (una frase en inglés con ruido blanco muy fuerte, 505
+  palabras): con 0.5 subraya el 36 % de las mal oídas y el 13 % de las correctas; con 0.3, 18 % y 4 %; con 0.7,
+  49 % y 28 %. Con el audio limpio o con filtro de teléfono no subraya nada. Sin calibrar con llamadas reales.
+  `no_speech_prob` de `whisper-server` no sirve para detectar ruido: con este pedido devuelve siempre 0.
 
 ## Actualizaciones futuras
 

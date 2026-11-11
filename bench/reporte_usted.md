@@ -1,6 +1,9 @@
 # Recordatorio de «usted» en cada frase al español
 
-Fecha: 2026-10-29. Interruptor: `USTED_RECORDATORIO` en `config.py` (`False` = como antes).
+Fecha: 2026-10-29. Interruptor: `USTED_RECORDATORIO` en `config.py`.
+
+**Apagado desde 2026-10-31** (`False`): mejoró los videos de práctica, pero empeoró las llamadas reales.
+Ver «Llamadas reales».
 
 ## Problema
 
@@ -50,6 +53,31 @@ Errores nuevos de B2 que conviene conocer:
 
 En los 2 videos de control, que no se usaron para diseñar el cambio
 (23 Hypertension y 30 Asthma), el tuteo bajó de 8 frases a 0 (con B1 y con B2).
+
+## Llamadas reales
+
+Fecha: 2026-10-31. Tras un día de uso, se volvieron a traducir las 4 llamadas del 30/10 con y sin el
+recordatorio, en local: 212 frases al español pasaron por el modelo y 92 cambiaron de texto.
+
+| | Sin recordatorio | Con recordatorio |
+|---|---:|---:|
+| Frases con tuteo | 8 | 0 |
+| Tercera persona tratada como «usted» | 1 | 4 |
+| Tiempo total medio | 1,47 s | 1,51 s |
+
+**Revisión a ciegas de las 92 frases** (asistida por IA, no clínica; un solo día de llamadas):
+
+| | Mejores | Peores | Iguales |
+|---|---:|---:|---:|
+| Con recordatorio | 14 | 23 | 55 |
+
+- Trato de usted: 7 mejores, 0 peores.
+- Errores de sentido: 2 corregidos y 9 nuevos.
+- Otros cambios: 5 mejores y 14 peores.
+
+Los videos tienen audio limpio y hablan directo al paciente. Las llamadas traen altavoz, frases cortadas,
+ruido de Whisper y tercera persona, y ahí el cambio de prompt mueve mucho más la salida. Los textos de las
+llamadas tienen datos de pacientes y no se guardan en este repositorio.
 
 ## Método
 

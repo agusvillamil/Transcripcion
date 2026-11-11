@@ -17,7 +17,7 @@ WHISPER_AUDIO_CTX = 768  # 15 s de contexto: ~2x más rápido que 30 s en la RX 
 OLLAMA_URL = "http://127.0.0.1:11434"
 OLLAMA_MODELO = "qwen3:8b"  # el más fiel en el benchmark médico; ver README
 OLLAMA_CONTEXTO = 2048
-USTED_RECORDATORIO = True  # repite «usted» en cada pedido al español; False = como antes
+USTED_RECORDATORIO = False  # True repite «usted» en cada pedido al español; empeoró llamadas reales (bench/reporte_usted.md)
 
 # --- Segmentación por voz (VAD por energía) ---
 VAD_FRAME_MS = 30
@@ -37,6 +37,12 @@ IDIOMAS = {"en": "English", "es": "Español"}
 # No tocan los modelos ni el texto que producen. Cada uno se desactiva con 0.
 UI_REFRESCO_MS = 100  # la traducción en curso se pinta cada 100 ms; 0 = con cada token, como antes
 AUDIO_TARJETAS = 10   # tarjetas recientes que conservan su audio para «⇄»; 0 = todas, como antes
+
+# --- Avisos en las tarjetas ---
+# Solo marcan qué conviene mirar dos veces: no cambian los pedidos a los modelos, ni el texto
+# transcripto o traducido, ni la nota que se guarda. Cada uno se apaga con 0 / False.
+AVISO_PALABRA_DUDOSA = 0.5  # subraya en el original las palabras que Whisper escribió con menos de esta probabilidad
+AVISO_CIFRAS = True         # «⚠ cifras» si un número del original no está en la traducción, o al revés
 
 # --- Registro de llamadas: "Guardar sesión" escribe aquí (bóveda de Obsidian) ---
 SESIONES_DIR = Path.home() / "Documentos/Obsidian Vault/Llamadas"
